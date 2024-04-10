@@ -21,7 +21,9 @@ const Page = () => {
         <iframe title="index" src="/index.html" style={{ width: "100%", height: "100vh", border: "none" }} />
       ) : (
         // Render the usual page content
-        <div>Usual page content</div>
+        <div>Usual page content
+         
+        </div>
       )}
     </div>
   );

@@ -1,50 +1,29 @@
 document.addEventListener("DOMContentLoaded", function () {
-  const counter3 = document.querySelector(".counter-3");
-
-  for (let i = 0; i < 2; i++) {
-    for (let j = 0; j < 10; j++) {
-      const div = document.createElement("div");
-      div.className = "num";
-      div.textContent = j;
-      counter3.appendChild(div);
-    }
-  }
-  const finalDiv = document.createElement("div");
-  finalDiv.className = "num";
-  finalDiv.textContent = "0";
-  counter3.appendChild(finalDiv);
-
-  function animate(counter, duration, delay = 0) {
-    const numHeight = counter.querySelector(".num").clientHeight;
-    const totalDistance =
-      (counter.querySelectorAll(".num").length - 1) * numHeight;
-
-    gsap.to(counter, {
-      y: -totalDistance,
-      duration: duration,
-      delay: delay,
-      ease: "power2.inOut",
-    });
-  }
-
-  animate(counter3, 5);
-  animate(document.querySelector(".counter-2"), 6);
-  animate(document.querySelector(".counter-1"), 2, 4);
-});
-
-document.addEventListener("DOMContentLoaded", function () {
   // Select the HTML element where you want to display the emoji
   const gearEmoji = document.querySelector(".gear-emoji");
 
   // Use GSAP to animate the rotation of the emoji
   gsap.to(gearEmoji, {
-    rotation: 100, // Rotate 100 degrees
+    rotation: 360, // Rotate 360 degrees
     duration: 2, // Duration for the rotation
     repeat: -1, // Repeat indefinitely
     ease: "none" // Linear easing
   });
-});
 
+  // Animate opacity and scale after a certain delay
+  gsap.to(gearEmoji, {
+    opacity: 0, // Fade out
+    scale: 600, // Scale out to 40 times its size
+    duration: 2, // Duration for the animation
+    delay: 7, // Delay before starting the animation
+    ease: "power2.inOut", // Easing function
+    onComplete: function () {
+      gearEmoji.style.display = "none"; // Hide the element after animation completes
+    }
+  });
+
+
+});
 
 gsap.to(".digit", {
   top: "-150px",
@@ -75,38 +54,46 @@ gsap.to(".loader", {
   duration: 0.1,
 });
 
-gsap.to(".loader-1", {
-  rotate: 90,
-  y: -50,
-  duration: 0.5,
-  delay: 6,
-});
+// gsap.to(".loader-1", {
+//   rotate: 90,
+//   y: -50,
+//   duration: 0.5,
+//   delay: 6,
+// });
 
-gsap.to(
-  ".loader-2",
-  {
-    x: -75,
-    y: 75,
-    duration: 0.5,
-  },
-  "<"
-);
+// gsap.to(
+//   ".loader-2",
+//   {
+//     x: -75,
+//     y: 75,
+//     duration: 0.5,
+//   },
+//   "<"
+// );
 
-gsap.to(".loader", {
-  scale: 40,
-  duration: 1,
-  delay: 7,
-  ease: "power2.inOut",
-});
+// gsap.to(".loader", {
+//   scale: 40,
+//   duration: 1,
+//   delay: 7,
+//   ease: "power2.inOut",
+// });
 
-gsap.to(".loader", {
-  rotate: 45,
-  y: 500,
-  x: 2000,
-  duration: 1,
-  delay: 7,
-  ease: "power2.inOut",
-});
+// gsap.to(".gear-emoji", {
+//   rotate: 45,
+//   y: 500,
+//   x: 2000,
+//   duration: 1,
+//   delay: 7,
+//   ease: "power2.inOut",
+// });
+// gsap.to(".loader", {
+//   rotate: 45,
+//   y: 500,
+//   x: 2000,
+//   duration: 1,
+//   delay: 7,
+//   ease: "power2.inOut",
+// });
 
 gsap.to(".loading-screen", {
   opacity: 0,
