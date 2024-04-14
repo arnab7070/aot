@@ -248,6 +248,26 @@
   position: relative;
   z-index: 0;
 }
+.close {
+  color: #ffffff;
+  text-shadow:
+    0 1px #2c82c9,
+    -1px 0 #5fa8d3,
+    -1px 2px #2c82c9,
+    -2px 1px #5fa8d3,
+    -2px 3px #2c82c9,
+    -3px 2px #5fa8d3,
+    -3px 4px #2c82c9,
+    -4px 3px #5fa8d3,
+    -4px 5px #2c82c9,
+    -5px 4px #5fa8d3,
+    -5px 6px #2c82c9,
+    -6px 5px #5fa8d3,
+    -6px 7px #2c82c9,
+    -7px 6px #5fa8d3,
+    -7px 8px #2c82c9,
+    -8px 7px #5fa8d3;
+}
 
 .center {
   position: relative;

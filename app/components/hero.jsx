@@ -1,5 +1,9 @@
 import React, { useState, useEffect } from "react";
-
+import { Pacifico } from "next/font/google";
+const pacifico = Pacifico({
+  weight: "400",
+  subsets: ["latin"],
+});
 const Hero = () => {
   const [scrollPosition, setScrollPosition] = useState(2);
 
@@ -37,16 +41,19 @@ const Hero = () => {
           <div className="dot-matrix" aria-hidden="true"></div>
           <div className="center force">
             <div className="">
-              <h2 className="relative top-6">
-                <span className="">When ambition</span>{" "}<br/>
-                <span className="">
-                  meets opportunity<span className="">,</span>
-                </span>{" "}<br/>
-                <strong>
-                  <span className="">anything</span>{" "}<br/>
-                  <span className="">
-                    is possible<span className="">.</span>
-                  </span>
+              <h2 class="relative top-12 ">
+                <span class={`${pacifico.className} block text-4xl md:text-8xl ml-2 mr-auto md:ml-6 md:mr-auto`}>
+                  When vision
+                </span>
+                <br />
+                <span class={`${pacifico.className} block text-4xl md:text-8xl ml-8 mr-auto md:ml-56`}>
+                  meets guidance,
+                </span>
+                <br />
+                <strong class="">
+                  <span class="block text-4xl md:text-8xl ml-40 mr-auto md:ml-[50rem] md:mr-auto"><h1 className="close">anything</h1></span>
+                  <br />
+                  <span class="block text-4xl md:text-8xl ml-20 mr-auto md:ml-96 md:mr-auto"><h1 className="close">is possible.</h1></span>
                 </strong>
               </h2>
 
@@ -59,8 +66,7 @@ const Hero = () => {
           </div>
         </div>
         <div className="bg-yellow-500 w-full ">Rest of the Homepage UI</div>
-       
-        </section>
+      </section>
     </>
   );
 };
