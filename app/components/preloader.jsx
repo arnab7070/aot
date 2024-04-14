@@ -36,12 +36,13 @@ const YourComponent = () => {
             ease: "power2.inOut", // Easing function
             onComplete: () => {
               // Hide the gear emoji
-              gearEmojiRef.current.style.display = "none";
               logo1ref.current.style.display="none";
+              gearEmojiRef.current.style.display = "none";
+           
               // Fade out the loading screen
               // Decrease z-index of the entire preloader component
               gsap.to([containerref.current, gearEmojiRef.current], {
-                zIndex: -1,
+                zIndex: -3,
               });
             },
           });

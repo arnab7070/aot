@@ -1,17 +1,22 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
 @layer base {
   :root {
     --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --foreground: 222.2 47.4% 11.2%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover-foreground: 222.2 47.4% 11.2%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 47.4% 11.2%;
 
     --primary: 222.2 47.4% 11.2%;
     --primary-foreground: 210 40% 98%;
@@ -19,50 +24,48 @@
     --secondary: 210 40% 96.1%;
     --secondary-foreground: 222.2 47.4% 11.2%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
-
     --accent: 210 40% 96.1%;
     --accent-foreground: 222.2 47.4% 11.2%;
 
-    --destructive: 0 84.2% 60.2%;
+    --destructive: 0 100% 50%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --ring: 215 20.2% 65.1%;
 
     --radius: 0.5rem;
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
+    --background: 224 71% 4%;
+    --foreground: 213 31% 91%;
 
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
+    --muted: 223 47% 11%;
+    --muted-foreground: 215.4 16.3% 56.9%;
 
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
-
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
-
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
-
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
-
-    --accent: 217.2 32.6% 17.5%;
+    --accent: 216 34% 17%;
     --accent-foreground: 210 40% 98%;
 
-    --destructive: 0 62.8% 30.6%;
+    --popover: 224 71% 4%;
+    --popover-foreground: 215 20.2% 65.1%;
+
+    --border: 216 34% 17%;
+    --input: 216 34% 17%;
+
+    --card: 224 71% 4%;
+    --card-foreground: 213 31% 91%;
+
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 1.2%;
+
+    --secondary: 222.2 47.4% 11.2%;
+    --secondary-foreground: 210 40% 98%;
+
+    --destructive: 0 63% 31%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
+    --ring: 216 34% 17%;
+
+    --radius: 0.5rem;
   }
 }
 
@@ -72,12 +75,39 @@
   }
   body {
     @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
   }
 }
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100vw;
+  height: 100vh;
+  font-family: roboto, serif;
+}
+
 .loading-screen {
   width: 100%;
   height: 100%;
-  background: #000;
+  background: #0a0a09;
   position: fixed;
   top: 0;
   left: 0;
@@ -85,19 +115,9 @@
   pointer-events: none;
 }
 
-.counter {
-  position: fixed;
-  left: 50px;
-  bottom: 50px;
-  display: flex;
-  height: 100px;
-  font-size: 100px;
-  line-height: 102px;
-  clip-path: polygon(0 0, 100% 0, 100% 100px, 0 100px);
-  font-weight: 400;
-}
 .logo {
-  position: absolute;
+  
+  position:fixed;
   top: 10.5rem;
   width: 100%;
   display: flex;
@@ -107,23 +127,6 @@
   font: bolder;
   color: white;
 }
-.counter-1,
-.counter-2,
-.counter-3 {
-  position: relative;
-  top: -12px;
-}
-
-.num1offset1 {
-  position: relative;
-  right: -12px;
-}
-
-.num1offset2 {
-  position: relative;
-  right: -10px;
-}
-
 .loader {
   position: absolute;
   top: 50%;
@@ -137,80 +140,72 @@
 
 .loader-1 {
   position: relative;
-  background: #fff;
-  width: 200px;
-}
-
-.loader-2 {
-  position: relative;
-  background: #fff;
-  width: 100px;
-}
-
-.bar {
-  height: 50px;
-}
-
-.website-content {
-  position: absolute;
+  background: #f1f1f1;
   width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
-.header {
-  position: relative;
-  width: max-content;
-  height: max-content;
-}
 
-.h1 {
-  display: flex;
-}
 
-h1 {
-  font-size: 80px;
-}
+body {
+  .hero {
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
 
-.header .h1 h1 {
-  text-align: center;
-  position: relative;
-  top: 80px;
-  margin: 0 10px;
-  text-transform: uppercase;
-  font-weight: 400;
-}
+    background: url("http://lorempixel.com/g/1500/1000/nature/10/");
+    background-size: cover;
+    height: 170vh;
+    width: 100vw;
 
-.header-revealer {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-}
+    &:before {
+      content: "";
+      height: 100%;
+      width: 100%;
+      height: 170vh;
+      width: 100vw;
+      background: rgba(44, 123, 183, 0.5);
+      position: absolute;
+    }
 
-.header-revealer::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 105%;
-  height: 110%;
-  background: #fff;
-  top: 80px;
-}
-/* Responsive adjustments */
-@media screen and (max-width: 768px) {
-  .h1 {
-    flex-direction: column;
-    align-items: center;
+    h1 {
+      position: relative;
+      z-index: 1;
+
+      font-family: "Pacifico", cursive;
+      color: rgba(255, 255, 255, 1);
+      text-align: center;
+      font-size: 4rem;
+      line-height: 4rem;
+
+      text-shadow: 0 2px 2px rgba(0, 0, 0, 0.35);
+      max-width: 25rem;
+      margin: 30vh auto 0;
+
+      /*-webkit-transition: 1s opacity ease-in-out;*/
+    }
   }
 
-  .header .h1 h1 {
-    font-size: 50px; /* Adjust font size for smaller screens */
-    margin: 10px; /* Adjust margin */
+  .content {
+    position: absolute;
+    z-index: 1000;
+    top: 80vh;
+
+    background: rgb(44, 123, 153);
+    height: 100vh;
+    width: 100vw;
+
+    box-shadow: 0 -2px 1px rgba(0, 0, 0, 0.15);
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
   }
 }
+/* Main Navbar Background */
+.nav-background {
+
+  transition: 300ms ease-in-out;
+  
+}
+
+
