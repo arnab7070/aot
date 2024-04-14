@@ -51,7 +51,7 @@ const Banner = ({ setNav }) => {
           </span>
         </div>
       </div>
-      <div  ref={bannerRef} className="overflow-hidden bg-purple-600 h-[8vh] max-h-[15vh] w-full  nav-background    left-0 flex items-center"></div>
+      <div  ref={bannerRef} className="overflow-hidden bg-purple-600 h-[8vh] max-h-[15vh] w-full  nav-background    text-white left-0 flex items-center">This is the normal navbar attached to the banner</div>
     </div>
   );
 };

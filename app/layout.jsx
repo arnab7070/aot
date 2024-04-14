@@ -10,8 +10,9 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
+    <html lang="en" >
+      <body className={`${inter.className}`}>{children}</body>
+      {/* <div>Footer</div> have to render condintioanlly according to pathname */}
     </html>
   );
 }

@@ -10,9 +10,16 @@ const YourComponent = () => {
   const loader = useRef(null);
   const logo1ref = useRef(null);
   const logo2ref = useRef(null);
+
   useEffect(() => {
+
     // GSAP animation
-    const tl = gsap.timeline();
+    const tl = gsap.timeline({
+      onComplete: () => {
+        // Re-enable scrolling when all animations are finished
+        document.body.style.overflow = "auto";
+      }
+    });
 
     // Animate loader-1 to compress and expand
     tl.fromTo(
@@ -67,14 +74,21 @@ const YourComponent = () => {
       repeat: -1, // Repeat indefinitely
       ease: "none", // Linear easing
     });
-
+    document.body.style.overflow = "scroll";
     return () => {
       tl.kill();
     };
   }, []); // Empty dependency array to run only once on component mount
-
+ // Disable scrolling when the component mounts
+ useEffect(() => {
+  document.body.style.overflow = "hidden";
+  // Re-enable scrolling when the component is unmounted
+  return () => {
+    document.body.style.overflow = "auto";
+  };
+}, []);
   return (
-    <div className="relative z-50" ref={containerref}>
+    <div className="relative z-[60] " ref={containerref}>
       <div className="loading-screen" ref={loadingscreenref}>
         <div className="loader" ref={loader}>
           <div className="loader-1" ref={loader1ref}></div>
