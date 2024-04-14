@@ -23,7 +23,7 @@ const Navbar = ({ nav }) => {
   }, [nav]);
   return (
     <div
-      className="overflow-hidden bg-purple-600 h-[8vh] max-h-[15vh] w-full  nav-background   fixed left-0 flex items-center"
+      className={`overflow-hidden bg-purple-600 h-[8vh] max-h-[15vh] w-full nav-background fixed left-0 items-center ${nav ? "hidden" : ""}`}
       style={{ top: show ? "0px" : "-1000px" }}
     ></div>
   );
