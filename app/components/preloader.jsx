@@ -8,8 +8,8 @@ const YourComponent = () => {
   const loadingscreenref = useRef(null);
   const containerref = useRef(null);
   const loader = useRef(null);
-  const logo1ref=useRef(null);
-
+  const logo1ref = useRef(null);
+  const logo2ref = useRef(null);
   useEffect(() => {
     // GSAP animation
     const tl = gsap.timeline();
@@ -36,15 +36,25 @@ const YourComponent = () => {
             ease: "power2.inOut", // Easing function
             onComplete: () => {
               // Hide the gear emoji
-              logo1ref.current.style.display="none";
+              logo1ref.current.style.display = "none";
               gearEmojiRef.current.style.display = "none";
-           
+
               // Fade out the loading screen
               // Decrease z-index of the entire preloader component
               gsap.to([containerref.current, gearEmojiRef.current], {
                 zIndex: -3,
               });
             },
+          });
+          // Fade out the logo T
+          gsap.to(logo1ref.current, {
+            opacity: 0, // Fade out
+            duration: 0.1, // Duration for the animation
+          });
+          // Fade out the logo A
+          gsap.to(logo2ref.current, {
+            opacity: 0, // Fade out
+            duration: 0.1, // Duration for the animation
           });
         },
       }
@@ -71,7 +81,7 @@ const YourComponent = () => {
         </div>
       </div>
       <div className="logo">
-        <span className="" ref={logo1ref}>
+        <span className="" ref={logo2ref}>
           A
         </span>
         <span ref={gearEmojiRef} className="gear-emoji">
