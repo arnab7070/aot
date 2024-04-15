@@ -8,7 +8,11 @@ import {
     TableHeader,
     TableRow,
 } from "./ui/table"
-
+import { Pacifico } from "next/font/google";
+const pacifico = Pacifico({
+    weight: "400",
+    subsets: ["latin"],
+  });
 import { Courgette } from "next/font/google"
 
 import { Button } from "./ui/button"
@@ -37,7 +41,7 @@ export function FacultyTable() {
                 <Tabs defaultValue="faculty">
                     <TabsList className="grid w-full grid-cols-3 gap-4">
                         <TabsTrigger value="faculty">Faculty</TabsTrigger>
-                        <TabsTrigger value="password2">Publications2</TabsTrigger>
+                        <TabsTrigger value="publication">Publications</TabsTrigger>
                         <TabsTrigger value="faculty_data" className="">Faculty Profile</TabsTrigger>
                     </TabsList>
                     <TabsContent value="faculty_data">
@@ -75,8 +79,46 @@ export function FacultyTable() {
                             <li className="flex font-semibold"> <BadgeCheck className="mr-2" /> Existing faculty members of AOT have authored 11 books.</li>
                         </ul>
                     </TabsContent>
-                    <TabsContent value="password2">
-                        Password2
+                    <TabsContent value="publication">
+                        <section className="content">
+                            <div className="jhu-block brand-message section brand" role="region">
+                                <div className="dot-matrix" aria-hidden="true"></div>
+                                <div className="center force">
+                                    <div className="">
+                                        <h2 className="relative top-12 ">
+                                            <span
+                                                className={`${pacifico.className} block text-4xl md:text-8xl ml-2 mr-auto md:ml-6 md:mr-auto`}
+                                            >
+                                                When vision
+                                            </span>
+                                            <br />
+                                            <span
+                                                className={`${pacifico.className} block text-4xl md:text-8xl ml-8 mr-auto md:ml-56`}
+                                            >
+                                                meets guidance,
+                                            </span>
+                                            <br />
+                                            <strong className="">
+                                                <span className="block text-4xl md:text-8xl ml-40 mr-auto md:ml-[50rem] md:mr-auto">
+                                                    <h1 className="close">anything</h1>
+                                                </span>
+                                                <br />
+                                                <span className="block text-4xl md:text-8xl ml-20 mr-auto md:ml-96 md:mr-auto">
+                                                    <h1 className="close">is possible.</h1>
+                                                </span>
+                                            </strong>
+                                        </h2>
+
+                                        {/* <p>
+                At Johns Hopkins, you can explore ideas that interest you, find
+                people who inspire and challenge you, and make discoveries that
+                change your life—and the world.
+              </p> */}
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="bg-yellow-500 w-full ">Rest of the Homepage UI</div>
+                        </section>
                     </TabsContent>
                 </Tabs>
 
