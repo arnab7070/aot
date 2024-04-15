@@ -56,7 +56,7 @@ export function FacultyTable() {
                                 <span>Faculty Members</span>
                             </h2>
                             <section class="projects section " id="projects">
-                                <div class="projects__container container grid border-2 border-black">
+                                <div class="projects__container container grid">
                                     {facultyData.map((faculty) => (
                                         <article className="projects__card" key={faculty.Name}>
                                             <div className="projects__image">

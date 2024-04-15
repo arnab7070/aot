@@ -68,13 +68,13 @@ const Hero = () => {
             <div className="">
               <h2 className="relative top-12 ">
                 <span
-                  className={`${pacifico.className} block text-4xl md:text-8xl ml-2 mr-auto md:ml-6 md:mr-auto`}
+                  className={`${pacifico.className} block text-white text-4xl md:text-8xl ml-2 mr-auto md:ml-6 md:mr-auto`}
                 >
                   When vision
                 </span>
                 <br />
                 <span
-                  className={`${pacifico.className} block text-4xl md:text-8xl ml-8 mr-auto md:ml-56`}
+                  className={`${pacifico.className} block text-white text-4xl md:text-8xl ml-8 mr-auto md:ml-56`}
                 >
                   meets guidance,
                 </span>
