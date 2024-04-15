@@ -256,6 +256,15 @@
   position: relative;
   z-index: 0;
 }
+.publication.brand {
+  height: 100%;
+  background-image: url(./assets/textured_paper.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+  position: relative;
+  z-index: 0;
+}
 .close {
   color: #ffffff;
   text-shadow:
