@@ -37,7 +37,7 @@ const Hero = () => {
       <section className="hero" style={parallax()}>
         <video
           aria-describedby="hero-video-description"
-          autoplay="autoplay"
+          autoPlay="autoplay"
           loop="loop"
           preload="auto"
           poster="https://www.jhu.edu/assets/uploads/2024/02/homepage_loop_102_v2-Original-960x540.jpg"

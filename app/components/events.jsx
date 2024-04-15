@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import { LayoutGrid } from "../components/ui/layout-grid";
+import image1 from '../assets/techfiesta.png'
 
 // Skeleton components
 const SkeletonCard = ({ title, description }) => {
@@ -19,38 +20,40 @@ const SkeletonCard = ({ title, description }) => {
 const cards = [
   {
     id: 1,
-    content: <SkeletonCard title="House in the woods" description="A serene and tranquil retreat, this house in the woods offers a peaceful escape from the hustle and bustle of city life." />,
+    content: <SkeletonCard title="Techfest 2024" description="Techfiesta 2024 is a two day long technical festival organised by the student's of Academy of Technology. It offers various events on software & hardware technology domain. Participants will take part based on their skillset and preferences. " />,
     className: "md:col-span-2",
-    thumbnail:
-      "https://images.unsplash.com/photo-1476231682828-37e571bc172f?q=80&w=3474&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    thumbnail: image1,
   },
   {
     id: 2,
-    content: <SkeletonCard title="House above the clouds" description="Perched high above the world, this house offers breathtaking views and a unique living experience. It's a place where the sky meets home, and tranquility is a way of life." />,
+    content: <SkeletonCard title="Games Meet" description="Where the Academy of Technology transforms into a playground where games like football, volleyball, and more come alive." />,
     className: "col-span-1",
     thumbnail:
-      "https://images.unsplash.com/photo-1464457312035-3d7d0e0c058e?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "https://images.unsplash.com/photo-1601564350184-9e93c13df688?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
   {
     id: 3,
-    content: <SkeletonCard title="Greens all over" description="A house surrounded by greenery and nature's beauty. It's the perfect place to relax, unwind, and enjoy life." />,
+    content: <SkeletonCard title="Workshops in AOT" description="At the Academy of Technology, innovation takes center stage with workshops on the product design lifecycle, Git & GitHub mastery, frontend business logic, backend deployment strategies, and CAD design, shaping tomorrow's tech leaders." />,
     className: "col-span-1",
     thumbnail:
-      "https://images.unsplash.com/photo-1588880331179-bc9b93a8cb5e?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
   {
     id: 4,
-    content: <SkeletonCard title="Rivers are serene" description="A house by the river is a place of peace and tranquility. It's the perfect place to relax, unwind, and enjoy life." />,
+    content: <SkeletonCard title="Arcadia 2023" description="Experience the ultimate college extravaganza at Arcadia, a two-day fest filled with boundless fun and entertainment, featuring electrifying performances by renowned singers that will captivate and delight students throughout." />,
     className: "md:col-span-2",
     thumbnail:
-      "https://images.unsplash.com/photo-1475070929565-c985b496cb9f?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "https://images.unsplash.com/photo-1583681758134-3ea2709d2e23?q=80&w=1852&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
 ];
 
 export default function EventSection() {
   return (
-    <div className="h-screen py-20 w-full">
+    <main>
+
+    <div className="h-screen py-16 w-full">
       <LayoutGrid cards={cards} />
     </div>
+    </main>
   );
 }
