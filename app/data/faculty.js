@@ -3,7 +3,7 @@ const facultyData = [
         "Name": "Prof. Dilip Bhattacharya",
         "Designation": "Professor & Director",
         "Qualification": "Ph.D",
-        "Experience": "40 yrs 8 mts"
+        "Experience": "40 yrs 8 months"
     },
     {
         "Name": "Prof.Sripati Mukhopadhyay",
@@ -27,25 +27,25 @@ const facultyData = [
         "Name": "Prof.Abhijit Banerjee",
         "Designation": "Professor",
         "Qualification": "Ph.D",
-        "Experience": "18 yrs 9 mts"
+        "Experience": "18 yrs 9 months"
     },
     {
         "Name": "Krishna Bhowal",
         "Designation": "Associate Professor & Registrar",
         "Qualification": "Ph.D",
-        "Experience": "17 yrs 8 mts"
+        "Experience": "17 yrs 8 months"
     },
     {
         "Name": "Arindrajit Pal",
         "Designation": "Associate Professor",
         "Qualification": "Ph.D",
-        "Experience": "18 yrs 7 mts"
+        "Experience": "18 yrs 7 months"
     },
     {
         "Name": "Basab Chatterjee",
         "Designation": "Associate Professor",
         "Qualification": "Ph.D",
-        "Experience": "19 yrs 1 mts"
+        "Experience": "19 yrs 1 months"
     },
     {
         "Name": "Sirshendu Saha",
@@ -63,7 +63,7 @@ const facultyData = [
         "Name": "Hiranmoy Mondal",
         "Designation": "Associate Professor",
         "Qualification": "Ph.D",
-        "Experience": "17 yrs 2 mts"
+        "Experience": "17 yrs 2 months"
     },
     {
         "Name": "Srinjoy Bid",
@@ -75,37 +75,37 @@ const facultyData = [
         "Name": "Abhijit Mallick",
         "Designation": "Associate Professor",
         "Qualification": "Ph.D",
-        "Experience": "21 yrs 5 mts"
+        "Experience": "21 yrs 5 months"
     },
     {
         "Name": "Biswaranjan Das",
         "Designation": "Associate Professor",
         "Qualification": "Ph.D",
-        "Experience": "18 yrs 8 mts"
+        "Experience": "18 yrs 8 months"
     },
     {
         "Name": "Baishakhi Bhattacharya",
         "Designation": "Associate Professor",
         "Qualification": "Ph.D",
-        "Experience": "14 yrs 8 mts"
+        "Experience": "14 yrs 8 months"
     },
     {
         "Name": "Subhra Chatterjee",
         "Designation": "Associate Professor",
         "Qualification": "Ph.D",
-        "Experience": "14 yrs 8 mts"
+        "Experience": "14 yrs 8 months"
     },
     {
         "Name": "Poulomi Deb Roy Chowdhury",
         "Designation": "Associate Professor",
         "Qualification": "Ph.D",
-        "Experience": "17 yrs 6 mts"
+        "Experience": "17 yrs 6 months"
     },
     {
         "Name": "Sourav Kayal",
         "Designation": "Associate Professor",
         "Qualification": "Ph.D",
-        "Experience": "10 yrs 8 mts"
+        "Experience": "10 yrs 8 months"
     },
     {
         "Name": "Asish Mohan",
@@ -117,7 +117,7 @@ const facultyData = [
         "Name": "Jhumpa De",
         "Designation": "Associate Professor",
         "Qualification": "Ph.D",
-        "Experience": "15 yrs 8 mts"
+        "Experience": "15 yrs 8 months"
     },
     {
         "Name": "Bappaditya Mondal",
@@ -129,7 +129,7 @@ const facultyData = [
         "Name": "Paulomi Chattopadhyay",
         "Designation": "Associate Professor",
         "Qualification": "Ph.D",
-        "Experience": "15 yrs 6 mts"
+        "Experience": "15 yrs 6 months"
     },
     {
         "Name": "Subir Panja",
@@ -141,7 +141,7 @@ const facultyData = [
         "Name": "Abhinaba Dutta",
         "Designation": "Associate Professor",
         "Qualification": "Ph.D",
-        "Experience": "16 yrs 8 mts"
+        "Experience": "16 yrs 8 months"
     },
     {
         "Name": "Jayati Mukherjee",
@@ -159,7 +159,7 @@ const facultyData = [
         "Name": "Kanishka Majumder",
         "Designation": "Assistant Professor",
         "Qualification": "Ph.D",
-        "Experience": "9 yrs 8 mts"
+        "Experience": "9 yrs 8 months"
     },
     {
         "Name": "Sukanta Bose",
@@ -177,7 +177,7 @@ const facultyData = [
         "Name": "Soumya Chatterjee",
         "Designation": "Assistant Professor",
         "Qualification": "Ph.D",
-        "Experience": "15 yrs 10 mts"
+        "Experience": "15 yrs 10 months"
     },
     {
         "Name": "Ramnayan Mukherjee",
@@ -189,19 +189,19 @@ const facultyData = [
         "Name": "Somnath Mukherjee",
         "Designation": "Assistant Professor",
         "Qualification": "Ph.D",
-        "Experience": "8 yrs 9 mts"
+        "Experience": "8 yrs 9 months"
     },
     {
         "Name": "Anshupriya Shome",
         "Designation": "Assistant Professor",
         "Qualification": "Ph.D",
-        "Experience": "3 yrs 2 mts"
+        "Experience": "3 yrs 2 months"
     },
     {
         "Name": "Dhrubajyoti Mondal",
         "Designation": "Assistant Professor",
         "Qualification": "Ph.D",
-        "Experience": "3 yrs 3 mts"
+        "Experience": "3 yrs 3 months"
     },
     {
         "Name": "Vikram Bhagat",
@@ -225,25 +225,25 @@ const facultyData = [
         "Name": "Rituparna Pakhira",
         "Designation": "Assistant Professor",
         "Qualification": "Ph.D",
-        "Experience": "2 yr 3 mts"
+        "Experience": "2 yr 3 months"
     },
     {
         "Name": "Avishek Chakraborty",
         "Designation": "Assistant Professor",
         "Qualification": "Ph.D",
-        "Experience": "2 yr 3 mts"
+        "Experience": "2 yr 3 months"
     },
     {
         "Name": "Nisantika Biswas",
         "Designation": "Assistant Professor",
         "Qualification": "Ph.D",
-        "Experience": "10 yrs 2 mts"
+        "Experience": "10 yrs 2 months"
     },
     {
         "Name": "Sanjib Kundu",
         "Designation": "Assistant Professor",
         "Qualification": "Ph.D",
-        "Experience": "12 yrs 8 mts"
+        "Experience": "12 yrs 8 months"
     },
     {
         "Name": "Partha Ghosh",
@@ -255,13 +255,13 @@ const facultyData = [
         "Name": "Smarajit Maity",
         "Designation": "Assistant Professor",
         "Qualification": "Ph.D",
-        "Experience": "18 yrs 8 mts"
+        "Experience": "18 yrs 8 months"
     },
     {
         "Name": "Tapas Tewary",
         "Designation": "Assistant Professor",
         "Qualification": "Ph.D",
-        "Experience": "14 yrs 7 mts"
+        "Experience": "14 yrs 7 months"
     },
     {
         "Name": "Nayan Ranjan Das",
@@ -303,55 +303,55 @@ const facultyData = [
         "Name": "Pinak Pani Mukherjee",
         "Designation": "Assistant Professor",
         "Qualification": "M.Tech",
-        "Experience": "13 yrs 1 mts"
+        "Experience": "13 yrs 1 months"
     },
     {
         "Name": "Niloy Ghosh",
         "Designation": "Assistant Professor",
         "Qualification": "M.E",
-        "Experience": "7 yrs 8 mts"
+        "Experience": "7 yrs 8 months"
     },
     {
         "Name": "Nibedita Saha",
         "Designation": "Assistant Professor",
         "Qualification": "M.E",
-        "Experience": "9 yrs 8 mts"
+        "Experience": "9 yrs 8 months"
     },
     {
         "Name": "Jayjeet Sarkar",
         "Designation": "Assistant Professor",
         "Qualification": "M.Tech",
-        "Experience": "15 yrs 1 mts"
+        "Experience": "15 yrs 1 months"
     },
     {
         "Name": "Supantha Das",
         "Designation": "Assistant Professor",
         "Qualification": "M.E",
-        "Experience": "10 yrs 8 mts"
+        "Experience": "10 yrs 8 months"
     },
     {
         "Name": "Swarup Sarkar",
         "Designation": "Assistant Professor",
         "Qualification": "M.Tech",
-        "Experience": "14 yrs 6 mts"
+        "Experience": "14 yrs 6 months"
     },
     {
         "Name": "Nupur Chhaule",
         "Designation": "Assistant Professor",
         "Qualification": "M.Tech",
-        "Experience": "12 yrs 7 mts"
+        "Experience": "12 yrs 7 months"
     },
     {
         "Name": "Rakhi Neogi",
         "Designation": "Assistant Professor",
         "Qualification": "M.Tech",
-        "Experience": "12 yrs 8 mts"
+        "Experience": "12 yrs 8 months"
     },
     {
         "Name": "Suman Bhattacharya",
         "Designation": "Assistant Professor",
         "Qualification": "M.Tech",
-        "Experience": "14 yrs 8 mts"
+        "Experience": "14 yrs 8 months"
     },
     {
         "Name": "Kaushik Roy Chowdhury",
@@ -363,7 +363,7 @@ const facultyData = [
         "Name": "Biswajit Patra",
         "Designation": "Assistant Professor",
         "Qualification": "M.Tech",
-        "Experience": "3 yrs 4 mts"
+        "Experience": "3 yrs 4 months"
     },
     {
         "Name": "Priyanka Bhattacharya",
@@ -375,7 +375,7 @@ const facultyData = [
         "Name": "Chiranjit Guchait",
         "Designation": "Assistant Professor",
         "Qualification": "M.Tech",
-        "Experience": "9 yrs 11 mts"
+        "Experience": "9 yrs 11 months"
     },
     {
         "Name": "Subhasish Das",
@@ -393,7 +393,7 @@ const facultyData = [
         "Name": "Somen Kumar Hati",
         "Designation": "Assistant Professor",
         "Qualification": "M.Tech",
-        "Experience": "19 yrs 8 mts"
+        "Experience": "19 yrs 8 months"
     },
     {
         "Name": "Jyotirmoy Panja",
@@ -405,31 +405,31 @@ const facultyData = [
         "Name": "Sailik Sen",
         "Designation": "Assistant Professor",
         "Qualification": "M.Tech",
-        "Experience": "3 yrs 1mts"
+        "Experience": "3 yrs 1months"
     },
     {
         "Name": "Kaushik Bose",
         "Designation": "Assistant Professor",
         "Qualification": "M.Tech",
-        "Experience": "3 yrs 2 mts"
+        "Experience": "3 yrs 2 months"
     },
     {
         "Name": "Garima Rani",
         "Designation": "Assistant Professor",
         "Qualification": "M.Tech",
-        "Experience": "4 yrs 1 mts"
+        "Experience": "4 yrs 1 months"
     },
     {
         "Name": "Subhankar Roy",
         "Designation": "Assistant Professor",
         "Qualification": "M.Tech",
-        "Experience": "11 yrs 7 mts"
+        "Experience": "11 yrs 7 months"
     },
     {
         "Name": "K.M.Priti",
         "Designation": "Assistant Professor",
         "Qualification": "MCA",
-        "Experience": "4 yrs 4 mts"
+        "Experience": "4 yrs 4 months"
     },
     {
         "Name": "Aaheli Sarkar",
@@ -441,19 +441,19 @@ const facultyData = [
         "Name": "Ashutosh Kumar",
         "Designation": "Assistant Professor",
         "Qualification": "M.Tech",
-        "Experience": "3 yrs 4 mts"
+        "Experience": "3 yrs 4 months"
     },
     {
         "Name": "Firoj Ahamad",
         "Designation": "Assistant Professor",
         "Qualification": "M.Tech",
-        "Experience": "4 yrs 1 mts"
+        "Experience": "4 yrs 1 months"
     },
     {
         "Name": "Srikrishna Awasthi",
         "Designation": "Assistant Professor",
         "Qualification": "M.Tech",
-        "Experience": "4 yrs 1 mts"
+        "Experience": "4 yrs 1 months"
     },
     {
         "Name": "Jitendra Banerjee",
@@ -465,19 +465,19 @@ const facultyData = [
         "Name": "Suman Mukherjee",
         "Designation": "Assistant Professor",
         "Qualification": "M.E",
-        "Experience": "4 yrs 1 mts"
+        "Experience": "4 yrs 1 months"
     },
     {
         "Name": "Buddhadeb Chatterjee",
         "Designation": "Assistant Professor",
         "Qualification": "M.E",
-        "Experience": "11 yrs 2 mts"
+        "Experience": "11 yrs 2 months"
     },
     {
         "Name": "Jyotirmoy Chakrabarti",
         "Designation": "Assistant Professor",
         "Qualification": "M.Tech",
-        "Experience": "14 yrs 2 mts"
+        "Experience": "14 yrs 2 months"
     },
     {
         "Name": "Swarna Das",
@@ -489,7 +489,7 @@ const facultyData = [
         "Name": "Amit Kumar Nandi",
         "Designation": "Assistant Professor",
         "Qualification": "M.E",
-        "Experience": "12 yrs 7 mts"
+        "Experience": "12 yrs 7 months"
     },
     {
         "Name": "Md. Ehtesham",
@@ -507,37 +507,37 @@ const facultyData = [
         "Name": "Divyangna Sharma",
         "Designation": "Assistant Professor",
         "Qualification": "M.Tech",
-        "Experience": "4 yrs 1 mts"
+        "Experience": "4 yrs 1 months"
     },
     {
         "Name": "Subham Pramanik",
         "Designation": "Assistant Professor",
         "Qualification": "M.Tech",
-        "Experience": "13 yrs 8 mts"
+        "Experience": "13 yrs 8 months"
     },
     {
         "Name": "Netai Das",
         "Designation": "Assistant Professor",
         "Qualification": "M.Tech",
-        "Experience": "2 yrs 2 mts"
+        "Experience": "2 yrs 2 months"
     },
     {
         "Name": "Manisha",
         "Designation": "Assistant Professor",
         "Qualification": "M.Tech",
-        "Experience": "3 yrs 4 mts"
+        "Experience": "3 yrs 4 months"
     },
     {
         "Name": "Mintu Dey",
         "Designation": "Assistant Professor",
         "Qualification": "M.Tech",
-        "Experience": "2 yrs 1 mts"
+        "Experience": "2 yrs 1 months"
     },
     {
         "Name": "Hiralal Kumar",
         "Designation": "Assistant Professor",
         "Qualification": "M.E",
-        "Experience": "2 yrs 1 mts"
+        "Experience": "2 yrs 1 months"
     },
     {
         "Name": "Manish Sharma",
@@ -549,7 +549,7 @@ const facultyData = [
         "Name": "Abhijit Patra",
         "Designation": "Assistant Professor",
         "Qualification": "M.E",
-        "Experience": "14 yrs 5 mts"
+        "Experience": "14 yrs 5 months"
     },
     {
         "Name": "Subhradeep Maitra",
@@ -561,31 +561,31 @@ const facultyData = [
         "Name": "Bamdeb Banerjee",
         "Designation": "Assistant Professor",
         "Qualification": "M.Tech",
-        "Experience": "19 yrs 8 mts"
+        "Experience": "19 yrs 8 months"
     },
     {
         "Name": "Debasish Sur",
         "Designation": "Assistant Professor",
         "Qualification": "M.Tech",
-        "Experience": "10 yrs 7 mts"
+        "Experience": "10 yrs 7 months"
     },
     {
         "Name": "Debjani Bhattacharya",
         "Designation": "Assistant Professor",
         "Qualification": "M.Tech",
-        "Experience": "13 yrs 8 mts"
+        "Experience": "13 yrs 8 months"
     },
     {
         "Name": "Kaustav Bhadar",
         "Designation": "Assistant Professor",
         "Qualification": "M.Tech",
-        "Experience": "9 yrs 8 mts"
+        "Experience": "9 yrs 8 months"
     },
     {
         "Name": "Sayan Das",
         "Designation": "Assistant Professor",
         "Qualification": "M.Tech",
-        "Experience": "3 yrs 2 mts"
+        "Experience": "3 yrs 2 months"
     },
     {
         "Name": "Suman Sengupta",
@@ -597,49 +597,49 @@ const facultyData = [
         "Name": "Gaurav Shalot",
         "Designation": "Assistant Professor",
         "Qualification": "M.Tech",
-        "Experience": "4 yrs 1 mts"
+        "Experience": "4 yrs 1 months"
     },
     {
         "Name": "Soumitra Das",
         "Designation": "Assistant Professor",
         "Qualification": "M.Tech",
-        "Experience": "2 yrs 2 mts"
+        "Experience": "2 yrs 2 months"
     },
     {
         "Name": "Sandipan Misra",
         "Designation": "Assistant Professor",
         "Qualification": "M.Tech",
-        "Experience": "13 yrs 8 mts"
+        "Experience": "13 yrs 8 months"
     },
     {
         "Name": "Suman Kumar Das",
         "Designation": "Assistant Professor",
         "Qualification": "M.Tech",
-        "Experience": "13 yrs 7 mts"
+        "Experience": "13 yrs 7 months"
     },
     {
         "Name": "Abhijit Basu",
         "Designation": "Assistant Professor",
         "Qualification": "M.Tech",
-        "Experience": "12 yrs 2 mts"
+        "Experience": "12 yrs 2 months"
     },
     {
         "Name": "Aloke Kumar Ghoshal",
         "Designation": "Assistant Professor",
         "Qualification": "M.B.A",
-        "Experience": "16 yrs 8 mts"
+        "Experience": "16 yrs 8 months"
     },
     {
         "Name": "Anindya Saha",
         "Designation": "Assistant Professor",
         "Qualification": "M.Sc",
-        "Experience": "20 yrs 2 mts"
+        "Experience": "20 yrs 2 months"
     },
     {
         "Name": "Soma Banerjee",
         "Designation": "Assistant Professor",
         "Qualification": "MBA",
-        "Experience": "10 yrs 1 mts"
+        "Experience": "10 yrs 1 months"
     },
     {
         "Name": "Arindam Dey",
@@ -651,37 +651,37 @@ const facultyData = [
         "Name": "Dwijen Biswas",
         "Designation": "Assistant Professor",
         "Qualification": "MBA",
-        "Experience": "3 yrs 2 mts"
+        "Experience": "3 yrs 2 months"
     },
     {
         "Name": "Shaoli Mukherjee",
         "Designation": "Assistant Professor",
         "Qualification": "MBA",
-        "Experience": "3 yrs 2 mts"
+        "Experience": "3 yrs 2 months"
     },
     {
         "Name": "Anil Kumar Sharma",
         "Designation": "Assistant Professor",
         "Qualification": "MBA",
-        "Experience": "12 yrs2 mts"
+        "Experience": "12 yrs2 months"
     },
     {
         "Name": "Uday Kumar Mandal",
         "Designation": "Assistant Professor",
         "Qualification": "MCA, M.Tech",
-        "Experience": "15 yrs 8 mts"
+        "Experience": "15 yrs 8 months"
     },
     {
         "Name": "Venu Gopal",
         "Designation": "Assistant Professor",
         "Qualification": "MCA",
-        "Experience": "4 yrs 2 mts"
+        "Experience": "4 yrs 2 months"
     },
     {
         "Name": "Suman Goswami",
         "Designation": "Assistant Professor",
         "Qualification": "M.Tech",
-        "Experience": "2 yrs 2 mts"
+        "Experience": "2 yrs 2 months"
     },
     {
         "Name": "Sarjita Soo",
@@ -693,7 +693,7 @@ const facultyData = [
         "Name": "Suchibrata Dutta",
         "Designation": "Assistant Professor",
         "Qualification": "M.Tech",
-        "Experience": "14 yrs 3 mts"
+        "Experience": "14 yrs 3 months"
     },
     {
         "Name": "Shamik Kumar Bose",
