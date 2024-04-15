@@ -65,9 +65,9 @@ export function FacultyTable() {
                         </ScrollArea>
                     </TabsContent>
                     <TabsContent value="faculty">
-                        <p className={`${courgette.className} text-xl my-5 text-wisteria-300`}>Quality education starts with its educators...</p>
+                        <p className={`${courgette.className} text-xl font-bold my-5 text-wisteria-300`}>Quality education starts with its educators...</p>
                         <p className="my-5 text-lg">AOT believes in creating an environment that helps the students to enhance their intellectual, emotional and physical development.</p>
-                        <p className="text-lg">Prof. (Dr.) Dilip Bhattacharya, renowned Professor of Electronics & Electrical Communication Engineering from IIT Kharagpur and the Director of Academy of Technology, leads a team of 111 qualified and experienced faculty members conforming to AICTE stipulated teacher-student ratio.</p>
+                        <p className="text-lg">Prof. (Dr.) <span className={courgette.className}>Dilip Bhattacharya</span>, renowned Professor of Electronics & Electrical Communication Engineering from IIT Kharagpur and the Director of Academy of Technology, leads a team of 111 qualified and experienced faculty members conforming to AICTE stipulated teacher-student ratio.</p>
                         <ul className="space-y-4 mt-5 ">
                             <li className="flex font-semibold"> <BadgeCheck className="mr-2" /> 81 regular faculty members are having specialization in Industry 4.0 Technologies.</li>
                             <li className="flex font-semibold"> <BadgeCheck className="mr-2" /> Average teaching experience of faculty members is 11 years 8 months.</li>
