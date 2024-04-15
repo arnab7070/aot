@@ -313,3 +313,7 @@ div {
   display: block;
   unicode-bidi: isolate;
 }
+
+.activeTab {
+  background-color: egyptian_blue; /* Use the color you desire */
+}
