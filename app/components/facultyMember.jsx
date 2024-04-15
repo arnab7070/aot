@@ -29,7 +29,7 @@ const courgette = Courgette({ subsets: ['latin'], weight: ['400'] });
 
 export function FacultyTable() {
     return (
-        <div className="grid grid-cols-1 md:grid-cols-2">
+        <div className="grid grid-cols-1 md:grid-cols-1">
             <div className="">
 
             </div>
