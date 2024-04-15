@@ -12,7 +12,7 @@ import { Pacifico } from "next/font/google";
 const pacifico = Pacifico({
     weight: "400",
     subsets: ["latin"],
-});
+  });
 import { Courgette } from "next/font/google"
 
 import { Button } from "./ui/button"
@@ -82,7 +82,7 @@ export function FacultyTable() {
                     <TabsContent value="publication">
                         <section className="content">
                             <div className="jhu-block brand-message publication brand" role="region">
-                                {/* <div className="dot-matrix" aria-hidden="true"></div> */}
+                                <div className="dot-matrix" aria-hidden="true"></div>
                                 <div className="center force">
                                     <div className="">
                                         <h2 className="relative top-12 ">
@@ -117,7 +117,7 @@ export function FacultyTable() {
                                     </div>
                                 </div>
                             </div>
-                            
+                            <div className="bg-yellow-500 w-full ">Rest of the Homepage UI</div>
                         </section>
                     </TabsContent>
                 </Tabs>
