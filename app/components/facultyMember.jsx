@@ -12,7 +12,7 @@ import { Pacifico } from "next/font/google";
 const pacifico = Pacifico({
     weight: "400",
     subsets: ["latin"],
-  });
+});
 import { Courgette } from "next/font/google"
 
 import { Button } from "./ui/button"
@@ -117,7 +117,7 @@ export function FacultyTable() {
                                     </div>
                                 </div>
                             </div>
-                            <div className="bg-yellow-500 w-full ">Rest of the Homepage UI</div>
+                            
                         </section>
                     </TabsContent>
                 </Tabs>
