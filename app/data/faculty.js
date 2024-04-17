@@ -3,775 +3,1033 @@ const facultyData = [
         "Name": "Prof. Dilip Bhattacharya",
         "Designation": "Professor & Director",
         "Qualification": "Ph.D",
-        "Experience": "40 yrs 8 months"
+        "Experience": "40 yrs 8 months",
+        "ImageUrl": "",
+        "LinkedIn": "",
     },
     {
         "Name": "Prof.Sripati Mukhopadhyay",
         "Designation": "Professor",
         "Qualification": "Ph.D",
-        "Experience": "40 yrs"
+        "Experience": "40 yrs",
+        "ImageUrl": "",
+        "LinkedIn": "",
     },
     {
         "Name": "Prof.Dilip Kumar Maity",
         "Designation": "Professor & Principal",
         "Qualification": "Ph.D",
-        "Experience": "20 yrs"
+        "Experience": "20 yrs",
+        "ImageUrl": "",
+        "LinkedIn": "",
     },
     {
         "Name": "Prof.Partha Dey",
         "Designation": "Professor",
         "Qualification": "Ph.D",
-        "Experience": "24 yrs"
+        "Experience": "24 yrs",
+        "ImageUrl": "",
+        "LinkedIn": "",
     },
     {
         "Name": "Prof.Abhijit Banerjee",
         "Designation": "Professor",
         "Qualification": "Ph.D",
-        "Experience": "18 yrs 9 months"
+        "Experience": "18 yrs 9 months",
+        "ImageUrl": "",
+        "LinkedIn": "",
     },
     {
         "Name": "Krishna Bhowal",
         "Designation": "Associate Professor & Registrar",
         "Qualification": "Ph.D",
-        "Experience": "17 yrs 8 months"
+        "Experience": "17 yrs 8 months",
+        "ImageUrl": "",
+        "LinkedIn": "",
     },
     {
         "Name": "Arindrajit Pal",
         "Designation": "Associate Professor",
         "Qualification": "Ph.D",
-        "Experience": "18 yrs 7 months"
+        "Experience": "18 yrs 7 months",
+        "ImageUrl": "",
+        "LinkedIn": "",
     },
     {
         "Name": "Basab Chatterjee",
         "Designation": "Associate Professor",
         "Qualification": "Ph.D",
-        "Experience": "19 yrs 1 months"
+        "Experience": "19 yrs 1 months",
+        "ImageUrl": "",
+        "LinkedIn": "",
     },
     {
         "Name": "Sirshendu Saha",
         "Designation": "Associate Professor",
         "Qualification": "Ph.D",
-        "Experience": "16 yrs"
+        "Experience": "16 yrs",
+        "ImageUrl": "",
+        "LinkedIn": "",
     },
     {
         "Name": "Sandip Saha Chowdhury",
         "Designation": "Associate Professor",
         "Qualification": "Ph.D",
-        "Experience": "22 yrs"
+        "Experience": "22 yrs",
+        "ImageUrl": "",
+        "LinkedIn": "",
     },
     {
         "Name": "Hiranmoy Mondal",
         "Designation": "Associate Professor",
         "Qualification": "Ph.D",
-        "Experience": "17 yrs 2 months"
+        "Experience": "17 yrs 2 months",
+        "ImageUrl": "",
+        "LinkedIn": "",
     },
     {
         "Name": "Srinjoy Bid",
         "Designation": "Associate Professor",
         "Qualification": "Ph.D",
-        "Experience": "20 yrs"
+        "Experience": "20 yrs",
+        "ImageUrl": "",
+        "LinkedIn": "",
     },
     {
         "Name": "Abhijit Mallick",
         "Designation": "Associate Professor",
         "Qualification": "Ph.D",
-        "Experience": "21 yrs 5 months"
+        "Experience": "21 yrs 5 months",
+        "ImageUrl": "",
+        "LinkedIn": "",
     },
     {
         "Name": "Biswaranjan Das",
         "Designation": "Associate Professor",
         "Qualification": "Ph.D",
-        "Experience": "18 yrs 8 months"
+        "Experience": "18 yrs 8 months",
+        "ImageUrl": "",
+        "LinkedIn": "",
     },
     {
         "Name": "Baishakhi Bhattacharya",
         "Designation": "Associate Professor",
         "Qualification": "Ph.D",
-        "Experience": "14 yrs 8 months"
+        "Experience": "14 yrs 8 months",
+        "ImageUrl": "",
+        "LinkedIn": "",
     },
     {
         "Name": "Subhra Chatterjee",
         "Designation": "Associate Professor",
         "Qualification": "Ph.D",
-        "Experience": "14 yrs 8 months"
+        "Experience": "14 yrs 8 months",
+        "ImageUrl": "",
+        "LinkedIn": "",
     },
     {
         "Name": "Poulomi Deb Roy Chowdhury",
         "Designation": "Associate Professor",
         "Qualification": "Ph.D",
-        "Experience": "17 yrs 6 months"
+        "Experience": "17 yrs 6 months",
+        "ImageUrl": "",
+        "LinkedIn": "",
     },
     {
         "Name": "Sourav Kayal",
         "Designation": "Associate Professor",
         "Qualification": "Ph.D",
-        "Experience": "10 yrs 8 months"
+        "Experience": "10 yrs 8 months",
+        "ImageUrl": "",
+        "LinkedIn": "",
     },
     {
         "Name": "Asish Mohan",
         "Designation": "Associate Professor",
         "Qualification": "Ph.D",
-        "Experience": "14 yrs"
+        "Experience": "14 yrs",
+        "ImageUrl": "",
+        "LinkedIn": "",
     },
     {
         "Name": "Jhumpa De",
         "Designation": "Associate Professor",
         "Qualification": "Ph.D",
-        "Experience": "15 yrs 8 months"
+        "Experience": "15 yrs 8 months",
+        "ImageUrl": "",
+        "LinkedIn": "",
     },
     {
         "Name": "Bappaditya Mondal",
         "Designation": "Associate Professor",
         "Qualification": "Ph.D",
-        "Experience": "16 yrs"
+        "Experience": "16 yrs",
+        "ImageUrl": "",
+        "LinkedIn": "",
     },
     {
         "Name": "Paulomi Chattopadhyay",
         "Designation": "Associate Professor",
         "Qualification": "Ph.D",
-        "Experience": "15 yrs 6 months"
+        "Experience": "15 yrs 6 months",
+        "ImageUrl": "",
+        "LinkedIn": "",
     },
     {
         "Name": "Subir Panja",
         "Designation": "Associate Professor",
         "Qualification": "Ph.D",
-        "Experience": "14 yrs"
+        "Experience": "14 yrs",
+        "ImageUrl": "",
+        "LinkedIn": "",
     },
     {
         "Name": "Abhinaba Dutta",
         "Designation": "Associate Professor",
         "Qualification": "Ph.D",
-        "Experience": "16 yrs 8 months"
+        "Experience": "16 yrs 8 months",
+        "ImageUrl": "",
+        "LinkedIn": "",
     },
     {
         "Name": "Jayati Mukherjee",
         "Designation": "Assistant Professor",
         "Qualification": "Ph.D",
-        "Experience": "3 yrs"
+        "Experience": "3 yrs",
+        "ImageUrl": "",
+        "LinkedIn": "",
     },
     {
         "Name": "Oendrila Samanta",
         "Designation": "Assistant Professor",
         "Qualification": "Ph.D",
-        "Experience": "2 yrs"
+        "Experience": "2 yrs",
+        "ImageUrl": "",
+        "LinkedIn": "",
     },
     {
         "Name": "Kanishka Majumder",
         "Designation": "Assistant Professor",
         "Qualification": "Ph.D",
-        "Experience": "9 yrs 8 months"
+        "Experience": "9 yrs 8 months",
+        "ImageUrl": "",
+        "LinkedIn": "",
     },
     {
         "Name": "Sukanta Bose",
         "Designation": "Assistant Professor",
         "Qualification": "Ph.D",
-        "Experience": "13 yrs"
+        "Experience": "13 yrs",
+        "ImageUrl": "",
+        "LinkedIn": "",
     },
     {
         "Name": "Nabanita Das",
         "Designation": "Assistant Professor",
         "Qualification": "Ph.D",
-        "Experience": "1 yr"
+        "Experience": "1 yr",
+        "ImageUrl": "",
+        "LinkedIn": "",
     },
     {
         "Name": "Soumya Chatterjee",
         "Designation": "Assistant Professor",
         "Qualification": "Ph.D",
-        "Experience": "15 yrs 10 months"
+        "Experience": "15 yrs 10 months",
+        "ImageUrl": "",
+        "LinkedIn": "",
     },
     {
         "Name": "Ramnayan Mukherjee",
         "Designation": "Assistant Professor",
         "Qualification": "Ph.D",
-        "Experience": "8 yrs"
+        "Experience": "8 yrs",
+        "ImageUrl": "",
+        "LinkedIn": "",
     },
     {
         "Name": "Somnath Mukherjee",
         "Designation": "Assistant Professor",
         "Qualification": "Ph.D",
-        "Experience": "8 yrs 9 months"
+        "Experience": "8 yrs 9 months",
+        "ImageUrl": "",
+        "LinkedIn": "",
     },
     {
         "Name": "Anshupriya Shome",
         "Designation": "Assistant Professor",
         "Qualification": "Ph.D",
-        "Experience": "3 yrs 2 months"
+        "Experience": "3 yrs 2 months",
+        "ImageUrl": "",
+        "LinkedIn": "",
     },
     {
         "Name": "Dhrubajyoti Mondal",
         "Designation": "Assistant Professor",
         "Qualification": "Ph.D",
-        "Experience": "3 yrs 3 months"
+        "Experience": "3 yrs 3 months",
+        "ImageUrl": "",
+        "LinkedIn": "",
     },
     {
         "Name": "Vikram Bhagat",
         "Designation": "Assistant Professor",
         "Qualification": "Ph.D",
-        "Experience": "13 yrs"
+        "Experience": "13 yrs",
+        "ImageUrl": "",
+        "LinkedIn": "",
     },
     {
         "Name": "Sreetama Sinha",
         "Designation": "Assistant Professor",
         "Qualification": "Ph.D",
-        "Experience": "2 yrs"
+        "Experience": "2 yrs",
+        "ImageUrl": "",
+        "LinkedIn": "",
     },
     {
         "Name": "Shalini Misra",
         "Designation": "Assistant Professor",
         "Qualification": "Ph.D",
-        "Experience": "4 yrs"
+        "Experience": "4 yrs",
+        "ImageUrl": "",
+        "LinkedIn": "",
     },
     {
         "Name": "Rituparna Pakhira",
         "Designation": "Assistant Professor",
         "Qualification": "Ph.D",
-        "Experience": "2 yr 3 months"
+        "Experience": "2 yr 3 months",
+        "ImageUrl": "",
+        "LinkedIn": "",
     },
     {
         "Name": "Avishek Chakraborty",
         "Designation": "Assistant Professor",
         "Qualification": "Ph.D",
-        "Experience": "2 yr 3 months"
+        "Experience": "2 yr 3 months",
+        "ImageUrl": "",
+        "LinkedIn": "",
     },
     {
         "Name": "Nisantika Biswas",
         "Designation": "Assistant Professor",
         "Qualification": "Ph.D",
-        "Experience": "10 yrs 2 months"
+        "Experience": "10 yrs 2 months",
+        "ImageUrl": "",
+        "LinkedIn": "",
     },
     {
         "Name": "Sanjib Kundu",
         "Designation": "Assistant Professor",
         "Qualification": "Ph.D",
-        "Experience": "12 yrs 8 months"
+        "Experience": "12 yrs 8 months",
+        "ImageUrl": "",
+        "LinkedIn": "",
     },
     {
         "Name": "Partha Ghosh",
         "Designation": "Assistant Professor",
         "Qualification": "Ph.D",
-        "Experience": "10 yrs"
+        "Experience": "10 yrs",
+        "ImageUrl": "",
+        "LinkedIn": "",
     },
     {
         "Name": "Smarajit Maity",
         "Designation": "Assistant Professor",
         "Qualification": "Ph.D",
-        "Experience": "18 yrs 8 months"
+        "Experience": "18 yrs 8 months",
+        "ImageUrl": "",
+        "LinkedIn": "",
     },
     {
         "Name": "Tapas Tewary",
         "Designation": "Assistant Professor",
         "Qualification": "Ph.D",
-        "Experience": "14 yrs 7 months"
+        "Experience": "14 yrs 7 months",
+        "ImageUrl": "",
+        "LinkedIn": "",
     },
     {
         "Name": "Nayan Ranjan Das",
         "Designation": "Assistant Professor",
         "Qualification": "Ph.D",
-        "Experience": "2 yrs"
+        "Experience": "2 yrs",
+        "ImageUrl": "",
+        "LinkedIn": "",
     },
     {
         "Name": "Soumendu Banerjee",
         "Designation": "Assistant Professor",
         "Qualification": "Ph.D",
-        "Experience": "10 yrs"
+        "Experience": "10 yrs",
+        "ImageUrl": "",
+        "LinkedIn": "",
     },
     {
         "Name": "Snehasish Saha",
         "Designation": "Assistant Professor",
         "Qualification": "Ph.D",
-        "Experience": "6 yrs"
+        "Experience": "6 yrs",
+        "ImageUrl": "",
+        "LinkedIn": "",
     },
     {
         "Name": "Debamalya Ghosh",
         "Designation": "Assistant Professor",
         "Qualification": "Ph.D",
-        "Experience": "2 yrs"
+        "Experience": "2 yrs",
+        "ImageUrl": "",
+        "LinkedIn": "",
     },
     {
         "Name": "Sunanda Sinha",
         "Designation": "Assistant Professor",
         "Qualification": "Ph.D",
-        "Experience": "2 yrs"
+        "Experience": "2 yrs",
+        "ImageUrl": "",
+        "LinkedIn": "",
     },
     {
         "Name": "Moupikta Mukherjee",
         "Designation": "Assistant Professor",
         "Qualification": "Ph.D",
-        "Experience": "2 yrs"
+        "Experience": "2 yrs",
+        "ImageUrl": "",
+        "LinkedIn": "",
     },
     {
         "Name": "Pinak Pani Mukherjee",
         "Designation": "Assistant Professor",
         "Qualification": "M.Tech",
-        "Experience": "13 yrs 1 months"
+        "Experience": "13 yrs 1 months",
+        "ImageUrl": "",
+        "LinkedIn": "",
     },
     {
         "Name": "Niloy Ghosh",
         "Designation": "Assistant Professor",
         "Qualification": "M.E",
-        "Experience": "7 yrs 8 months"
+        "Experience": "7 yrs 8 months",
+        "ImageUrl": "",
+        "LinkedIn": "",
     },
     {
         "Name": "Nibedita Saha",
         "Designation": "Assistant Professor",
         "Qualification": "M.E",
-        "Experience": "9 yrs 8 months"
+        "Experience": "9 yrs 8 months",
+        "ImageUrl": "",
+        "LinkedIn": "",
     },
     {
         "Name": "Jayjeet Sarkar",
         "Designation": "Assistant Professor",
         "Qualification": "M.Tech",
-        "Experience": "15 yrs 1 months"
+        "Experience": "15 yrs 1 months",
+        "ImageUrl": "",
+        "LinkedIn": "",
     },
     {
         "Name": "Supantha Das",
         "Designation": "Assistant Professor",
         "Qualification": "M.E",
-        "Experience": "10 yrs 8 months"
+        "Experience": "10 yrs 8 months",
+        "ImageUrl": "",
+        "LinkedIn": "",
     },
     {
         "Name": "Swarup Sarkar",
         "Designation": "Assistant Professor",
         "Qualification": "M.Tech",
-        "Experience": "14 yrs 6 months"
+        "Experience": "14 yrs 6 months",
+        "ImageUrl": "",
+        "LinkedIn": "",
     },
     {
         "Name": "Nupur Chhaule",
         "Designation": "Assistant Professor",
         "Qualification": "M.Tech",
-        "Experience": "12 yrs 7 months"
+        "Experience": "12 yrs 7 months",
+        "ImageUrl": "",
+        "LinkedIn": "",
     },
     {
         "Name": "Rakhi Neogi",
         "Designation": "Assistant Professor",
         "Qualification": "M.Tech",
-        "Experience": "12 yrs 8 months"
+        "Experience": "12 yrs 8 months",
+        "ImageUrl": "",
+        "LinkedIn": "",
     },
     {
         "Name": "Suman Bhattacharya",
         "Designation": "Assistant Professor",
         "Qualification": "M.Tech",
-        "Experience": "14 yrs 8 months"
+        "Experience": "14 yrs 8 months",
+        "ImageUrl": "",
+        "LinkedIn": "",
     },
     {
         "Name": "Kaushik Roy Chowdhury",
         "Designation": "Assistant Professor",
         "Qualification": "M.Tech",
-        "Experience": "18 yrs"
+        "Experience": "18 yrs",
+        "ImageUrl": "",
+        "LinkedIn": "",
     },
     {
         "Name": "Biswajit Patra",
         "Designation": "Assistant Professor",
         "Qualification": "M.Tech",
-        "Experience": "3 yrs 4 months"
+        "Experience": "3 yrs 4 months",
+        "ImageUrl": "",
+        "LinkedIn": "",
     },
     {
         "Name": "Priyanka Bhattacharya",
         "Designation": "Assistant Professor",
         "Qualification": "M.Tech",
-        "Experience": "7 yrs"
+        "Experience": "7 yrs",
+        "ImageUrl": "",
+        "LinkedIn": "",
     },
     {
         "Name": "Chiranjit Guchait",
         "Designation": "Assistant Professor",
         "Qualification": "M.Tech",
-        "Experience": "9 yrs 11 months"
+        "Experience": "9 yrs 11 months",
+        "ImageUrl": "",
+        "LinkedIn": "",
     },
     {
         "Name": "Subhasish Das",
         "Designation": "Assistant Professor",
         "Qualification": "M.Tech",
-        "Experience": "1 yrs"
+        "Experience": "1 yrs",
+        "ImageUrl": "",
+        "LinkedIn": "",
     },
     {
         "Name": "Prasenjit Das",
         "Designation": "Assistant Professor",
         "Qualification": "M.Tech",
-        "Experience": "20 yrs"
+        "Experience": "20 yrs",
+        "ImageUrl": "",
+        "LinkedIn": "",
     },
     {
         "Name": "Somen Kumar Hati",
         "Designation": "Assistant Professor",
         "Qualification": "M.Tech",
-        "Experience": "19 yrs 8 months"
+        "Experience": "19 yrs 8 months",
+        "ImageUrl": "",
+        "LinkedIn": "",
     },
     {
         "Name": "Jyotirmoy Panja",
         "Designation": "Assistant Professor",
         "Qualification": "M.BA",
-        "Experience": "1 yr"
+        "Experience": "1 yr",
+        "ImageUrl": "",
+        "LinkedIn": "",
     },
     {
         "Name": "Sailik Sen",
         "Designation": "Assistant Professor",
         "Qualification": "M.Tech",
-        "Experience": "3 yrs 1months"
+        "Experience": "3 yrs 1months",
+        "ImageUrl": "",
+        "LinkedIn": "",
     },
     {
         "Name": "Kaushik Bose",
         "Designation": "Assistant Professor",
         "Qualification": "M.Tech",
-        "Experience": "3 yrs 2 months"
+        "Experience": "3 yrs 2 months",
+        "ImageUrl": "",
+        "LinkedIn": "",
     },
     {
         "Name": "Garima Rani",
         "Designation": "Assistant Professor",
         "Qualification": "M.Tech",
-        "Experience": "4 yrs 1 months"
+        "Experience": "4 yrs 1 months",
+        "ImageUrl": "",
+        "LinkedIn": "",
     },
     {
         "Name": "Subhankar Roy",
         "Designation": "Assistant Professor",
         "Qualification": "M.Tech",
-        "Experience": "11 yrs 7 months"
+        "Experience": "11 yrs 7 months",
+        "ImageUrl": "",
+        "LinkedIn": "",
     },
     {
         "Name": "K.M.Priti",
         "Designation": "Assistant Professor",
         "Qualification": "MCA",
-        "Experience": "4 yrs 4 months"
+        "Experience": "4 yrs 4 months",
+        "ImageUrl": "",
+        "LinkedIn": "",
     },
     {
         "Name": "Aaheli Sarkar",
         "Designation": "Assistant Professor",
         "Qualification": "M.Tech",
-        "Experience": "3 yrs"
+        "Experience": "3 yrs",
+        "ImageUrl": "",
+        "LinkedIn": "",
     },
     {
         "Name": "Ashutosh Kumar",
         "Designation": "Assistant Professor",
         "Qualification": "M.Tech",
-        "Experience": "3 yrs 4 months"
+        "Experience": "3 yrs 4 months",
+        "ImageUrl": "",
+        "LinkedIn": "",
     },
     {
         "Name": "Firoj Ahamad",
         "Designation": "Assistant Professor",
         "Qualification": "M.Tech",
-        "Experience": "4 yrs 1 months"
+        "Experience": "4 yrs 1 months",
+        "ImageUrl": "",
+        "LinkedIn": "",
     },
     {
         "Name": "Srikrishna Awasthi",
         "Designation": "Assistant Professor",
         "Qualification": "M.Tech",
-        "Experience": "4 yrs 1 months"
+        "Experience": "4 yrs 1 months",
+        "ImageUrl": "",
+        "LinkedIn": "",
     },
     {
         "Name": "Jitendra Banerjee",
         "Designation": "Assistant Professor",
         "Qualification": "M.E",
-        "Experience": "13 yrs"
+        "Experience": "13 yrs",
+        "ImageUrl": "",
+        "LinkedIn": "",
     },
     {
         "Name": "Suman Mukherjee",
         "Designation": "Assistant Professor",
         "Qualification": "M.E",
-        "Experience": "4 yrs 1 months"
+        "Experience": "4 yrs 1 months",
+        "ImageUrl": "",
+        "LinkedIn": "",
     },
     {
         "Name": "Buddhadeb Chatterjee",
         "Designation": "Assistant Professor",
         "Qualification": "M.E",
-        "Experience": "11 yrs 2 months"
+        "Experience": "11 yrs 2 months",
+        "ImageUrl": "",
+        "LinkedIn": "",
     },
     {
         "Name": "Jyotirmoy Chakrabarti",
         "Designation": "Assistant Professor",
         "Qualification": "M.Tech",
-        "Experience": "14 yrs 2 months"
+        "Experience": "14 yrs 2 months",
+        "ImageUrl": "",
+        "LinkedIn": "",
     },
     {
         "Name": "Swarna Das",
         "Designation": "Assistant Professor",
         "Qualification": "M.E",
-        "Experience": "9yrs"
+        "Experience": "9yrs",
+        "ImageUrl": "",
+        "LinkedIn": "",
     },
     {
         "Name": "Amit Kumar Nandi",
         "Designation": "Assistant Professor",
         "Qualification": "M.E",
-        "Experience": "12 yrs 7 months"
+        "Experience": "12 yrs 7 months",
+        "ImageUrl": "",
+        "LinkedIn": "",
     },
     {
         "Name": "Md. Ehtesham",
         "Designation": "Assistant Professor",
         "Qualification": "M.Tech",
-        "Experience": "3 yrs"
+        "Experience": "3 yrs",
+        "ImageUrl": "",
+        "LinkedIn": "",
     },
     {
         "Name": "Partha Banerjee",
         "Designation": "Assistant Professor",
         "Qualification": "M.Tech",
-        "Experience": "8 yrs"
+        "Experience": "8 yrs",
+        "ImageUrl": "",
+        "LinkedIn": "",
     },
     {
         "Name": "Divyangna Sharma",
         "Designation": "Assistant Professor",
         "Qualification": "M.Tech",
-        "Experience": "4 yrs 1 months"
+        "Experience": "4 yrs 1 months",
+        "ImageUrl": "",
+        "LinkedIn": "",
     },
     {
         "Name": "Subham Pramanik",
         "Designation": "Assistant Professor",
         "Qualification": "M.Tech",
-        "Experience": "13 yrs 8 months"
+        "Experience": "13 yrs 8 months",
+        "ImageUrl": "",
+        "LinkedIn": "",
     },
     {
         "Name": "Netai Das",
         "Designation": "Assistant Professor",
         "Qualification": "M.Tech",
-        "Experience": "2 yrs 2 months"
+        "Experience": "2 yrs 2 months",
+        "ImageUrl": "",
+        "LinkedIn": "",
     },
     {
         "Name": "Manisha",
         "Designation": "Assistant Professor",
         "Qualification": "M.Tech",
-        "Experience": "3 yrs 4 months"
+        "Experience": "3 yrs 4 months",
+        "ImageUrl": "",
+        "LinkedIn": "",
     },
     {
         "Name": "Mintu Dey",
         "Designation": "Assistant Professor",
         "Qualification": "M.Tech",
-        "Experience": "2 yrs 1 months"
+        "Experience": "2 yrs 1 months",
+        "ImageUrl": "",
+        "LinkedIn": "",
     },
     {
         "Name": "Hiralal Kumar",
         "Designation": "Assistant Professor",
         "Qualification": "M.E",
-        "Experience": "2 yrs 1 months"
+        "Experience": "2 yrs 1 months",
+        "ImageUrl": "",
+        "LinkedIn": "",
     },
     {
         "Name": "Manish Sharma",
         "Designation": "Assistant Professor",
         "Qualification": "M.Tech",
-        "Experience": "4 yrs"
+        "Experience": "4 yrs",
+        "ImageUrl": "",
+        "LinkedIn": "",
     },
     {
         "Name": "Abhijit Patra",
         "Designation": "Assistant Professor",
         "Qualification": "M.E",
-        "Experience": "14 yrs 5 months"
+        "Experience": "14 yrs 5 months",
+        "ImageUrl": "",
+        "LinkedIn": "",
     },
     {
         "Name": "Subhradeep Maitra",
         "Designation": "Assistant Professor",
         "Qualification": "M.Tech",
-        "Experience": "1 yr"
+        "Experience": "1 yr",
+        "ImageUrl": "",
+        "LinkedIn": "",
     },
     {
         "Name": "Bamdeb Banerjee",
         "Designation": "Assistant Professor",
         "Qualification": "M.Tech",
-        "Experience": "19 yrs 8 months"
+        "Experience": "19 yrs 8 months",
+        "ImageUrl": "",
+        "LinkedIn": "",
     },
     {
         "Name": "Debasish Sur",
         "Designation": "Assistant Professor",
         "Qualification": "M.Tech",
-        "Experience": "10 yrs 7 months"
+        "Experience": "10 yrs 7 months",
+        "ImageUrl": "",
+        "LinkedIn": "",
     },
     {
         "Name": "Debjani Bhattacharya",
         "Designation": "Assistant Professor",
         "Qualification": "M.Tech",
-        "Experience": "13 yrs 8 months"
+        "Experience": "13 yrs 8 months",
+        "ImageUrl": "",
+        "LinkedIn": "",
     },
     {
         "Name": "Kaustav Bhadar",
         "Designation": "Assistant Professor",
         "Qualification": "M.Tech",
-        "Experience": "9 yrs 8 months"
+        "Experience": "9 yrs 8 months",
+        "ImageUrl": "",
+        "LinkedIn": "",
     },
     {
         "Name": "Sayan Das",
         "Designation": "Assistant Professor",
         "Qualification": "M.Tech",
-        "Experience": "3 yrs 2 months"
+        "Experience": "3 yrs 2 months",
+        "ImageUrl": "",
+        "LinkedIn": "",
     },
     {
         "Name": "Suman Sengupta",
         "Designation": "Assistant Professor",
         "Qualification": "M.Tech",
-        "Experience": "28 yrs"
+        "Experience": "28 yrs",
+        "ImageUrl": "",
+        "LinkedIn": "",
     },
     {
         "Name": "Gaurav Shalot",
         "Designation": "Assistant Professor",
         "Qualification": "M.Tech",
-        "Experience": "4 yrs 1 months"
+        "Experience": "4 yrs 1 months",
+        "ImageUrl": "",
+        "LinkedIn": "",
     },
     {
         "Name": "Soumitra Das",
         "Designation": "Assistant Professor",
         "Qualification": "M.Tech",
-        "Experience": "2 yrs 2 months"
+        "Experience": "2 yrs 2 months",
+        "ImageUrl": "",
+        "LinkedIn": "",
     },
     {
         "Name": "Sandipan Misra",
         "Designation": "Assistant Professor",
         "Qualification": "M.Tech",
-        "Experience": "13 yrs 8 months"
+        "Experience": "13 yrs 8 months",
+        "ImageUrl": "",
+        "LinkedIn": "",
     },
     {
         "Name": "Suman Kumar Das",
         "Designation": "Assistant Professor",
         "Qualification": "M.Tech",
-        "Experience": "13 yrs 7 months"
+        "Experience": "13 yrs 7 months",
+        "ImageUrl": "",
+        "LinkedIn": "",
     },
     {
         "Name": "Abhijit Basu",
         "Designation": "Assistant Professor",
         "Qualification": "M.Tech",
-        "Experience": "12 yrs 2 months"
+        "Experience": "12 yrs 2 months",
+        "ImageUrl": "",
+        "LinkedIn": "",
     },
     {
         "Name": "Aloke Kumar Ghoshal",
         "Designation": "Assistant Professor",
         "Qualification": "M.B.A",
-        "Experience": "16 yrs 8 months"
+        "Experience": "16 yrs 8 months",
+        "ImageUrl": "",
+        "LinkedIn": "",
     },
     {
         "Name": "Anindya Saha",
         "Designation": "Assistant Professor",
         "Qualification": "M.Sc",
-        "Experience": "20 yrs 2 months"
+        "Experience": "20 yrs 2 months",
+        "ImageUrl": "",
+        "LinkedIn": "",
     },
     {
         "Name": "Soma Banerjee",
         "Designation": "Assistant Professor",
         "Qualification": "MBA",
-        "Experience": "10 yrs 1 months"
+        "Experience": "10 yrs 1 months",
+        "ImageUrl": "",
+        "LinkedIn": "",
     },
     {
         "Name": "Arindam Dey",
         "Designation": "Assistant Professor",
         "Qualification": "M.Sc",
-        "Experience": "3 yrs"
+        "Experience": "3 yrs",
+        "ImageUrl": "",
+        "LinkedIn": "",
     },
     {
         "Name": "Dwijen Biswas",
         "Designation": "Assistant Professor",
         "Qualification": "MBA",
-        "Experience": "3 yrs 2 months"
+        "Experience": "3 yrs 2 months",
+        "ImageUrl": "",
+        "LinkedIn": "",
     },
     {
         "Name": "Shaoli Mukherjee",
         "Designation": "Assistant Professor",
         "Qualification": "MBA",
-        "Experience": "3 yrs 2 months"
+        "Experience": "3 yrs 2 months",
+        "ImageUrl": "",
+        "LinkedIn": "",
     },
     {
         "Name": "Anil Kumar Sharma",
         "Designation": "Assistant Professor",
         "Qualification": "MBA",
-        "Experience": "12 yrs2 months"
+        "Experience": "12 yrs2 months",
+        "ImageUrl": "",
+        "LinkedIn": "",
     },
     {
         "Name": "Uday Kumar Mandal",
         "Designation": "Assistant Professor",
         "Qualification": "MCA, M.Tech",
-        "Experience": "15 yrs 8 months"
+        "Experience": "15 yrs 8 months",
+        "ImageUrl": "",
+        "LinkedIn": "",
     },
     {
         "Name": "Venu Gopal",
         "Designation": "Assistant Professor",
         "Qualification": "MCA",
-        "Experience": "4 yrs 2 months"
+        "Experience": "4 yrs 2 months",
+        "ImageUrl": "",
+        "LinkedIn": "",
     },
     {
         "Name": "Suman Goswami",
         "Designation": "Assistant Professor",
         "Qualification": "M.Tech",
-        "Experience": "2 yrs 2 months"
+        "Experience": "2 yrs 2 months",
+        "ImageUrl": "",
+        "LinkedIn": "",
     },
     {
         "Name": "Sarjita Soo",
         "Designation": "Assistant Professor",
         "Qualification": "MCA, M.Tech",
-        "Experience": "4 yrs"
+        "Experience": "4 yrs",
+        "ImageUrl": "",
+        "LinkedIn": "",
     },
     {
         "Name": "Suchibrata Dutta",
         "Designation": "Assistant Professor",
         "Qualification": "M.Tech",
-        "Experience": "14 yrs 3 months"
+        "Experience": "14 yrs 3 months",
+        "ImageUrl": "",
+        "LinkedIn": "",
     },
     {
         "Name": "Shamik Kumar Bose",
         "Designation": "Assistant Professor",
         "Qualification": "M.Tech",
-        "Experience": "5 yrs"
+        "Experience": "5 yrs",
+        "ImageUrl": "",
+        "LinkedIn": "",
     },
     {
         "Name": "Poulomi Ganguly",
         "Designation": "Assistant Professor",
         "Qualification": "M.Tech",
-        "Experience": "10 yrs"
+        "Experience": "10 yrs",
+        "ImageUrl": "",
+        "LinkedIn": "",
     },
     {
         "Name": "Dibyendu Kumar Ghosh",
         "Designation": "Assistant Professor",
         "Qualification": "M.Tech",
-        "Experience": "1 yrs"
+        "Experience": "1 yrs",
+        "ImageUrl": "",
+        "LinkedIn": "",
     },
     {
         "Name": "Sajal Sasmal",
         "Designation": "Assistant Professor",
         "Qualification": "M.Tech",
-        "Experience": "9 yrs"
+        "Experience": "9 yrs",
+        "ImageUrl": "",
+        "LinkedIn": "",
     },
     {
         "Name": "Dipanjan De",
         "Designation": "Assistant Professor",
         "Qualification": "M.Tech",
-        "Experience": "15 yrs"
+        "Experience": "15 yrs",
+        "ImageUrl": "",
+        "LinkedIn": "",
     },
     {
         "Name": "Shiladitya Acharyya",
         "Designation": "Assistant Professor",
         "Qualification": "M.Tech",
-        "Experience": "1 yr"
+        "Experience": "1 yr",
+        "ImageUrl": "",
+        "LinkedIn": "",
     },
     {
         "Name": "Jayanta Digar",
         "Designation": "Assistant Professor",
         "Qualification": "M.Tech",
-        "Experience": "2 yrs"
+        "Experience": "2 yrs",
+        "ImageUrl": "",
+        "LinkedIn": "",
     },
     {
         "Name": "Anumita Singha Roy",
         "Designation": "Assistant Professor",
         "Qualification": "M.Tech",
-        "Experience": "4 yrs"
+        "Experience": "4 yrs",
+        "ImageUrl": "",
+        "LinkedIn": "",
     },
     {
         "Name": "Sruti Mondal",
         "Designation": "Assistant Professor",
         "Qualification": "M.Tech",
-        "Experience": "2 yrs"
+        "Experience": "2 yrs",
+        "ImageUrl": "",
+        "LinkedIn": "",
     },
     {
         "Name": "Tanmoy Makar",
         "Designation": "Assistant Professor",
         "Qualification": "M.Tech",
-        "Experience": "2 yrs"
+        "Experience": "2 yrs",
+        "ImageUrl": "",
+        "LinkedIn": "",
     },
     {
         "Name": "Arun Kumar Sadhu",
         "Designation": "Assistant Professor",
         "Qualification": "M.Tech",
-        "Experience": "19 yrs"
+        "Experience": "19 yrs",
+        "ImageUrl": "",
+        "LinkedIn": "",
     },
     {
         "Name": "Priya Raj Chandra",
         "Designation": "Assistant Professor",
         "Qualification": "M.Tech",
-        "Experience": "1 yrs"
+        "Experience": "1 yrs",
+        "ImageUrl": "",
+        "LinkedIn": "",
     },
     {
         "Name": "Dipanwita Saha",
         "Designation": "Assistant Professor",
         "Qualification": "M..Tech",
-        "Experience": "1 yrs"
+        "Experience": "1 yrs",
+        "ImageUrl": "",
+        "LinkedIn": "",
     }
 ]
 
