@@ -364,7 +364,7 @@ div {
 
   /*========== Colors ==========*/
   /*Color mode HSL(hue, saturation, lightness)*/
-  --first-color: hsl(14, 98%, 50%);
+  --first-color: hsl(257, 57%, 64%);
   --black-color: hsl(0, 0%, 0%);
   --black-color-light: hsl(0, 0%, 40%);
   --white-color: hsl(0, 0%, 95%);
@@ -626,6 +626,7 @@ img {
   font-size: var(--small-font-size);
   font-weight: var(--font-medium);
   transition: color 0.4s;
+  font-weight: bold;
 }
 
 .projects__link i {
