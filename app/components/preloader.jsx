@@ -1,8 +1,8 @@
 import React, { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import {Settings} from 'lucide-react'
-import { Pacifico } from "next/font/google";
-const pacifico = Pacifico({
+import { Courgette } from "next/font/google";
+const courgette = Courgette({
   weight: "400",
   subsets: ["latin"],
 });
@@ -100,14 +100,14 @@ const YourComponent = () => {
         </div>
       </div>
       <div className="logo">
-        <span className={`${pacifico.className} text-[#242d67]`} ref={logo2ref}>
+        <span className={`${courgette.className} text-[#242d67] mr-2 font-bold text-8xl`} ref={logo2ref}>
           A
         </span>
         <span ref={gearEmojiRef} className="gear-emoji">
           {/* ⚙️ */}
-          <Settings color="#242d67" size={48}/>
+          <Settings color="yellow" size={95}/>
         </span>
-        <span className={`${pacifico.className} text-[#242d67]`} ref={logo1ref}>
+        <span className={`${courgette.className} text-[#242d67] ml-2 font-bold text-8xl`} ref={logo1ref}>
           T
         </span>
       </div>
