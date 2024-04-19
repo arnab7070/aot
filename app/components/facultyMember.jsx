@@ -60,16 +60,19 @@ export function FacultyTable() {
                             </section>
                         </ScrollArea>
                     </TabsContent>
-                    <TabsContent value="faculty">
-                        <p className={`${courgette.className} text-xl font-bold my-5 text-wisteria-300`}>Quality education starts with its educators...</p>
-                        <p className="my-5 text-lg">AOT believes in creating an environment that helps the students to enhance their intellectual, emotional and physical development.</p>
-                        <p className="text-lg">Prof. (Dr.) <span className={courgette.className}>Dilip Bhattacharya</span>, renowned Professor of Electronics & Electrical Communication Engineering from IIT Kharagpur and the Director of Academy of Technology, leads a team of 111 qualified and experienced faculty members conforming to AICTE stipulated teacher-student ratio.</p>
-                        <ul className="space-y-4 mt-5 ">
-                            <li className="flex font-semibold"> <BadgeCheck className="mr-2" /> 81 regular faculty members are having specialization in Industry 4.0 Technologies.</li>
-                            <li className="flex font-semibold"> <BadgeCheck className="mr-2" /> Average teaching experience of faculty members is 11 years 8 months.</li>
-                            <li className="flex font-semibold"> <BadgeCheck className="mr-2" />  Faculty members of AOT have published 84 papers in various International & National Journals.</li>
-                            <li className="flex font-semibold"> <BadgeCheck className="mr-2" /> Existing faculty members of AOT have authored 11 books.</li>
-                        </ul>
+                    <TabsContent value="faculty" className="grid grid-cols-1 md:grid-cols-2 md:p-6">
+                        <div className="md:p-5">Another Div</div>
+                        <div className="md:p-5">
+                            <p className={`${courgette.className} text-xl font-bold my-5 text-wisteria-300`}>Quality education starts with its educators...</p>
+                            <p className="my-5 text-lg">AOT believes in creating an environment that helps the students to enhance their intellectual, emotional and physical development.</p>
+                            <p className="text-lg">Prof. (Dr.) <span className={courgette.className}>Dilip Bhattacharya</span>, renowned Professor of Electronics & Electrical Communication Engineering from IIT Kharagpur and the Director of Academy of Technology, leads a team of 111 qualified and experienced faculty members conforming to AICTE stipulated teacher-student ratio.</p>
+                            <ul className="space-y-4 mt-5 ">
+                                <li className="flex font-semibold"> <BadgeCheck className="mr-2" /> 81 regular faculty members are having specialization in Industry 4.0 Technologies.</li>
+                                <li className="flex font-semibold"> <BadgeCheck className="mr-2" /> Average teaching experience of faculty members is 11 years 8 months.</li>
+                                <li className="flex font-semibold"> <BadgeCheck className="mr-2" />  Faculty members of AOT have published 84 papers in various International & National Journals.</li>
+                                <li className="flex font-semibold"> <BadgeCheck className="mr-2" /> Existing faculty members of AOT have authored 11 books.</li>
+                            </ul>
+                        </div>
                     </TabsContent>
                     <TabsContent value="publication">
                         <section className="content">
