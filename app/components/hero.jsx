@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Pacifico } from "next/font/google";
 import Typewriter from "typewriter-effect";
+import Image from "next/image";
 const pacifico = Pacifico({
   weight: "400",
   subsets: ["latin"],
@@ -43,9 +44,8 @@ const Hero = () => {
           poster="https://www.jhu.edu/assets/uploads/2024/02/homepage_loop_102_v2-Original-960x540.jpg"
           muted="muted"
           type="video/mp4"
-            src="https://www.jhu.edu/assets/uploads/2024/02/homepage_loop_102_v2-Original.mp4"
-        >
-        </video>
+          src="https://www.jhu.edu/assets/uploads/2024/04/2024-04_homepage_loop_103_-_final-Original.mp4"
+        ></video>
 
         <h1 style={titleStyle()} className="text-center lg:text-left">
           <Typewriter
@@ -99,6 +99,8 @@ const Hero = () => {
           </div>
         </div>
         <div className="bg-yellow-500 w-full ">Rest of the Homepage UI</div>
+        <img src="https://www.jhu.edu/assets/themes/machado/assets/images/textures/footer-texture-blue-ad4fe94a5e.svg" className="w-full"/>
+        
       </section>
     </>
   );
