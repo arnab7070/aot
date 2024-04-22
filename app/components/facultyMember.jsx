@@ -1,10 +1,14 @@
-import { Courgette } from "next/font/google";
+import { Courgette, Pacifico } from "next/font/google";
 import { TracingBeam } from "../components/ui/tracing-beam";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "./ui/tabs";
 import facultyData from "../data/faculty";
 import { BadgeCheck } from "lucide-react";
 import { ScrollArea } from "./ui/scroll-area";
+import { FacultyTooltip } from "./tooltip";
+import Image from "next/image";
+import { FacultyStack } from "./stackcard";
 const courgette = Courgette({ subsets: ["latin"], weight: ["400"] });
+const pacifico = Pacifico({ subsets: ["latin"], weight: ["400"] });
 export function FacultyTable() {
   return (
     <div className="grid grid-cols-1">
@@ -24,8 +28,8 @@ export function FacultyTable() {
             <h2 class="section__title-1">
               <span>Faculty Members</span>
             </h2>
-            
-              <section class="" id="projects">
+
+            <section class="" id="projects">
               <TracingBeam>
                 <div class="projects__container container grid">
                   {facultyData.map((faculty) => (
@@ -79,9 +83,9 @@ export function FacultyTable() {
                     </article>
                   ))}
                 </div>
-                </TracingBeam>
-              </section>
-          
+              </TracingBeam>
+            </section>
+
 
             {/* </ScrollArea> */}
           </TabsContent>
@@ -89,10 +93,24 @@ export function FacultyTable() {
             value="faculty"
             className="grid grid-cols-1 md:grid-cols-2 md:p-6"
           >
-            <div className="md:p-5">Another Div</div>
+            <div className="md:p-5">
+              <div className="w-full h-52 my-5 shadow-lg relative">
+                <Image
+                  alt="college-image"
+                  src={'https://i.ytimg.com/vi/GkAluH9iq1M/maxresdefault.jpg'}
+                  layout='fill'
+                  objectFit='cover'
+                  className="rounded-md"
+                ></Image>
+              </div>
+              <p className={`${courgette.className} font-bold text-lg mb-5`}>Cultivating Knowledge, Fostering Excellence: Discover the Heartbeat of Our Academic Community with Our  <span className="text-egyptian_blue-600">Esteemed Faculty!</span></p>
+              <FacultyTooltip />
+              <p className={`${pacifico.className} text-egyptian_blue-600 text-2xl mt-4 ml-4`}>What our teacher says,</p>
+              <FacultyStack />
+            </div>
             <div className="md:p-5">
               <p
-                className={`${courgette.className} text-xl font-bold my-5 text-wisteria-300`}
+                className={`${courgette.className} text-xl font-bold my-5 text-egyptian_blue-600`}
               >
                 Quality education starts with its educators...
               </p>
