@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Pacifico } from "next/font/google";
 import Typewriter from "typewriter-effect";
 import Image from "next/image";
+import Footer from "../components/footer";
 const pacifico = Pacifico({
   weight: "400",
   subsets: ["latin"],
@@ -98,9 +99,10 @@ const Hero = () => {
             </div>
           </div>
         </div>
-        <div className="bg-yellow-500 w-full ">Rest of the Homepage UI</div>
-        <img src="https://www.jhu.edu/assets/themes/machado/assets/images/textures/footer-texture-blue-ad4fe94a5e.svg" className="w-full"/>
-        
+        {/* <div className="bg-yellow-500 w-full ">Rest of the Homepage UI</div> */}
+        <Footer />
+        <img src="https://www.jhu.edu/assets/themes/machado/assets/images/textures/footer-texture-blue-ad4fe94a5e.svg" className="w-full" />
+
       </section>
     </>
   );
