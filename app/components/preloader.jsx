@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import { gsap } from "gsap";
-import {Settings} from 'lucide-react'
+import { Settings } from "lucide-react";
 import { Courgette } from "next/font/google";
 const courgette = Courgette({
   weight: "400",
@@ -17,13 +17,12 @@ const YourComponent = () => {
   const logo2ref = useRef(null);
 
   useEffect(() => {
-
     // GSAP animation
     const tl = gsap.timeline({
       onComplete: () => {
         // Re-enable scrolling when all animations are finished
         document.body.style.overflow = "auto";
-      }
+      },
     });
 
     // Animate loader-1 to compress and expand
@@ -84,14 +83,14 @@ const YourComponent = () => {
       tl.kill();
     };
   }, []); // Empty dependency array to run only once on component mount
- // Disable scrolling when the component mounts
- useEffect(() => {
-  document.body.style.overflow = "hidden";
-  // Re-enable scrolling when the component is unmounted
-  return () => {
-    document.body.style.overflow = "auto";
-  };
-}, []);
+  // Disable scrolling when the component mounts
+  useEffect(() => {
+    document.body.style.overflow = "hidden";
+    // Re-enable scrolling when the component is unmounted
+    return () => {
+      document.body.style.overflow = "auto";
+    };
+  }, []);
   return (
     <div className="relative z-[60] " ref={containerref}>
       <div className="loading-screen" ref={loadingscreenref}>
@@ -100,14 +99,20 @@ const YourComponent = () => {
         </div>
       </div>
       <div className="logo">
-        <span className={`${courgette.className} text-[#242d67] mr-2 font-bold text-8xl`} ref={logo2ref}>
-          A
-        </span>
+      <span className={`${courgette.className} text-[#6375ec] mr-2 font-bold text-8xl`} style={{ textShadow: "0 0 10px rgba(47, 79, 168, 0.7)" }} ref={logo2ref}>
+  A
+</span>
+
+
         <span ref={gearEmojiRef} className="gear-emoji">
           {/* ⚙️ */}
-          <Settings color="yellow" size={95}/>
+          <Settings color="yellow" size={95} />
         </span>
-        <span className={`${courgette.className} text-[#242d67] ml-2 font-bold text-8xl`} ref={logo1ref}>
+        <span
+          className={`${courgette.className} text-[#6375ec] ml-2 font-bold text-8xl`}
+          ref={logo1ref}
+          style={{ textShadow: "0 0 10px rgba(47, 79, 168, 0.7)" }}
+        >
           T
         </span>
       </div>
