@@ -104,8 +104,11 @@ export function FacultyTable() {
                 ></Image>
               </div>
               <p className={`${courgette.className} font-bold text-lg mb-5`}>Cultivating Knowledge, Fostering Excellence: Discover the Heartbeat of Our Academic Community with Our  <span className="text-egyptian_blue-600">Esteemed Faculty!</span></p>
+              <div className="ml-8">
+
               <FacultyTooltip />
-              <p className={`${pacifico.className} text-egyptian_blue-600 text-2xl mt-4 ml-4`}>What our teacher says,</p>
+              </div>
+              <p className={`${pacifico.className} text-egyptian_blue-600 text-2xl mt-4 ml-8`}>What our teacher says,</p>
               <FacultyStack />
             </div>
             <div className="md:p-5">

@@ -1,7 +1,8 @@
 "use client";
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
-
+import { Courgette } from "next/font/google";
+const courgette = Courgette({ subsets: ["latin"], weight: ["400"] });
 let interval: any;
 
 type Card = {
@@ -45,7 +46,7 @@ export const CardStack = ({
         return (
           <motion.div
             key={card.id}
-            className="absolute dark:bg-black bg-white h-44 w-96 rounded-3xl p-4 shadow-xl border border-neutral-200 dark:border-white/[0.1]  shadow-black/[0.1] dark:shadow-white/[0.05] flex flex-col justify-between"
+            className="absolute dark:bg-black bg-white h-44 w-96 rounded-3xl p-4 shadow-xl border border-neutral-400 dark:border-white/[0.1]  shadow-black/20 dark:shadow-white/[0.05] flex flex-col justify-between"
             style={{
               transformOrigin: "top center",
             }}
@@ -55,11 +56,11 @@ export const CardStack = ({
               zIndex: cards.length - index, //  decrease z-index for the cards that are behind
             }}
           >
-            <div className="font-normal text-black dark:text-neutral-200">
+            <div className={`${courgette.className} font-normal text-black dark:text-neutral-200`}>
               {card.content}
             </div>
             <div>
-              <p className="text-slate-900 font-medium dark:text-white">
+              <p className={`${courgette.className} text-black text-lg font-bold dark:text-white`}>
                 {card.name}
               </p>
               <p className="text-neutral-600 font-normal dark:text-neutral-200">
