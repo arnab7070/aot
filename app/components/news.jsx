@@ -27,7 +27,7 @@ export function BentoGridDemo() {
           description={item.description}
           header={<Skeleton imageSrc={item.imageSrc} />}
           icon={item.icon}
-          className={i === 3 || i === 6 ? "md:col-span-2" : ""}
+          className={i === 3 || i === 6 ? "" : ""}
         />
       ))}
     </BentoGrid>
@@ -63,7 +63,7 @@ const items = [
   },
   {
     title: "AOT and IEEE WIE Kolkata organized seminar on Women in Space Engineering.",
-    description: "AOT and IEEE WIE Kolkata jointly hosted a seminar on 'Women in Space Engineering,' showcasing initiatives supporting women in engineering. Dr. Sumitra Mukhopadhyay and Dr. Ankita Pramanik highlighted impactful efforts to empower women, drawing diverse attendees from students to faculty.",
+    description: "AOT & IEEE WIE Kolkata co-hosted a seminar on 'Women in Space Engineering,' showcasing Dr. Sumitra Mukhopadhyay and Dr. Ankita Pramanik's efforts for women empowerment.",
     // header: <Skeleton />,
     imageSrc: "https://media.licdn.com/dms/image/D5622AQFIe7FuwQyw4w/feedshare-shrink_2048_1536/0/1713875963014?e=1718236800&v=beta&t=H3-jClfrMWs5GSGd2pE7FYnNZUx6rbpQ5nNziurIpm0",
     // icon: <IconClipboardCopy className="h-4 w-4 text-neutral-500" />,
