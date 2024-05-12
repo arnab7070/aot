@@ -1,5 +1,6 @@
 "use client";
 import { useEffect } from "react";
+import Link from "next/link";
 import {
   Table,
   TableCaption,
@@ -138,13 +139,13 @@ function PublicationList() {
               </td>
               <td className="px-6 py-4 whitespace-nowrap">
                 {publication.doi && (
-                  <a
+                  <Link
                     href={publication.doi}
                     target="_blank"
                     rel="noopener noreferrer"
                   >
                     {publication.doi}
-                  </a>
+                  </Link>
                 )}
               </td>
             </tr>
