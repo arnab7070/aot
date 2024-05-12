@@ -17,7 +17,7 @@ import Image from "next/image";
 export function BentoGridDemo() {
   return (
     <div className="max-w-4xl mx-auto font-bold">
-      NEWS SECTION
+      <p className="font-bold text-3xl text-center p-10">NEWS SECTION</p>
     <BentoGrid className="max-w-4xl mx-auto">
       
       {items.map((item, i) => (
