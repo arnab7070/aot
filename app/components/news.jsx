@@ -18,7 +18,7 @@ export function BentoGridDemo() {
   return (
     <div className="max-w-4xl mx-auto font-bold">
       <p className="font-bold text-3xl text-center p-10">NEWS SECTION</p>
-    <BentoGrid className="max-w-4xl mx-auto">
+    <BentoGrid className="min-w-4xl mx-auto">
       
       {items.map((item, i) => (
         <BentoGridItem
