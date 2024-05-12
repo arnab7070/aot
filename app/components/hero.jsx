@@ -4,47 +4,67 @@ import { Pacifico } from "next/font/google";
 import Typewriter from "typewriter-effect";
 import Image from "next/image";
 import Footer from "../components/footer";
-import Swiper from "swiper";
-import 'swiper/swiper-bundle.css';
+import Carousel from './ui/carousal';
+import { Button } from './ui/button';
+
+
 const pacifico = Pacifico({
   weight: "400",
   subsets: ["latin"],
 });
+const carouselItems = [
+  {
+    number: '01',
+    title: 'G.I. Joe: Retaliation',
+    subtitle:
+      'The G.I. Joes are not only fighting their mortal enemy Cobra; they are forced to contend with threats from within the government that jeopardize their very existence.',
+    image: 'https://i.imgur.com/gIxOPCD.jpg',
+    link: '#',
+  },
+  {
+    number: '02',
+    title: 'Red Notice',
+    subtitle:
+      "An Interpol agent successfully tracks down the world's most wanted art thief with help from a rival thief. But nothing is as it seems as a series of double-crosses ensues.",
+    image: 'https://i.imgur.com/2V1lJy4.jpg',
+    link: '#',
+  },
+  {
+    number: '03',
+    title: 'Battleship',
+    subtitle:
+      'A fleet of ships is forced to do battle with an armada of unknown origins in order to discover and thwart their destructive goals.',
+    image: 'https://i.imgur.com/3tlt7BS.jpg',
+    link: '#',
+  },
+  {
+    number: '04',
+    title: 'London Has Fallen',
+    subtitle:
+      "In London for the Prime Minister's funeral, Mike Banning is caught up in a plot to assassinate all the attending world leaders.",
+    image: 'https://i.imgur.com/2Y4s19s.jpg',
+    link: '#',
+  },
+  {
+    number: '05',
+    title: 'The Dark Knight',
+    subtitle:
+      'When the menace known as the Joker wreaks havoc and chaos on the people of Gotham, Batman must accept one of the greatest psychological and physical tests of his ability to fight injustice.',
+    image: 'https://i.imgur.com/VCcLrQU.jpg',
+    link: '#',
+  },
+  {
+    number: '06',
+    title: 'Inception',
+    subtitle:
+      'A thief who steals corporate secrets through the use of dream-sharing technology is given the inverse task of planting an idea into the mind of a C.E.O.',
+    image: 'https://i.imgur.com/eeOTF3W.jpg',
+    link: '#',
+  },
+];
 
 const Hero = () => {
-  useEffect(() => {
-    const swiper = new Swiper(".swiper", {
-      direction: "horizontal",
-      grabCursor: true,
-      slidesPerView: 1,
-      slidesPerGroup: 1,
-      centeredSlides: false,
-      loop: true,
-      spaceBetween: 10,
-      mousewheel: {
-        forceToAxis: true
-      },
-      breakpoints: {
-        767: {
-          slidesPerView: 2,
-          spaceBetween: 24,
-        },
-        1699: {
-          slidesPerView: 3,
-          spaceBetween: 24,
-        },
-      },
-      speed: 700,
-      slideActiveClass: "is-active",
-      slideDuplicateActiveClass: "is-active",
-      
-    });
-
-    return () => {
-      swiper.destroy();
-    };
-  }, []);
-
+  
   const [scrollPosition, setScrollPosition] = useState(2);
 
   useEffect(() => {
@@ -138,156 +158,9 @@ const Hero = () => {
         </div>
         <div className=" ">
         
-          <div class="section">
-            <div class="container">
-              <div class="swiper">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                    <div class="people__card">
-                      <img
-                        src="https://i.imgur.com/gIxOPCD.jpg"
-                        class="people__card__image"
-                      />
-                      <div class="people__card__content">
-                        <div class="slide__number">01</div>
-                        <div class="slide__title">G.I. Joe: Retaliation</div>
-                        <div class="slide__subtitle">
-                          The G.I. Joes are not only fighting their mortal enemy
-                          Cobra; they are forced to contend with threats from
-                          within the government that jeopardize their very
-                          existence.
-                        </div>
-                        <a href="" class="slide__btn">
-                          <span class="slide__btn__text">Watch Now</span>
-                          <span class="slide__btn__icon">
-                            <svg
-                              width="100%"
-                              height="100%"
-                              viewBox="0 0 17 21"
-                              fill="none"
-                              xmlns="http://www.w3.org/2000/svg"
-                            >
-                              <path
-                                d="M3.22218 15.2222C2.79261 15.6518 2.79261 16.3482 3.22218 16.7778C3.65176 17.2074 4.34824 17.2074 4.77782 16.7778L3.22218 15.2222ZM16.1 5C16.1 4.39249 15.6075 3.9 15 3.9L5.1 3.9C4.49249 3.9 4 4.39249 4 5C4 5.60751 4.49249 6.1 5.1 6.1L13.9 6.1L13.9 14.9C13.9 15.5075 14.3925 16 15 16C15.6075 16 16.1 15.5075 16.1 14.9L16.1 5ZM4.77782 16.7778L15.7778 5.77782L14.2222 4.22218L3.22218 15.2222L4.77782 16.7778Z"
-                                fill="currentColor"
-                              />
-                            </svg>
-                          </span>
-                        </a>
-                      </div>
-                      <div class="slide__gradient"></div>
-                    </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div class="people__card">
-                      <img
-                        src="https://i.imgur.com/2V1lJy4.jpg"
-                        class="people__card__image"
-                      />
-                      <div class="people__card__content">
-                        <div class="slide__number">02</div>
-                        <div class="slide__title">Red Notice</div>
-                        <div class="slide__subtitle">
-                          An Interpol agent successfully tracks down the world's
-                          most wanted art thief with help from a rival thief.
-                          But nothing is as it seems as a series of
-                          double-crosses ensues.
-                        </div>
-                        <a href="" class="slide__btn">
-                          <span class="slide__btn__text">Watch Now</span>
-                          <span class="slide__btn__icon">
-                            <svg
-                              width="100%"
-                              height="100%"
-                              viewBox="0 0 17 21"
-                              fill="none"
-                              xmlns="http://www.w3.org/2000/svg"
-                            >
-                              <path
-                                d="M3.22218 15.2222C2.79261 15.6518 2.79261 16.3482 3.22218 16.7778C3.65176 17.2074 4.34824 17.2074 4.77782 16.7778L3.22218 15.2222ZM16.1 5C16.1 4.39249 15.6075 3.9 15 3.9L5.1 3.9C4.49249 3.9 4 4.39249 4 5C4 5.60751 4.49249 6.1 5.1 6.1L13.9 6.1L13.9 14.9C13.9 15.5075 14.3925 16 15 16C15.6075 16 16.1 15.5075 16.1 14.9L16.1 5ZM4.77782 16.7778L15.7778 5.77782L14.2222 4.22218L3.22218 15.2222L4.77782 16.7778Z"
-                                fill="currentColor"
-                              />
-                            </svg>
-                          </span>
-                        </a>
-                      </div>
-                      <div class="slide__gradient"></div>
-                    </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div class="people__card">
-                      <img
-                        src="https://i.imgur.com/3tlt7BS.jpg"
-                        class="people__card__image"
-                      />
-                      <div class="people__card__content">
-                        <div class="slide__number">03</div>
-                        <div class="slide__title">Battleship</div>
-                        <div class="slide__subtitle">
-                          A fleet of ships is forced to do battle with an armada
-                          of unknown origins in order to discover and thwart
-                          their destructive goals.
-                        </div>
-                        <a href="" class="slide__btn">
-                          <span class="slide__btn__text">Watch Now</span>
-                          <span class="slide__btn__icon">
-                            <svg
-                              width="100%"
-                              height="100%"
-                              viewBox="0 0 17 21"
-                              fill="none"
-                              xmlns="http://www.w3.org/2000/svg"
-                            >
-                              <path
-                                d="M3.22218 15.2222C2.79261 15.6518 2.79261 16.3482 3.22218 16.7778C3.65176 17.2074 4.34824 17.2074 4.77782 16.7778L3.22218 15.2222ZM16.1 5C16.1 4.39249 15.6075 3.9 15 3.9L5.1 3.9C4.49249 3.9 4 4.39249 4 5C4 5.60751 4.49249 6.1 5.1 6.1L13.9 6.1L13.9 14.9C13.9 15.5075 14.3925 16 15 16C15.6075 16 16.1 15.5075 16.1 14.9L16.1 5ZM4.77782 16.7778L15.7778 5.77782L14.2222 4.22218L3.22218 15.2222L4.77782 16.7778Z"
-                                fill="currentColor"
-                              />
-                            </svg>
-                          </span>
-                        </a>
-                      </div>
-                      <div class="slide__gradient"></div>
-                    </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div class="people__card">
-                      <img
-                        src="https://i.imgur.com/2Y4s19s.jpg"
-                        class="people__card__image"
-                      />
-                      <div class="people__card__content">
-                        <div class="slide__number">04</div>
-                        <div class="slide__title">London Has Fallen</div>
-                        <div class="slide__subtitle">
-                          In London for the Prime Minister's funeral, Mike
-                          Banning is caught up in a plot to assassinate all the
-                          attending world leaders.
-                        </div>
-                        <a href="" class="slide__btn">
-                          <span class="slide__btn__text">Watch Now</span>
-                          <span class="slide__btn__icon">
-                            <svg
-                              width="100%"
-                              height="100%"
-                              viewBox="0 0 17 21"
-                              fill="none"
-                              xmlns="http://www.w3.org/2000/svg"
-                            >
-                              <path
-                                d="M3.22218 15.2222C2.79261 15.6518 2.79261 16.3482 3.22218 16.7778C3.65176 17.2074 4.34824 17.2074 4.77782 16.7778L3.22218 15.2222ZM16.1 5C16.1 4.39249 15.6075 3.9 15 3.9L5.1 3.9C4.49249 3.9 4 4.39249 4 5C4 5.60751 4.49249 6.1 5.1 6.1L13.9 6.1L13.9 14.9C13.9 15.5075 14.3925 16 15 16C15.6075 16 16.1 15.5075 16.1 14.9L16.1 5ZM4.77782 16.7778L15.7778 5.77782L14.2222 4.22218L3.22218 15.2222L4.77782 16.7778Z"
-                                fill="currentColor"
-                              />
-                            </svg>
-                          </span>
-                        </a>
-                      </div>
-                      <div class="slide__gradient"></div>
-                    </div>
-                  </div>
-                </div>
-                
-              </div>
-            </div>
+        <Carousel items={carouselItems} />
+        <div className="flex justify-end mr-10 mt-0">
+            <Button className="carousel-button rounded-full bg-black h-10 w-30 text-white">View All</Button> {/* New Button */}
           </div>
         </div>
 

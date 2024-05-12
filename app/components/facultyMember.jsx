@@ -7,6 +7,9 @@ import { ScrollArea } from "./ui/scroll-area";
 import { FacultyTooltip } from "./tooltip";
 import Image from "next/image";
 import { FacultyStack } from "./stackcard";
+import PublicationList from '../components/ui/publications';
+
+
 const courgette = Courgette({ subsets: ["latin"], weight: ["400"] });
 const pacifico = Pacifico({ subsets: ["latin"], weight: ["400"] });
 export function FacultyTable() {
@@ -157,24 +160,25 @@ export function FacultyTable() {
             </div>
           </TabsContent>
           <TabsContent value="publication">
-            <section className="content">
+            {/* <section className="content">
               <div
                 className="jhu-block brand-message publication brand"
                 role="region"
               >
-                {/* <div className="dot-matrix" aria-hidden="true"></div> */}
+                <div className="dot-matrix" aria-hidden="true"></div> 
                 <div className="center force">
                   <div className="">
-                    {/* <p>
+                     <p>
                 At Johns Hopkins, you can explore ideas that interest you, find
                 people who inspire and challenge you, and make discoveries that
                 change your life—and the world.
-              </p> */}
+              </p> 
                   </div>
                 </div>
               </div>
-              {/* <div className="bg-yellow-500 w-full ">Rest of the Homepage UI</div> */}
-            </section>
+              <div className="bg-yellow-500 w-full ">Rest of the Homepage UI</div> 
+            </section> */}
+            <PublicationList />
           </TabsContent>
         </Tabs>
       </div>
