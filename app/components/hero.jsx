@@ -4,9 +4,10 @@ import { Pacifico } from "next/font/google";
 import Typewriter from "typewriter-effect";
 import Image from "next/image";
 import Footer from "../components/footer";
-import Carousel from './ui/carousal';
-import { Button } from './ui/button';
-
+import Carousel from "./ui/carousal";
+import { Button } from "./ui/button";
+import BentoGridDemo from "../components/news";
+import EventSection from "../components/events";
 
 const pacifico = Pacifico({
   weight: "400",
@@ -14,57 +15,56 @@ const pacifico = Pacifico({
 });
 const carouselItems = [
   {
-    number: '01',
-    title: 'G.I. Joe: Retaliation',
+    number: "01",
+    title: "G.I. Joe: Retaliation",
     subtitle:
-      'The G.I. Joes are not only fighting their mortal enemy Cobra; they are forced to contend with threats from within the government that jeopardize their very existence.',
-    image: 'https://i.imgur.com/gIxOPCD.jpg',
-    link: '#',
+      "The G.I. Joes are not only fighting their mortal enemy Cobra; they are forced to contend with threats from within the government that jeopardize their very existence.",
+    image: "https://i.imgur.com/gIxOPCD.jpg",
+    link: "#",
   },
   {
-    number: '02',
-    title: 'Red Notice',
+    number: "02",
+    title: "Red Notice",
     subtitle:
       "An Interpol agent successfully tracks down the world's most wanted art thief with help from a rival thief. But nothing is as it seems as a series of double-crosses ensues.",
-    image: 'https://i.imgur.com/2V1lJy4.jpg',
-    link: '#',
+    image: "https://i.imgur.com/2V1lJy4.jpg",
+    link: "#",
   },
   {
-    number: '03',
-    title: 'Battleship',
+    number: "03",
+    title: "Battleship",
     subtitle:
-      'A fleet of ships is forced to do battle with an armada of unknown origins in order to discover and thwart their destructive goals.',
-    image: 'https://i.imgur.com/3tlt7BS.jpg',
-    link: '#',
+      "A fleet of ships is forced to do battle with an armada of unknown origins in order to discover and thwart their destructive goals.",
+    image: "https://i.imgur.com/3tlt7BS.jpg",
+    link: "#",
   },
   {
-    number: '04',
-    title: 'London Has Fallen',
+    number: "04",
+    title: "London Has Fallen",
     subtitle:
       "In London for the Prime Minister's funeral, Mike Banning is caught up in a plot to assassinate all the attending world leaders.",
-    image: 'https://i.imgur.com/2Y4s19s.jpg',
-    link: '#',
+    image: "https://i.imgur.com/2Y4s19s.jpg",
+    link: "#",
   },
   {
-    number: '05',
-    title: 'The Dark Knight',
+    number: "05",
+    title: "The Dark Knight",
     subtitle:
-      'When the menace known as the Joker wreaks havoc and chaos on the people of Gotham, Batman must accept one of the greatest psychological and physical tests of his ability to fight injustice.',
-    image: 'https://i.imgur.com/VCcLrQU.jpg',
-    link: '#',
+      "When the menace known as the Joker wreaks havoc and chaos on the people of Gotham, Batman must accept one of the greatest psychological and physical tests of his ability to fight injustice.",
+    image: "https://i.imgur.com/VCcLrQU.jpg",
+    link: "#",
   },
   {
-    number: '06',
-    title: 'Inception',
+    number: "06",
+    title: "Inception",
     subtitle:
-      'A thief who steals corporate secrets through the use of dream-sharing technology is given the inverse task of planting an idea into the mind of a C.E.O.',
-    image: 'https://i.imgur.com/eeOTF3W.jpg',
-    link: '#',
+      "A thief who steals corporate secrets through the use of dream-sharing technology is given the inverse task of planting an idea into the mind of a C.E.O.",
+    image: "https://i.imgur.com/eeOTF3W.jpg",
+    link: "#",
   },
 ];
 
 const Hero = () => {
-  
   const [scrollPosition, setScrollPosition] = useState(2);
 
   useEffect(() => {
@@ -94,16 +94,19 @@ const Hero = () => {
   return (
     <>
       <section className="hero" style={parallax()}>
-        <video
-          aria-describedby="hero-video-description"
-          autoPlay="autoplay"
-          loop="loop"
+      <video
+          autoPlay
+          loop
+          muted
           preload="auto"
-          poster="https://www.jhu.edu/assets/uploads/2024/02/homepage_loop_102_v2-Original-960x540.jpg"
-          muted="muted"
-          type="video/mp4"
-          src="https://www.jhu.edu/assets/uploads/2024/04/2024-04_homepage_loop_103_-_final-Original.mp4"
-        ></video>
+          style={{ width: '100%', height: 'auto' }}
+        >
+          <source
+            src="/hero_video.mp4" // Ensure this path is correct
+            type="video/mp4"
+          />
+          Your browser does not support the video tag.
+        </video>
 
         <h1 style={titleStyle()} className="text-center lg:text-left">
           <Typewriter
@@ -148,22 +151,25 @@ const Hero = () => {
                 </strong>
               </h2>
 
-              {/* <p>
-                At Johns Hopkins, you can explore ideas that interest you, find
+              <p>
+                At Aot, you can explore ideas that interest you, find
                 people who inspire and challenge you, and make discoveries that
                 change your life—and the world.
-              </p> */}
+              </p>
             </div>
           </div>
         </div>
         <div className=" ">
-        
-        <Carousel items={carouselItems} />
-        <div className="flex justify-end mr-10 mt-0">
-            <Button className="carousel-button rounded-full bg-black h-10 w-30 text-white">View All</Button> {/* New Button */}
+          <Carousel items={carouselItems} />
+          <div className="flex justify-end mr-10 mt-0">
+            <Button className="carousel-button rounded-full bg-black h-10 w-30 text-white">
+              View All
+            </Button>{" "}
+            {/* New Button */}images.unsplash.com
           </div>
         </div>
-
+        <BentoGridDemo />
+        <EventSection />
         <Footer />
         <img
           src="https://www.jhu.edu/assets/themes/machado/assets/images/textures/footer-texture-blue-ad4fe94a5e.svg"

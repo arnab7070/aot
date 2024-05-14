@@ -9,10 +9,12 @@ const Page = () => {
   const [nav, setNav] = useState(true);
   return (
     <div>
+
       <Preloader />
       <Banner setNav={setNav} />
-      <Navbar nav={nav} />
+      <Navbar nav={nav} /> 
       <Hero />
+
     </div>
   );
 };

@@ -14,7 +14,7 @@ import { BentoGrid, BentoGridItem } from "./ui/bento-grid";
 // } from "@tabler/icons-react";
 import Image from "next/image";
 
-export function BentoGridDemo() {
+export default function BentoGridDemo() {
   return (
     <div className=" font-bold">
       <p className="font-bold text-3xl text-center p-10">NEWS SECTION</p>
@@ -36,7 +36,7 @@ export function BentoGridDemo() {
 }
 const Skeleton = ({ imageSrc }) => (
   <div className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl bg-gradient-to-br from-neutral-200 dark:from-neutral-900 dark:to-neutral-800 to-neutral-100">
-    <Image src={imageSrc} height="9999" width="9999" className="rounded-xl"/>
+    <img src={imageSrc} height="9999" width="9999" className="rounded-xl"/>
   </div>
 );
 const items = [

@@ -6,6 +6,7 @@ const Events = () => {
   return (
     <div>
         {/*<EventSection />*/}
+  
         <FacultyTable />
     </div>
   );
