@@ -99,16 +99,16 @@ const Hero = () => {
           loop
           muted
           preload="auto"
-          style={{ width: '100%', height: 'auto' }}
+          style={{ width: '100%', height: '60%' }}
         >
           <source
             src="/hero_video.mp4" // Ensure this path is correct
             type="video/mp4"
           />
-          Your browser does not support the video tag.
+         
         </video>
 
-        <h1 style={titleStyle()} className="text-center lg:text-left">
+        <h1 style={titleStyle()} className="text-center lg:text-left ">
           <Typewriter
             options={{
               strings: [
@@ -119,6 +119,7 @@ const Hero = () => {
               autoStart: true,
               loop: true,
             }}
+            className="text-black"
           />
         </h1>
       </section>

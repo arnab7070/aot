@@ -43,9 +43,9 @@ export const FooterLink2 = [
     {
       title: "Faculty",
       links: [
-          {title: "Faculty List", link: ""},
-          {title: "Faculty Positions", link: ""},
-          {title: "Career Benefits@AOT", link: ""},
+          {title: "Faculty List", link: "/faculty"},
+          {title: "Faculty Positions", link: "/faculty"},
+          {title: "Career Benefits@AOT", link: "/faculty"},
           // {title: "Professional certification", link: "/professional-certification"},
           // {title: "-", link: "/hi"},
           // {title: "Full Catalog", link: "/full-catalog"},
