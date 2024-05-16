@@ -3,6 +3,7 @@ import Image from "next/image";
 import aot from "../assets/aot-logo.jpg";
 import { Courgette } from "next/font/google";
 import Link from "next/link";
+import SheetDemo from "./hamburger";
 const courgette = Courgette({
   weight: "400",
   subsets: ["latin"],
@@ -31,8 +32,10 @@ const Banner = ({ setNav }) => {
   }, [setNav]); // Include setNav in the dependency array
   return (
     <div>
-      <div className="bg-white border-yellow-400 border-t-8 border-b-8 rounded-md w-full p-4 ">
-        <div className="flex flex-row gap-x-3  md:gap-x-12 w-full">
+      <div className=" border-yellow-400 border-t-8 border-b-8 rounded-md w-full p-4 fixed top-0 bg-white/80
+        backdrop-blur-md shadow-md z-[9999] md:static md:bg-white ">
+          <div>
+        <div className="flex flex-row gap-x-3  md:gap-x-12 w-full ">
           <div className="mt-[-12px] flex flex-row  items-center">
             <Image src={aot} className=" w-24 h-12" />
           </div>
@@ -51,15 +54,16 @@ const Banner = ({ setNav }) => {
             ...translating vision into reality
           </span>
         </div>
+        </div>
+        <span className=" md:hidden relative ml-96"><SheetDemo/></span>
       </div>
-     
-      <nav   ref={bannerRef}
-        className="flex justify-around py-4 bg-white/80
-        backdrop-blur-md shadow-md w-full
+
+      <nav
+        ref={bannerRef}
+        className="x justify-around py-4 bg-white/80
+        backdrop-blur-md shadow-md w-full hidden md:flex
      "
       >
-        
-
         <div className="relative items-center hidden space-x-8 lg:flex ">
           <li class="dropdown dropdown-5">
             Academics
