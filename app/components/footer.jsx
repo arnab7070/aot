@@ -1,7 +1,9 @@
 import React from "react";
 import { FooterLink2 } from "../data/footer-links";
+import aot from "../assets/aot-logo-removebg-preview.png"
 import { FaFacebook, FaGoogle, FaTwitter, FaYoutube } from "react-icons/fa";
 import Link from "next/link";
+import Image from "next/image";
 const BottomFooter = ["Privacy Policy", "Cookie Policy", "Terms"];
 const Resources = [
   "Articles",
@@ -18,13 +20,13 @@ const Community = ["Forums", "Chapters", "Events"];
 
 const Footer = () => {
   return (
-    <div className="bg-richblack-900   z-50  w-full">
+    <div className=" border-black border-t-2  z-50  w-full">
       <div className="flex lg:flex-row gap-8 items-center justify-between w-11/12 max-w-maxContent text-richblack-400 leading-6 mx-auto relative py-14">
         <div className="border-b w-[100%] flex flex-col lg:flex-row pb-5 border-richblack-700">
           {/* Section 1 */}
           <div className="lg:w-[50%] flex flex-wrap flex-row justify-between lg:border-r lg:border-richblack-700 pl-3 lg:pr-5 gap-3">
             <div className="w-[30%] flex flex-col gap-3 lg:w-[30%] mb-7 lg:pl-0">
-              <img src="" alt="AOT Logo" className="object-contain" />
+              <Image src={aot} alt="AOT Logo" className=" mr-5"  />
               <h1 className="text-richblack-50 font-semibold text-[16px]">
                 Company
               </h1>

@@ -2,6 +2,7 @@ import React, { useRef, useEffect } from "react";
 import Image from "next/image";
 import aot from "../assets/aot-logo.jpg";
 import { Courgette } from "next/font/google";
+import Link from "next/link";
 const courgette = Courgette({
   weight: "400",
   subsets: ["latin"],
@@ -51,7 +52,77 @@ const Banner = ({ setNav }) => {
           </span>
         </div>
       </div>
-      <div  ref={bannerRef} className="overflow-hidden bg-purple-600 h-[8vh] max-h-[15vh] w-full  nav-background    text-white left-0 flex items-center">This is the normal navbar attached to the banner</div>
+     
+      <nav   ref={bannerRef}
+        className="flex justify-around py-4 bg-white/80
+        backdrop-blur-md shadow-md w-full
+     "
+      >
+        
+
+        <div className="relative items-center hidden space-x-8 lg:flex ">
+          <li class="dropdown dropdown-5">
+            Academics
+            <ul class="dropdown_menu dropdown_menu-5">
+              <li class="dropdown_item-1"> Department</li>
+              <li class="dropdown_item-2">UG Programs</li>
+              <li class="dropdown_item-3">PG Programs</li>
+              <li class="dropdown_item-4">Program Structure</li>
+              <li class="dropdown_item-5">Regulations</li>
+              <li class="dropdown_item-5"> Curriculum</li>
+            </ul>
+          </li>
+          <li class="dropdown dropdown-5">
+            Resources
+            <ul class="dropdown_menu dropdown_menu-5">
+              <li class="dropdown_item-1">Library</li>
+              <li class="dropdown_item-2">Moodle</li>
+            </ul>
+          </li>
+
+          <li class="dropdown dropdown-5">
+            Admissions
+            <ul class="dropdown_menu dropdown_menu-5">
+              <li class="dropdown_item-1">UG Admission</li>
+              <li class="dropdown_item-2">PG Admission</li>
+            </ul>
+          </li>
+
+          <li class="dropdown dropdown-5">
+            Research
+            <ul class="dropdown_menu dropdown_menu-5">
+              <li class="dropdown_item-1">Current Research</li>
+              <li class="dropdown_item-2">Past Research</li>
+              <li class="dropdown_item-3"> Research Facilities</li>
+            </ul>
+          </li>
+
+          <li class="dropdown dropdown-5">
+            Students
+            <ul class="dropdown_menu dropdown_menu-5">
+              <li class="dropdown_item-1">Life@AOT</li>
+              <li class="dropdown_item-2">Campus Facilities</li>
+              <li class="dropdown_item-3">Career Services</li>
+              <li class="dropdown_item-3">Events</li>
+            </ul>
+          </li>
+
+          <li class="dropdown dropdown-5">
+            Faculty
+            <ul class="dropdown_menu dropdown_menu-5">
+              <Link href="/faculty">
+                <li class="dropdown_item-1">Faculty List</li>
+              </Link>
+              <Link href="/faculty">
+                <li class="dropdown_item-2">Faculty Positions</li>
+              </Link>
+              <Link href="/faculty">
+                <li class="dropdown_item-3">Career Benefits@AOT</li>
+              </Link>
+            </ul>
+          </li>
+        </div>
+      </nav>
     </div>
   );
 };

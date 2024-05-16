@@ -1,4 +1,7 @@
 import React, { useState, useEffect, useCallback } from "react";
+import aot from "../assets/aot-logo-removebg-preview.png";
+import Image from "next/image";
+import Link from "next/link";
 const Navbar = ({ nav }) => {
   return (
     <>
@@ -11,9 +14,9 @@ const Navbar = ({ nav }) => {
           <div className="relative flex items-center ">
             <a className="cursor-pointer">
               <h3 className="text-2xl font-medium text-blue-500">
-                <img
-                  className="h-10 object-cover"
-                  src="https://stackoverflow.design/assets/img/logos/so/logo-stackoverflow.svg"
+                <Image
+                  className="h-12 object-cover bg-transparent"
+                  src={aot}
                   alt="Store Logo"
                 />
               </h3>
@@ -21,65 +24,66 @@ const Navbar = ({ nav }) => {
           </div>
 
           <div className="relative items-center hidden space-x-8 lg:flex ">
-            <a
-              className="flex text-gray-600 hover:text-blue-500
-                cursor-pointer transition-colors duration-300"
-            >
-              Home
-            </a>
+            <li class="dropdown dropdown-5">
+              Academics
+              <ul class="dropdown_menu dropdown_menu-5">
+                <li class="dropdown_item-1"> Department</li>
+                <li class="dropdown_item-2">UG Programs</li>
+                <li class="dropdown_item-3">PG Programs</li>
+                <li class="dropdown_item-4">Program Structure</li>
+                <li class="dropdown_item-5">Regulations</li>
+                <li class="dropdown_item-5"> Curriculum</li>
+              </ul>
+            </li>
+            <li class="dropdown dropdown-5">
+              Resources
+              <ul class="dropdown_menu dropdown_menu-5">
+                <li class="dropdown_item-1">Library</li>
+                <li class="dropdown_item-2">Moodle</li>
+              </ul>
+            </li>
 
-            <a
-              className="flex 
-                cursor-pointer transition-colors duration-300
-                font-semibold hover: text-gray-600 hover:text-blue-500"
-            >
-              Themes
-            </a>
+            <li class="dropdown dropdown-5">
+              Admissions
+              <ul class="dropdown_menu dropdown_menu-5">
+                <li class="dropdown_item-1">UG Admission</li>
+                <li class="dropdown_item-2">PG Admission</li>
+              </ul>
+            </li>
 
-            <a
-              className="flex text-gray-600 hover:text-blue-500
-                cursor-pointer transition-colors duration-300"
-            >
-              Developers
-            </a>
+            <li class="dropdown dropdown-5">
+              Research
+              <ul class="dropdown_menu dropdown_menu-5">
+                <li class="dropdown_item-1">Current Research</li>
+                <li class="dropdown_item-2">Past Research</li>
+                <li class="dropdown_item-3"> Research Facilities</li>
+              </ul>
+            </li>
 
-            <a
-              className="flex text-gray-600 hover:text-blue-500
-                cursor-pointer transition-colors duration-300"
-            >
-              Pricing
-            </a>
+            <li class="dropdown dropdown-5">
+              Students
+              <ul class="dropdown_menu dropdown_menu-5">
+                <li class="dropdown_item-1">Life@AOT</li>
+                <li class="dropdown_item-2">Campus Facilities</li>
+                <li class="dropdown_item-3">Career Services</li>
+                <li class="dropdown_item-3">Events</li>
+              </ul>
+            </li>
 
-            <a
-              className="flex text-gray-600 hover:text-blue-500
-                cursor-pointer transition-colors duration-300"
-            >
-              Blog
-            </a>
-
-            <a
-              className="flex text-gray-600 hover:text-blue-500
-                cursor-pointer transition-colors duration-300"
-            >
-              About Us
-            </a>
-          </div>
-
-          <div className=" relative flex items-center space-x-5">
-            <a
-              className="flex text-gray-600 hover:text-blue-500
-                cursor-pointer transition-colors duration-300"
-            >
-              Register
-            </a>
-
-            <a
-              className="flex text-gray-600 hover:text-blue-500
-                cursor-pointer transition-colors duration-300
-                font-semibold "
-            >
-              Login
-            </a>
+            <li class="dropdown dropdown-5">
+              Faculty
+              <ul class="dropdown_menu dropdown_menu-5">
+                <Link href="/faculty">
+                  <li class="dropdown_item-1">Faculty List</li>
+                </Link>
+                <Link href="/faculty">
+                  <li class="dropdown_item-2">Faculty Positions</li>
+                </Link>
+                <Link href="/faculty">
+                  <li class="dropdown_item-3">Career Benefits@AOT</li>
+                </Link>
+              </ul>
+            </li>
           </div>
         </nav>
       )}

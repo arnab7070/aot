@@ -44,7 +44,7 @@ const Carousel = ({ items }) => {
               <div className="swiper-slide" key={index}>
                 <div className="people__card">
                   <img
-                    src={item.image}
+                    src={item.imageSrc}
                     className="people__card__image"
                     alt={item.title}
                   />
@@ -53,7 +53,7 @@ const Carousel = ({ items }) => {
                     <div className="slide__title">{item.title}</div>
                     <div className="slide__subtitle">{item.subtitle}</div>
                     <a href={item.link} className="slide__btn">
-                      <span className="slide__btn__text">Watch Now</span>
+                      <span className="slide__btn__text">Visit Now</span>
                       <span className="slide__btn__icon">
                         {/* SVG Icon */}
                       </span>

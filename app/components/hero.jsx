@@ -13,53 +13,74 @@ const pacifico = Pacifico({
   weight: "400",
   subsets: ["latin"],
 });
+
 const carouselItems = [
   {
     number: "01",
-    title: "G.I. Joe: Retaliation",
+    title: "Prize-Winning Start-Ups: Special Talk",
     subtitle:
-      "The G.I. Joes are not only fighting their mortal enemy Cobra; they are forced to contend with threats from within the government that jeopardize their very existence.",
-    image: "https://i.imgur.com/gIxOPCD.jpg",
+      "ED-Cell hosts event with successful student entrepreneurs sharing startup journey, challenges, and advice",
+    // header: <Skeleton />,
+    imageSrc:
+      "https://media.licdn.com/dms/image/D5622AQGFpYcl7apq9g/feedshare-shrink_2048_1536/0/1712983761618?e=1718236800&v=beta&t=Lyvi0NFY7OPFa9KKfnifmltu9Ogkbg3HfaCtdl4p-Rw",
+    // icon: <IconClipboardCopy className="h-4 w-4 text-neutral-500" />,
     link: "#",
   },
   {
     number: "02",
-    title: "Red Notice",
+    title: "Space Innovation: Dr. Tapan Misra",
     subtitle:
-      "An Interpol agent successfully tracks down the world's most wanted art thief with help from a rival thief. But nothing is as it seems as a series of double-crosses ensues.",
-    image: "https://i.imgur.com/2V1lJy4.jpg",
+      "Dr. Tapan Misra discusses space tech innovation, past achievements, and future prospects.",
+    // header: <Skeleton />,
+    imageSrc:
+      "https://media.licdn.com/dms/image/D5622AQF8bRwSnaDygw/feedshare-shrink_2048_1536/0/1712984307820?e=1718236800&v=beta&t=3mWle45qrhzFTRcDD0ju88YYlO-FxPNQzKTUlol8wgE",
+    // icon: <IconClipboardCopy className="h-4 w-4 text-neutral-500" />,
     link: "#",
   },
   {
     number: "03",
-    title: "Battleship",
+
+    title: "Guardian Interaction: Academic Performance Discussion",
     subtitle:
-      "A fleet of ships is forced to do battle with an armada of unknown origins in order to discover and thwart their destructive goals.",
-    image: "https://i.imgur.com/3tlt7BS.jpg",
+      "AOT held a campus session on academic performance and attendance improvement, engaging with guardians and stakeholders interactively.",
+    // header: <Skeleton />,
+    imageSrc:
+      "https://media.licdn.com/dms/image/D5622AQEdg8a9BzOMlg/feedshare-shrink_2048_1536/0/1713070848206?e=1718236800&v=beta&t=T6K5cAhaW5IrbGNmE5oBgs5l_xk2yEGRTwTOw2xwMgE",
+    // icon: <IconClipboardCopy className="h-4 w-4 text-neutral-500" />,
     link: "#",
   },
   {
     number: "04",
-    title: "London Has Fallen",
+    title:
+      "AOT and IEEE WIE Kolkata organized seminar on Women in Space Engineering.",
     subtitle:
-      "In London for the Prime Minister's funeral, Mike Banning is caught up in a plot to assassinate all the attending world leaders.",
-    image: "https://i.imgur.com/2Y4s19s.jpg",
+      "AOT & IEEE WIE Kolkata co-hosted a seminar on 'Women in Space Engineering,' showcasing Dr. Sumitra Mukhopadhyay and Dr. Ankita Pramanik's efforts for women empowerment.",
+    // header: <Skeleton />,
+    imageSrc:
+      "https://media.licdn.com/dms/image/D5622AQFIe7FuwQyw4w/feedshare-shrink_2048_1536/0/1713875963014?e=1718236800&v=beta&t=H3-jClfrMWs5GSGd2pE7FYnNZUx6rbpQ5nNziurIpm0",
+    // icon: <IconClipboardCopy className="h-4 w-4 text-neutral-500" />,
     link: "#",
   },
   {
     number: "05",
-    title: "The Dark Knight",
+    title: "An industrial visit to BTPS",
     subtitle:
-      "When the menace known as the Joker wreaks havoc and chaos on the people of Gotham, Batman must accept one of the greatest psychological and physical tests of his ability to fight injustice.",
-    image: "https://i.imgur.com/VCcLrQU.jpg",
+      "EE students visited BTPS on 24th April, gaining practical knowledge on theoretical concepts.",
+    // header: <Skeleton />,
+    imageSrc:
+      "https://media.licdn.com/dms/image/D4E22AQENhSd0bpMpfQ/feedshare-shrink_2048_1536/0/1715063824018?e=1718236800&v=beta&t=zjVJPCZ_cyvRXkMUw2b0NHXB_n4-YuMMzwadJ7nvEOA",
+    // icon: <IconClipboardCopy className="h-4 w-4 text-neutral-500" />,
     link: "#",
   },
   {
     number: "06",
-    title: "Inception",
+    title: "Professor of JU visited AOT",
     subtitle:
-      "A thief who steals corporate secrets through the use of dream-sharing technology is given the inverse task of planting an idea into the mind of a C.E.O.",
-    image: "https://i.imgur.com/eeOTF3W.jpg",
+      "Dr. Ranjan Ganguly, Jadavpur University, visited on 4th May 2024, appreciated labs, addressed students.",
+    // header: <Skeleton />,
+    imageSrc:
+      "https://media.licdn.com/dms/image/D4E22AQFIttyLobhh2w/feedshare-shrink_2048_1536/0/1715065222244?e=1718236800&v=beta&t=odhDBGU-vXBluWTIR9DjeMOvS7k-9ItPMqFcC5zYPj0",
+    // icon: <IconClipboardCopy className="h-4 w-4 text-neutral-500" />,
     link: "#",
   },
 ];
@@ -94,33 +115,33 @@ const Hero = () => {
   return (
     <>
       <section className="hero" style={parallax()}>
-      <video
+        <video
           autoPlay
           loop
           muted
           preload="auto"
-          style={{ width: '100%', height: '60%' }}
+          style={{ width: "100%", height: "60%" }}
         >
           <source
             src="/hero_video.mp4" // Ensure this path is correct
             type="video/mp4"
           />
-         
         </video>
 
         <h1 style={titleStyle()} className="text-center lg:text-left ">
-          <Typewriter
-            options={{
-              strings: [
-                "Welcome to Academy Of Technology",
-                "Where aspirations meet success",
-                "Translating visions into reality",
-              ],
-              autoStart: true,
-              loop: true,
-            }}
-            className="text-black"
-          />
+          <div className="glow-text">
+            <Typewriter
+              options={{
+                strings: [
+                  "Welcome to Academy Of Technology",
+                  "Where aspirations meet success",
+                  "Translating visions into reality",
+                ],
+                autoStart: true,
+                loop: true,
+              }}
+            />
+          </div>
         </h1>
       </section>
       <section className="content">
@@ -130,47 +151,36 @@ const Hero = () => {
             <div className="">
               <h2 className="relative top-12 ">
                 <span
-                  className={`${pacifico.className} block text-white text-4xl md:text-8xl ml-2 mr-auto md:ml-6 md:mr-auto`}
+                  className={`${pacifico.className} block text-white text-5xl md:text-8xl ml-2 mr-auto md:ml-6 md:mr-auto`}
                 >
                   When vision
                 </span>
                 <br />
                 <span
-                  className={`${pacifico.className} block text-white text-4xl md:text-8xl ml-8 mr-auto md:ml-56`}
+                  className={`${pacifico.className} block text-white text-5xl md:text-8xl ml-8 mr-auto md:ml-56`}
                 >
                   meets guidance,
                 </span>
                 <br />
                 <strong className="">
-                  <span className="block text-4xl md:text-8xl ml-40 mr-auto md:ml-[50rem] md:mr-auto">
+                  <span className="block text-5xl md:text-8xl ml-40 mr-auto md:ml-[50rem] md:mr-auto">
                     <h1 className="close">anything</h1>
                   </span>
                   <br />
-                  <span className="block text-4xl md:text-8xl ml-20 mr-auto md:ml-96 md:mr-auto">
+                  <span className="block text-5xl md:text-8xl ml-20 mr-auto md:ml-96 md:mr-auto">
                     <h1 className="close">is possible.</h1>
                   </span>
                 </strong>
               </h2>
 
-              <p>
-                At Aot, you can explore ideas that interest you, find
-                people who inspire and challenge you, and make discoveries that
-                change your life—and the world.
-              </p>
+             
             </div>
           </div>
         </div>
         <div className=" ">
           <Carousel items={carouselItems} />
-          <div className="flex justify-end mr-10 mt-0">
-            <Button className="carousel-button rounded-full bg-black h-10 w-30 text-white">
-              View All
-            </Button>{" "}
-            {/* New Button */}images.unsplash.com
-          </div>
+          <div className="flex justify-end mr-10 mt-0"></div>
         </div>
-        <BentoGridDemo />
-        <EventSection />
         <Footer />
         <img
           src="https://www.jhu.edu/assets/themes/machado/assets/images/textures/footer-texture-blue-ad4fe94a5e.svg"
