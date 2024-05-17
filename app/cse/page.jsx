@@ -2,7 +2,7 @@
 import React from "react";
 import { useState, useEffect } from "react";
 import Banner from "../components/banner1";
-import Navbar from "../components/navbar";
+import Navbar from "../components/navbar1";
 import Footer from "../components/footer";
 const CSE = () => {
   const [nav, setNav] = useState(true);
