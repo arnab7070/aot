@@ -20,14 +20,11 @@ const CSE = () => {
         <section className="flex flex-col lg:flex-row h-auto w-full my-20">
           <div className="md:mt-0 mt-20 w-full lg:w-1/2">
             <h1 className="mx-20 text-3xl md:text-4xl lg:text-4xl font-semibold text-white max-w-m">
-              Discover and Master the World of{" "}
-              <span className="text-lime-500">Computer Science</span>
+            Discover and Master the World of{" "}
+              <span className="text-lime-500">Electrical and Electronics Engineering</span>
             </h1>
             <p className="text-white text-lg lg:text-base mt-5">
-              Get started with the most comprehensive and cutting-edge
-              curriculum to learn and excel in Computer Science and Engineering.
-              Start your journey today and become proficient in the latest
-              technologies and innovations in the field!
+            Get started with the most comprehensive and cutting-edge curriculum to learn and excel in Electrical and Electronics Engineering. Start your journey today and become proficient in the latest technologies and innovations in the field!
             </p>
             <div className="mt-10 h-12 flex items-center justify-start gap-3">
               <button className="px-6 py-1.5 h-12 text-white bg-lime-500 rounded-lg hover:opacity-75 transition-all duration-300">
