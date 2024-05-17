@@ -99,10 +99,13 @@ const YourComponent = () => {
         </div>
       </div>
       <div className="logo">
-      <span className={`${courgette.className} text-[#6375ec] mr-2 font-bold text-8xl`} style={{ textShadow: "0 0 10px rgba(47, 79, 168, 0.7)" }} ref={logo2ref}>
-  A
-</span>
-
+        <span
+          className={`${courgette.className} text-[#6375ec] mr-2 font-bold text-8xl`}
+          style={{ textShadow: "0 0 10px rgba(47, 79, 168, 0.7)" }}
+          ref={logo2ref}
+        >
+          A
+        </span>
 
         <span ref={gearEmojiRef} className="gear-emoji">
           {/* ⚙️ */}

@@ -92,11 +92,12 @@
   top: 0;
   left: 0;
   color: #fff;
+  z-index:12;
   pointer-events: none;
 }
 
 .logo {
-  
+  z-index:13;
   position:fixed;
   top: 15.5rem;
   right:0.01rem;

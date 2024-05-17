@@ -36,7 +36,7 @@ const Banner = ({ setNav }) => {
     <div>
       <div
         className=" border-yellow-400 border-t-8 border-b-8 rounded-md w-full p-4 fixed top-0 bg-white/80
-        backdrop-blur-md shadow-md z-[999] md:static md:bg-white "
+        backdrop-blur-md shadow-md z-[11] md:static md:bg-white "
       >
         <div>
           <div className="flex flex-row gap-x-3  md:gap-x-12 w-full ">
