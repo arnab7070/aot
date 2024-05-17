@@ -1,8 +1,14 @@
+'use client';
 import React from 'react'
+import { useState, useEffect } from "react";
+import Banner from '../components/banner';
 
 const CSE = () => {
+    const [nav, setNav] = useState(true);
   return (
-    <div>CSE</div>
+    <div>
+        <Banner setNav={setNav} />
+    </div>
   )
 }
 
