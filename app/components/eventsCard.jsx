@@ -46,6 +46,28 @@ const eventsData = [
     image: "https://images.unsplash.com/photo-1583681758134-3ea2709d2e23?q=80&w=1852&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     dept: "cse"
   },
+  {
+    id: 5,
+    title: "Literary Fest 2024",
+    date: "2024-06-15",
+    time: "10:00 AM",
+    location: "Library",
+    description: "Immerse yourself in a world of words at the Literary Fest 2024, where poetry, prose, and storytelling take center stage. Join us for insightful discussions, captivating readings, and a celebration of literature's timeless beauty.",
+    category: "workshops",
+    image: "https://images.unsplash.com/photo-1521587760476-6c12a4b040da",
+    dept: "ece"
+},
+{
+    id: 6,
+    title: "Science Fair 2024",
+    date: "2024-07-01",
+    time: "9:00 AM",
+    location: "D Block",
+    description: "Embark on a journey of discovery at the Science Fair 2024, where innovation meets experimentation. From cutting-edge research to hands-on demonstrations, explore the wonders of science and technology with us.",
+    category: "workshops",
+    image: "https://images.unsplash.com/photo-1507413245164-6160d8298b31",
+    dept: "csbs"
+}
 ];
 
 const Events = () => {
@@ -80,8 +102,8 @@ const Events = () => {
 
       {/* Search and Filter */}
       <div className="mb-8 flex flex-wrap gap-4">
-        <input type="text" value={searchTerm} onChange={handleSearch} placeholder="Search events..." className="px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-blue-400 flex-grow" />
-        <select value={categoryFilter} onChange={handleCategoryFilter} className="px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-blue-400">
+        <input type="text" value={searchTerm} onChange={handleSearch} placeholder="Search events..." className="px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-yellow-200 flex-grow" />
+        <select value={categoryFilter} onChange={handleCategoryFilter} className="px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring focus:yellow-blue-400">
           <option value="">All Categories</option>
           <option value="workshops">Workshops</option>
           <option value="music">Music</option>
@@ -97,7 +119,7 @@ const Events = () => {
             <div className="p-4">
               <h2 className="text-xl font-semibold mb-2">{event.title}</h2>
               <p className="text-gray-600 mb-2">{event.date} - {event.time}</p>
-              <p className="text-gray-600 mb-2">{event.location}</p>
+              <p className="mb-2 text-blue-500">{event.location}</p>
               <p className="text-gray-800">{event.description}</p>
               <a href="#" className="mt-4 inline-block px-4 py-2 bg-gradient-to-r transition duration-300 ease-in-out transform hover:scale-110 from-gray-800 to-slate-400 text-white font-semibold rounded-md hover:from-gray-900 hover:to-gray-600 hover:text-white hover:shadow-lg">More Details</a>
 
