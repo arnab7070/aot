@@ -1,14 +1,14 @@
 "use client";
 import React from "react";
 import { useState, useEffect } from "react";
-import CSEnews from "../components/news1";
+import CSBSnews from "../components/news2";
 import Carousel from "../components/ui/carousal";
 import Banner from "../components/banner1";
 import Navbar from "../components/navbar1";
 import Footer from "../components/footer";
-const CSE = () => {
+const CSBS = () => {
   const [nav, setNav] = useState(true);
-  const newsItems = CSEnews();
+  const newsItems = CSBSnews();
 
   return (
     <div>
@@ -18,14 +18,13 @@ const CSE = () => {
         <section className="flex flex-col lg:flex-row h-auto w-full my-20">
           <div className="md:mt-0 mt-20 w-full lg:w-1/2">
             <h1 className="mx-20 text-3xl md:text-4xl lg:text-4xl font-semibold text-white max-w-m">
-              Discover and Master the World of{" "}
-              <span className="text-lime-500">Computer Science</span>
+            Embark on a Journey through{" "}
+            <p>
+              <span className="text-lime-500">Computer Science Business Systems</span>
+            </p>
             </h1>
             <p className="text-white text-lg lg:text-base mt-5">
-              Get started with the most comprehensive and cutting-edge
-              curriculum to learn and excel in Computer Science and Engineering.
-              Start your journey today and become proficient in the latest
-              technologies and innovations in the field!
+            Delve into the vast landscape of Computer Science tailored specifically for business systems. Our comprehensive curriculum offers cutting-edge insights and tools designed to empower you in the realm of Computer Science and Engineering, with a focus on business applications. Begin your journey today and unlock the potential to excel in this dynamic field. Stay ahead of the curve by mastering the latest technologies and innovations, ensuring you are equipped to drive success in the world of business systems."
             </p>
             <div className="mt-10 h-12 flex items-center justify-start gap-3">
               <button className="px-6 py-1.5 h-12 text-white bg-lime-500 rounded-lg hover:opacity-75 transition-all duration-300">
@@ -38,7 +37,7 @@ const CSE = () => {
             <div className="grid grid-cols-1 md:grid-cols-3 mt-10 w-full h-auto gap-4 md:gap-2 lg:divide-x-[1px] place-content-center">
               <div className="w-full md:w-auto h-24 md:h-20 px-5 flex md:flex-col items-center justify-center">
                 <h2 className="text-4xl md:text-5xl font-bold text-lime-500">
-                220<span className="text-white">+</span>
+                60<span className="text-white">+</span>
                 </h2>
                 <h3 className="text-gray-300 text-sm md:text-base mt-2">
                   Students
@@ -46,7 +45,7 @@ const CSE = () => {
               </div>
               <div className="w-full md:w-auto h-24 md:h-20 px-5 flex md:flex-col items-center justify-center">
                 <h2 className="text-4xl md:text-5xl font-bold text-lime-500">
-                  25<span className="text-white">+</span>
+                  12<span className="text-white">+</span>
                 </h2>
                 <h3 className="text-gray-300 text-sm md:text-base mt-2">
                   Faculty
@@ -54,7 +53,7 @@ const CSE = () => {
               </div>
               <div className="w-full md:w-auto h-24 md:h-20 px-5 flex md:flex-col items-center justify-center">
                 <h2 className="text-4xl md:text-5xl font-bold text-lime-500">
-                2
+                1
                 </h2>
                 <h3 className="text-gray-300 text-sm md:text-base mt-2">
                   Journals
@@ -83,4 +82,4 @@ const CSE = () => {
   );
 };
 
-export default CSE;
+export default CSBS;
