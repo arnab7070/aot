@@ -166,11 +166,10 @@ const Hero = () => {
                   </span>
                 </strong>
               </h2>
-
-
             </div>
           </div>
         </div>
+        <p className="text-center text-3xl font-bold mt-10">NEWS BULLETIN</p>
         <div className=" ">
           <Carousel items={carouselItems} />
           <div className="flex justify-end mr-10 mt-0"></div>

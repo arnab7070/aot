@@ -76,7 +76,7 @@ const Events = () => {
 
   return (
     <div className="container mx-auto py-8">
-      <h1 className="text-3xl font-bold mb-4">Events</h1>
+      <h1 className="text-3xl font-bold mb-4 text-center">EVENTS</h1>
 
       {/* Search and Filter */}
       <div className="mb-8 flex flex-wrap gap-4">
