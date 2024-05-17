@@ -27,7 +27,7 @@ const Navbar = ({ nav }) => {
             <Link href="/home">
               <li className="dropdown dropdown-5">Home</li>
             </Link>
-
+            
             <li className="dropdown dropdown-5">
               People
               <ul className="dropdown_menu dropdown_menu-5">

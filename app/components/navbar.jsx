@@ -38,7 +38,7 @@ const Navbar = ({ nav }) => {
                   <li class="dropdown_item-5"> Curriculum</li>
                 </ul>
               </li>
-           
+              
             <li class="dropdown dropdown-5">
               Resources
               <ul class="dropdown_menu dropdown_menu-5">
