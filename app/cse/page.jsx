@@ -8,34 +8,36 @@ const CSE = () => {
   const [nav, setNav] = useState(true);
   const [timeRemaining, setTimeRemaining] = useState(calculateTimeRemaining());
 
-    // Function to calculate the time remaining
-    function calculateTimeRemaining() {
-        const endTime = new Date('May 18, 2024 00:00:00').getTime();
-        const now = new Date().getTime();
-        const timeRemaining = Math.max(0, endTime - now); // Ensure time remaining is non-negative
-        return timeRemaining;
-    }
+  // Function to calculate the time remaining
+  function calculateTimeRemaining() {
+    const endTime = new Date("May 18, 2024 00:00:00").getTime();
+    const now = new Date().getTime();
+    const timeRemaining = Math.max(0, endTime - now); // Ensure time remaining is non-negative
+    return timeRemaining;
+  }
 
-    // Function to format time
-    function formatTime(ms) {
-        const hours = Math.floor(ms / (1000 * 60 * 60));
-        const minutes = Math.floor((ms % (1000 * 60 * 60)) / (1000 * 60));
-        const seconds = Math.floor((ms % (1000 * 60)) / 1000);
-        return `${hours.toString().padStart(2, '0')}:${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
-    }
+  // Function to format time
+  function formatTime(ms) {
+    const hours = Math.floor(ms / (1000 * 60 * 60));
+    const minutes = Math.floor((ms % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((ms % (1000 * 60)) / 1000);
+    return `${hours.toString().padStart(2, "0")}:${minutes
+      .toString()
+      .padStart(2, "0")}:${seconds.toString().padStart(2, "0")}`;
+  }
 
-    // Update time remaining every second
-    useEffect(() => {
-        const interval = setInterval(() => {
-            setTimeRemaining(prev => {
-                const updatedTimeRemaining = Math.max(0, prev - 1000);
-                if (updatedTimeRemaining === 0) clearInterval(interval); // Stop interval when countdown ends
-                return updatedTimeRemaining;
-            });
-        }, 1000);
+  // Update time remaining every second
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setTimeRemaining((prev) => {
+        const updatedTimeRemaining = Math.max(0, prev - 1000);
+        if (updatedTimeRemaining === 0) clearInterval(interval); // Stop interval when countdown ends
+        return updatedTimeRemaining;
+      });
+    }, 1000);
 
-        return () => clearInterval(interval); // Cleanup interval on component unmount
-    }, []);
+    return () => clearInterval(interval); // Cleanup interval on component unmount
+  }, []);
   return (
     <div>
       <Banner setNav={setNav} />
@@ -90,11 +92,14 @@ const CSE = () => {
               alt=""
               className="h-auto w-full md:w-[70%] rounded-3xl"
             />
-            <div className="absolute w-[50%] bg-slate-900 border-t border-lime-500 rounded-xl bottom-0 translate-y-1/2 right-10 z-10 h-auto p-5">
-              <div className="flex items-center justify-between mb-5">
-                <div className="">
+
+            <div className="absolute w-full lg:w-[50%] bg-slate-900 border-t border-lime-500 rounded-xl bottom-0 translate-y-1/2 right-0 lg:right-10 z-10 h-auto p-5">
+              <div className="flex flex-col lg:flex-row items-center justify-between mb-5">
+                <div className="mb-3 lg:mb-0 lg:mr-5">
                   <p className="text-sm text-lime-500">Hackathon Countdown</p>
-                  <div className="text-lg text-white font-bold">{formatTime(timeRemaining)}</div>
+                  <div className="text-lg text-white font-bold">
+                    {formatTime(timeRemaining)}
+                  </div>
                 </div>
                 <div className="">
                   <p className="text-sm text-lime-500">Top Project</p>
@@ -103,7 +108,7 @@ const CSE = () => {
                   </p>
                 </div>
               </div>
-              <button className="px-3 py-1.5 w-full text-white bg-lime-500 border border-lime-500 rounded-lg hover:opacity-75 transition-all duration-300">
+              <button className="px-3 py-1.5 w-full lg:w-auto text-white bg-lime-500 border border-lime-500 rounded-lg hover:opacity-75 transition-all duration-300">
                 Join the Innovation!
               </button>
             </div>
