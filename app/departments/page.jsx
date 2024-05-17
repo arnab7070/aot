@@ -57,7 +57,7 @@ const Page = () => {
       <Banner setNav={setNav} />
       <Navbar nav={nav} />
       <div className="main">
-        <h1 className={`${courgette.className}  text-8xl mt-5 relative font-bold text-center mb-6`}>Departments</h1>
+        <h1 className={`${courgette.className} z-[-9] text-6xl md:text-8xl mt-52 md:mt-5 relative font-bold text-center mb-6`}>Departments</h1>
         <ul className="cards">
           {departments.map((dept, index) => (
             <li key={index} className="cards_item">
