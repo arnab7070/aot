@@ -6,7 +6,7 @@ import Image from "next/image";
 import Footer from "../components/footer";
 import Carousel from "./ui/carousal";
 import { Button } from "./ui/button";
-import BentoGridDemo from "../components/news";
+import Announcement from "../components/news";
 import EventSection from "../components/events";
 
 const pacifico = Pacifico({
@@ -176,6 +176,7 @@ const Hero = () => {
         </div>
 
         <EventSection/>
+        <Announcement/>
         <br/>
         <br/>
         <br/>
