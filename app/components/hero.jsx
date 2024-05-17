@@ -181,6 +181,11 @@ const Hero = () => {
           <Carousel items={carouselItems} />
           <div className="flex justify-end mr-10 mt-0"></div>
         </div>
+
+        <EventSection/>
+        <br/>
+        <br/>
+        <br/>
         <Footer />
         
       </section>

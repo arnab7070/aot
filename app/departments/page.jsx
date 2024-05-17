@@ -5,6 +5,7 @@ import Banner from "../components/banner";
 import Navbar from "../components/navbar";
 import Footer from "../components/footer";
 import "../departments/card.css";
+
 import { Courgette } from "next/font/google";
 const courgette = Courgette({
   weight: "400",
@@ -75,7 +76,7 @@ const Page = () => {
           ))}
         </ul>
       </div>
-
+        
       <Footer />
     </>
   );
