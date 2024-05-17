@@ -70,7 +70,7 @@ const Banner = ({ setNav }) => {
         className="justify-around py-4 bg-white/80 backdrop-blur-md shadow-md w-full hidden md:flex"
       >
         <div className="relative items-center hidden space-x-8 lg:flex">
-          <Link href="/home">
+          <Link href="/">
             <li className="dropdown dropdown-5">Home</li>
           </Link>
 
