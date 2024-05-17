@@ -17,7 +17,6 @@ const pacifico = Pacifico({
 
 const carouselItems = [
   {
-    number: "01",
     title: "Prize-Winning Start-Ups: Special Talk",
     subtitle:
       "ED-Cell hosts event with successful student entrepreneurs sharing startup journey, challenges, and advice",
@@ -28,7 +27,6 @@ const carouselItems = [
     link: "#",
   },
   {
-    number: "02",
     title: "Space Innovation: Dr. Tapan Misra",
     subtitle:
       "Dr. Tapan Misra discusses space tech innovation, past achievements, and future prospects.",
@@ -39,8 +37,6 @@ const carouselItems = [
     link: "#",
   },
   {
-    number: "03",
-
     title: "Guardian Interaction: Academic Performance Discussion",
     subtitle:
       "AOT held a campus session on academic performance and attendance improvement, engaging with guardians and stakeholders interactively.",
@@ -51,7 +47,6 @@ const carouselItems = [
     link: "#",
   },
   {
-    number: "04",
     title:
       "AOT and IEEE WIE Kolkata organized seminar on Women in Space Engineering.",
     subtitle:
@@ -63,7 +58,6 @@ const carouselItems = [
     link: "#",
   },
   {
-    number: "05",
     title: "An industrial visit to BTPS",
     subtitle:
       "EE students visited BTPS on 24th April, gaining practical knowledge on theoretical concepts.",
@@ -74,7 +68,6 @@ const carouselItems = [
     link: "#",
   },
   {
-    number: "06",
     title: "Professor of JU visited AOT",
     subtitle:
       "Dr. Ranjan Ganguly, Jadavpur University, visited on 4th May 2024, appreciated labs, addressed students.",

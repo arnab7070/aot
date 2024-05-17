@@ -1,8 +1,8 @@
 // components/computer-science-news.js
 import React from "react";
 
-const ComputerScienceNews = () => {
-  const department = "Computer Science";
+const CSBSNews = () => {
+  const department = "Computer Science and Business System";
 
   const carouselItems = [
     {
@@ -24,14 +24,14 @@ const ComputerScienceNews = () => {
       link: "#",
     },
     {
-      title: "Guardian Interaction: Academic Performance Discussion",
-      subtitle:
-        "AOT held a campus session on academic performance and attendance improvement, engaging with guardians and stakeholders interactively.",
-      department:["Computer Science","Computer Science and Business System"],
-      imageSrc:
-        "https://media.licdn.com/dms/image/D5622AQEdg8a9BzOMlg/feedshare-shrink_2048_1536/0/1713070848206?e=1718236800&v=beta&t=T6K5cAhaW5IrbGNmE5oBgs5l_xk2yEGRTwTOw2xwMgE",
-      link: "#",
-    },
+        title: "Guardian Interaction: Academic Performance Discussion",
+        subtitle:
+          "AOT held a campus session on academic performance and attendance improvement, engaging with guardians and stakeholders interactively.",
+        department: ["Computer Science","Computer Science and Business System"],
+        imageSrc:
+          "https://media.licdn.com/dms/image/D5622AQEdg8a9BzOMlg/feedshare-shrink_2048_1536/0/1713070848206?e=1718236800&v=beta&t=T6K5cAhaW5IrbGNmE5oBgs5l_xk2yEGRTwTOw2xwMgE",
+        link: "#",
+      },
     {
       title:
         "AOT and IEEE WIE Kolkata organized seminar on Women in Space Engineering.",
@@ -69,4 +69,4 @@ const ComputerScienceNews = () => {
   return filteredItems;
 };
 
-export default ComputerScienceNews;
+export default CSBSNews;
