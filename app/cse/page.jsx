@@ -44,7 +44,7 @@ const CSE = () => {
       <Navbar nav={nav} />
       <div className="w-full h-auto bg-gray-500 text-black font-bold px-5 @lg:px-12 lg:px-20 py-10">
         <section className="flex flex-col lg:flex-row h-auto w-full my-20">
-          <div className="  w-full lg:w-1/2">
+          <div className="md:mt-0 mt-20  w-full lg:w-1/2">
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-semibold text-white max-w-sm [object Object]">
               Discover and Collect The Best? NFTs{" "}
               <span className="text-lime-500">Digital Art.</span>
@@ -63,24 +63,30 @@ const CSE = () => {
                 Learn more
               </button>
             </div>
-            <div className="grid grid-cols-1 lg:grid-cols-3 mt-10 w-full h-auto gap-2 lg:divide-x-[1px] place-content-center">
-              <div className="w-full h-20  px-5  flex lg:block items-center justify-center">
-                <h2 className=" text-5xl font-bold text-lime-500 ">
-                  65<span className="[object Object] text-white">K</span>
+            <div className="grid grid-cols-1 md:grid-cols-3 mt-10 w-full h-auto gap-4 md:gap-2 lg:divide-x-[1px] place-content-center">
+              <div className="w-full md:w-auto h-24 md:h-20 px-5 flex md:flex-col items-center justify-center">
+                <h2 className="text-4xl md:text-5xl font-bold text-lime-500">
+                  65<span className="text-white">K</span>
                 </h2>
-                <h3 className="text-gray-300 text-sm mt-2 ">Students</h3>
+                <h3 className="text-gray-300 text-sm md:text-base mt-2">
+                  Students
+                </h3>
               </div>
-              <div className="w-full h-20  px-5  flex lg:block items-center justify-center">
-                <h2 className=" text-5xl font-bold text-lime-500 ">
-                  1.7<span className="[object Object] text-white">K</span>
+              <div className="w-full md:w-auto h-24 md:h-20 px-5 flex md:flex-col items-center justify-center">
+                <h2 className="text-4xl md:text-5xl font-bold text-lime-500">
+                  1.7<span className="text-white">K</span>
                 </h2>
-                <h3 className="text-gray-300 text-sm mt-2 ">Faculty</h3>
+                <h3 className="text-gray-300 text-sm md:text-base mt-2">
+                  Faculty
+                </h3>
               </div>
-              <div className="w-full h-20  px-5  flex lg:block items-center justify-center">
-                <h2 className=" text-5xl font-bold text-lime-500 ">
-                  75<span className="[object Object] text-white">K</span>
+              <div className="w-full md:w-auto h-24 md:h-20 px-5 flex md:flex-col items-center justify-center">
+                <h2 className="text-4xl md:text-5xl font-bold text-lime-500">
+                  75<span className="text-white">K</span>
                 </h2>
-                <h3 className="text-gray-300 text-sm mt-2 ">Journals</h3>
+                <h3 className="text-gray-300 text-sm md:text-base mt-2">
+                  Journals
+                </h3>
               </div>
             </div>
           </div>
