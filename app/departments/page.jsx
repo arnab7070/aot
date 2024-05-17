@@ -17,42 +17,42 @@ const ugDepartments = [
   {
     title: "Computer Science and Engineering",
     text: "Explore the world of computing with CSE.",
-    imageUrl: "https://picsum.photos/500/300/?image=5",
+    imageUrl: "https://plus.unsplash.com/premium_photo-1678565869434-c81195861939",
     btnText: "Read More",
     link: 'cse'
   },
   {
     title: "Computer Science and Business Systems",
     text: "Integrate technology with business using CSBS.",
-    imageUrl: "https://images.unsplash.com/photo-1453928582365-b6ad33cbcf64",
+    imageUrl: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f",
     btnText: "Read More",
     link: 'csbs'
   },
   {
     title: "Electrical and Electronics Engineering",
     text: "Power up your knowledge in EEE.",
-    imageUrl: "https://picsum.photos/500/300/?image=11",
+    imageUrl: "https://images.unsplash.com/photo-1596496181848-3091d4878b24",
     btnText: "Read More",
     link: 'eee'
   },
   {
     title: "Electronics and Communication Engineering",
     text: "Communicate the future with ECE.",
-    imageUrl: "https://picsum.photos/500/300/?image=14",
+    imageUrl: "https://images.unsplash.com/photo-1603732551658-5fabbafa84eb",
     btnText: "Read More",
     link: 'ece'
   },
   {
     title: "Electrical Engineering",
     text: "Master the flow of electricity with EE.",
-    imageUrl: "https://picsum.photos/500/300/?image=17",
+    imageUrl: "https://images.unsplash.com/photo-1517420704952-d9f39e95b43e",
     btnText: "Read More",
     link: 'ee'
   },
   {
     title: "Mechanical Engineering",
     text: "Engineer the world with ME.",
-    imageUrl: "https://picsum.photos/500/300/?image=2",
+    imageUrl: "https://images.unsplash.com/photo-1599585896662-85853131f259",
     btnText: "Read More",
     link: 'me'
   },
