@@ -1,5 +1,6 @@
 import React from "react";
 import { BentoGrid, BentoGridItem } from "./ui/bento-grid";
+import "./styles.css";
 
 export default function BentoGridDemo() {
   return (
@@ -76,18 +77,3 @@ const items = [
     new: false,
   },
 ];
-
-const css = `
-@keyframes blink {
-  0%, 100% { opacity: 1; }
-  50% { opacity: 0; }
-}
-
-.animate-blink {
-  animation: blink 1s infinite;
-}
-`;
-
-const style = document.createElement('style');
-style.textContent = css;
-document.head.append(style);
