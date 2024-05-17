@@ -1,15 +1,18 @@
+'use client'
 import React, { useRef, useEffect } from "react";
 import Image from "next/image";
 import aot from "../assets/aot-logo.jpg";
 import { Courgette } from "next/font/google";
 import Link from "next/link";
-import SheetDemo from "./hamburger";
+import { useState } from "react";
+import Hamburger from "./hamburger"
 const courgette = Courgette({
   weight: "400",
   subsets: ["latin"],
 });
 const Banner = ({ setNav }) => {
   const bannerRef = useRef(null);
+
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -33,9 +36,9 @@ const Banner = ({ setNav }) => {
   return (
     <div>
       <div className=" border-yellow-400 border-t-8 border-b-8 rounded-md w-full p-4 fixed top-0 bg-white/80
-        backdrop-blur-md shadow-md z-[9999] md:static md:bg-white ">
-          <div>
-        <div className="flex flex-row gap-x-3  md:gap-x-12 w-full ">
+        backdrop-blur-md shadow-md z-[999] md:static md:bg-white ">
+          <div className="">
+        <div className="flex flex-row gap-x-12   w-full ">
           <div className="mt-[-12px] flex flex-row  items-center">
             <Image src={aot} className=" w-24 h-12" />
           </div>
@@ -46,6 +49,9 @@ const Banner = ({ setNav }) => {
           >
             Academy of Technology
           </div>
+          <div className="md:hidden mt-5">
+          <Hamburger />
+          </div>
         </div>
         <div className="flex flex-row justify-center">
           <span
@@ -55,7 +61,9 @@ const Banner = ({ setNav }) => {
           </span>
         </div>
         </div>
-        <span className=" md:hidden relative ml-96"><SheetDemo/></span>
+        
+        
+        
       </div>
 
       <nav
@@ -68,7 +76,9 @@ const Banner = ({ setNav }) => {
           <li class="dropdown dropdown-5">
             Academics
             <ul class="dropdown_menu dropdown_menu-5">
-              <li class="dropdown_item-1"> Department</li>
+            <Link href="/departments">
+                  <li class="dropdown_item-1">Departments</li>
+                </Link>
               <li class="dropdown_item-2">UG Programs</li>
               <li class="dropdown_item-3">PG Programs</li>
               <li class="dropdown_item-4">Program Structure</li>

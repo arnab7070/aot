@@ -1,7 +1,6 @@
 "use client";
 import React, { useState, useEffect } from "react";
 import Preloader from "./components/preloader";
-import { Button } from "./components/ui/button";
 import Navbar from "./components/navbar";
 import Banner from "./components/banner";
 import Hero from "./components/hero.jsx";

@@ -24,17 +24,21 @@ const Navbar = ({ nav }) => {
           </div>
 
           <div className="relative items-center hidden space-x-8 lg:flex ">
-            <li class="dropdown dropdown-5">
-              Academics
-              <ul class="dropdown_menu dropdown_menu-5">
-                <li class="dropdown_item-1"> Department</li>
-                <li class="dropdown_item-2">UG Programs</li>
-                <li class="dropdown_item-3">PG Programs</li>
-                <li class="dropdown_item-4">Program Structure</li>
-                <li class="dropdown_item-5">Regulations</li>
-                <li class="dropdown_item-5"> Curriculum</li>
-              </ul>
-            </li>
+           
+              <li class="dropdown dropdown-5">
+                Academics
+                <ul class="dropdown_menu dropdown_menu-5">
+                <Link href="/departments">
+                  <li class="dropdown_item-1">Departments</li>
+                </Link>
+                  <li class="dropdown_item-2">UG Programs</li>
+                  <li class="dropdown_item-3">PG Programs</li>
+                  <li class="dropdown_item-4">Program Structure</li>
+                  <li class="dropdown_item-5">Regulations</li>
+                  <li class="dropdown_item-5"> Curriculum</li>
+                </ul>
+              </li>
+           
             <li class="dropdown dropdown-5">
               Resources
               <ul class="dropdown_menu dropdown_menu-5">
@@ -85,7 +89,6 @@ const Navbar = ({ nav }) => {
               </ul>
             </li>
           </div>
-          
         </nav>
       )}
     </>

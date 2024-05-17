@@ -182,10 +182,7 @@ const Hero = () => {
           <div className="flex justify-end mr-10 mt-0"></div>
         </div>
         <Footer />
-        <img
-          src="https://www.jhu.edu/assets/themes/machado/assets/images/textures/footer-texture-blue-ad4fe94a5e.svg"
-          className="w-full"
-        />
+        
       </section>
     </>
   );

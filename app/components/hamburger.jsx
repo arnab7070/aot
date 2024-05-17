@@ -1,50 +1,81 @@
-import { Button } from "./ui/button"
-import { Input } from "./ui/input"
-import { Label } from "./ui/label"
-import {
-  Sheet,
-  SheetClose,
-  SheetContent,
-  SheetDescription,
-  SheetFooter,
-  SheetHeader,
-  SheetTitle,
-  SheetTrigger,
-} from "./ui/sheet"
+import * as React from 'react';
+import Box from '@mui/material/Box';
+import Drawer from '@mui/material/Drawer';
+import Button from '@mui/material/Button';
+import List from '@mui/material/List';
+import Divider from '@mui/material/Divider';
+import ListItem from '@mui/material/ListItem';
+import ListItemButton from '@mui/material/ListItemButton';
+import ListItemIcon from '@mui/material/ListItemIcon';
+import ListItemText from '@mui/material/ListItemText';
+import Hamburger from 'hamburger-react';
 
-export default function SheetDemo() {
+export default function AnchorTemporaryDrawer() {
+  const [state, setState] = React.useState({
+    top: false,
+    left: false,
+    bottom: false,
+    right: false,
+  });
+
+  const toggleDrawer = (anchor, open) => (event) => {
+    if (event.type === 'keydown' && (event.key === 'Tab' || event.key === 'Shift')) {
+      return;
+    }
+
+    setState({ ...state, [anchor]: open });
+  };
+
+  const list = (anchor) => (
+    <Box
+      sx={{ width: anchor === 'top' || anchor === 'bottom' ? 'auto' : 250 }}
+      role="presentation"
+      onClick={toggleDrawer(anchor, false)}
+      onKeyDown={toggleDrawer(anchor, false)}
+    >
+    
+      <List>
+        {['  Academics', 'Resources', 'Admissions', 'Research'].map((text, index) => (
+          <ListItem key={text} disablePadding>
+            <ListItemButton>
+              <ListItemIcon>
+           
+              </ListItemIcon>
+              <ListItemText primary={text} />
+            </ListItemButton>
+          </ListItem>
+        ))}
+      </List>
+      <Divider />
+      <List>
+        {['Students', 'Faculty'].map((text, index) => (
+          <ListItem key={text} disablePadding>
+            <ListItemButton>
+              <ListItemIcon>
+                
+              </ListItemIcon>
+              <ListItemText primary={text} />
+            </ListItemButton>
+          </ListItem>
+        ))}
+      </List>
+    </Box>
+  );
+
   return (
-    <Sheet>
-      <SheetTrigger asChild>
-        <Button variant="outline">Open</Button>
-      </SheetTrigger>
-      <SheetContent>
-        <SheetHeader>
-          <SheetTitle>Edit profile</SheetTitle>
-          <SheetDescription>
-            Make changes to your profile here. Click save when you're done.
-          </SheetDescription>
-        </SheetHeader>
-        <div className="grid gap-4 py-4">
-          <div className="grid grid-cols-4 items-center gap-4">
-            <Label htmlFor="name" className="text-right">
-              Name
-            </Label>
-            <Input id="name" value="Pedro Duarte" className="col-span-3" />
-          </div>
-          <div className="grid grid-cols-4 items-center gap-4">
-            <Label htmlFor="username" className="text-right">
-              Username
-            </Label>
-            <Input id="username" value="@peduarte" className="col-span-3" />
-          </div>
-        </div>
-        <SheetFooter>
-          <SheetClose asChild>
-            <Button type="submit">Save changes</Button>
-          </SheetClose>
-        </SheetFooter>
-      </SheetContent>
-    </Sheet>
-  )
+    <div className="z-[9999]">
+      {[ 'right'].map((anchor) => (
+        <React.Fragment key={anchor}>
+          <Button onClick={toggleDrawer(anchor, true)}><Hamburger/></Button>
+          <Drawer
+            anchor={anchor}
+            open={state[anchor]}
+            onClose={toggleDrawer(anchor, false)}
+          >
+            {list(anchor)}
+          </Drawer>
+        </React.Fragment>
+      ))}
+    </div>
+  );
 }
