@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import { useState, useEffect } from "react";
-import CSEnews from "../components/CSEnews";
+import MEnews from "../components/CSEnews";
 import Carousel from "../components/ui/carousal";
 import Events from "../components/MEevents";
 import Announcement from "../components/MEannouncement";
@@ -10,7 +10,7 @@ import Navbar from "../components/navbar1";
 import Footer from "../components/footer";
 const CSE = () => {
   const [nav, setNav] = useState(true);
-  const newsItems = CSEnews();
+  const newsItems = MEnews();
 
   return (
     <div>
@@ -40,7 +40,7 @@ const CSE = () => {
             <div className="grid grid-cols-1 md:grid-cols-3 mt-10 w-full h-auto gap-4 md:gap-2 lg:divide-x-[1px] place-content-center">
               <div className="w-full md:w-auto h-24 md:h-20 px-5 flex md:flex-col items-center justify-center">
                 <h2 className="text-4xl md:text-5xl font-bold text-lime-500">
-                220<span className="text-white">+</span>
+                40<span className="text-white">+</span>
                 </h2>
                 <h3 className="text-gray-300 text-sm md:text-base mt-2">
                   Students
@@ -48,7 +48,7 @@ const CSE = () => {
               </div>
               <div className="w-full md:w-auto h-24 md:h-20 px-5 flex md:flex-col items-center justify-center">
                 <h2 className="text-4xl md:text-5xl font-bold text-lime-500">
-                  25<span className="text-white">+</span>
+                  8<span className="text-white">+</span>
                 </h2>
                 <h3 className="text-gray-300 text-sm md:text-base mt-2">
                   Faculty
@@ -56,7 +56,7 @@ const CSE = () => {
               </div>
               <div className="w-full md:w-auto h-24 md:h-20 px-5 flex md:flex-col items-center justify-center">
                 <h2 className="text-4xl md:text-5xl font-bold text-lime-500">
-                2
+                1
                 </h2>
                 <h3 className="text-gray-300 text-sm md:text-base mt-2">
                   Journals
