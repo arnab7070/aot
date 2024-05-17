@@ -8,6 +8,7 @@ import Carousel from "./ui/carousal";
 import { Button } from "./ui/button";
 import Announcement from "../components/news";
 import EventSection from "../components/events";
+import Events from "./eventsCard";
 
 const pacifico = Pacifico({
   weight: "400",
@@ -173,7 +174,7 @@ const Hero = () => {
                 </strong>
               </h2>
 
-             
+
             </div>
           </div>
         </div>
@@ -181,14 +182,14 @@ const Hero = () => {
           <Carousel items={carouselItems} />
           <div className="flex justify-end mr-10 mt-0"></div>
         </div>
-
-        <EventSection/>
-        <Announcement/>
-        <br/>
-        <br/>
-        <br/>
+        <Events />
+        {/* <EventSection/> */}
+        <Announcement />
+        <br />
+        <br />
+        <br />
         <Footer />
-        
+
       </section>
     </>
   );

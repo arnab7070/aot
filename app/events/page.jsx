@@ -1,9 +1,11 @@
 import React from 'react'
 import EventSection from '../components/events'
+import Events from '../components/eventsCard'
 const page = () => {
   return (
     <div>
-        <EventSection />
+        {/* <EventSection /> */}
+        <Events />
     </div>
   )
 }
