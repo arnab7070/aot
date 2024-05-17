@@ -43,9 +43,20 @@ const Banner = ({ setNav }) => {
             <Image src={aot} className=" w-24 h-12" />
           </div>
 
-          <div
-            className={`text-blue-950 font-extrabold  text-2xl md:text-5xl
+            <div
+              className={`text-blue-950 font-extrabold  text-2xl md:text-5xl
           ${courgette.className} `}
+            >
+              Academy of Technology
+            </div>
+          </div>
+          <div className="flex flex-row justify-center">
+            <span
+              className={` text-blue-800 font-thin text-sm mt-1 md:mt-2 ${courgette.className}`}
+            >
+              ...translating vision into reality
+            </span>
+          </div>
           >
             Academy of Technology
           </div>
@@ -89,8 +100,12 @@ const Banner = ({ setNav }) => {
           <li class="dropdown dropdown-5">
             Resources
             <ul class="dropdown_menu dropdown_menu-5">
-              <li class="dropdown_item-1">Library</li>
-              <li class="dropdown_item-2">Moodle</li>
+              <Link href="http://182.74.215.202:8001/">
+                <li class="dropdown_item-1">Library</li>
+              </Link>
+              <Link href="http://182.74.215.198/moodle/">
+                <li class="dropdown_item-2">Moodle</li>
+              </Link>
             </ul>
           </li>
 
@@ -117,7 +132,9 @@ const Banner = ({ setNav }) => {
               <li class="dropdown_item-1">Life@AOT</li>
               <li class="dropdown_item-2">Campus Facilities</li>
               <li class="dropdown_item-3">Career Services</li>
-              <li class="dropdown_item-3">Events</li>
+              <Link href="/events">
+                <li class="dropdown_item-2">Events</li>
+              </Link>
             </ul>
           </li>
 
