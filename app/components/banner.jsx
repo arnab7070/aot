@@ -34,28 +34,28 @@ const Banner = ({ setNav }) => {
     <div>
       <div className=" border-yellow-400 border-t-8 border-b-8 rounded-md w-full p-4 fixed top-0 bg-white/80
         backdrop-blur-md shadow-md z-[9999] md:static md:bg-white ">
-          <div>
-        <div className="flex flex-row gap-x-3  md:gap-x-12 w-full ">
-          <div className="mt-[-12px] flex flex-row  items-center">
-            <Image src={aot} className=" w-24 h-12" />
-          </div>
+        <div>
+          <div className="flex flex-row gap-x-3  md:gap-x-12 w-full ">
+            <div className="mt-[-12px] flex flex-row  items-center">
+              <Image src={aot} className=" w-24 h-12" />
+            </div>
 
-          <div
-            className={`text-blue-950 font-extrabold  text-2xl md:text-5xl
+            <div
+              className={`text-blue-950 font-extrabold  text-2xl md:text-5xl
           ${courgette.className} `}
-          >
-            Academy of Technology
+            >
+              Academy of Technology
+            </div>
+          </div>
+          <div className="flex flex-row justify-center">
+            <span
+              className={` text-blue-800 font-thin text-sm mt-1 md:mt-2 ${courgette.className}`}
+            >
+              ...translating vision into reality
+            </span>
           </div>
         </div>
-        <div className="flex flex-row justify-center">
-          <span
-            className={` text-blue-800 font-thin text-sm mt-1 md:mt-2 ${courgette.className}`}
-          >
-            ...translating vision into reality
-          </span>
-        </div>
-        </div>
-        <span className=" md:hidden relative ml-96"><SheetDemo/></span>
+        <span className=" md:hidden relative ml-96"><SheetDemo /></span>
       </div>
 
       <nav
@@ -79,8 +79,12 @@ const Banner = ({ setNav }) => {
           <li class="dropdown dropdown-5">
             Resources
             <ul class="dropdown_menu dropdown_menu-5">
-              <li class="dropdown_item-1">Library</li>
-              <li class="dropdown_item-2">Moodle</li>
+              <Link href="http://182.74.215.202:8001/">
+                <li class="dropdown_item-1">Library</li>
+              </Link>
+              <Link href="http://182.74.215.198/moodle/">
+                <li class="dropdown_item-2">Moodle</li>
+              </Link>
             </ul>
           </li>
 
@@ -107,7 +111,9 @@ const Banner = ({ setNav }) => {
               <li class="dropdown_item-1">Life@AOT</li>
               <li class="dropdown_item-2">Campus Facilities</li>
               <li class="dropdown_item-3">Career Services</li>
-              <li class="dropdown_item-3">Events</li>
+              <Link href="/events">
+                <li class="dropdown_item-2">Events</li>
+              </Link>
             </ul>
           </li>
 
