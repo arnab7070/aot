@@ -17,7 +17,7 @@ import Image from "next/image";
 export default function BentoGridDemo() {
   return (
     <div className=" font-bold">
-      <p className="font-bold text-3xl text-center p-10">Events</p>
+      <p className="font-bold text-3xl text-center p-10">ANNOUNCEMENT</p>
     <BentoGrid className="">
       
       {items.map((item, i) => (
@@ -41,52 +41,52 @@ const Skeleton = ({ imageSrc }) => (
 );
 const items = [
   {
-    title: "Professor of JU visited AOT",
-    description: "Dr. Ranjan Ganguly, Jadavpur University, visited on 4th May 2024, appreciated labs, addressed students.",
+    title: "Odd Semester results out",
+    description: "All students are informed that their odd semester results are out.",
     // header: <Skeleton />,
-    imageSrc: "https://media.licdn.com/dms/image/D4E22AQFIttyLobhh2w/feedshare-shrink_2048_1536/0/1715065222244?e=1718236800&v=beta&t=odhDBGU-vXBluWTIR9DjeMOvS7k-9ItPMqFcC5zYPj0",
+    imageSrc: "https://media.istockphoto.com/id/1086860354/photo/the-word-results-appearing-behind-torn-green-paper.jpg?s=1024x1024&w=is&k=20&c=PqeGy60zQtUNZ8k6uMytyfQS4uIt4XD3pi49oTBplhY=",
     // icon: <IconClipboardCopy className="h-4 w-4 text-neutral-500" />,
   },
   {
-    title: "PCB Design Workshop",
-    description: "AOT held a PCB Design workshop by Dipak Chakraborty for EE students on 23rd march, offering practical insights.",
+    title: "Upcoming Exam Schedule",
+    description: "Final exams for the Spring semester will be held from June 10th to June 28th. Please check the exam timetable on the student portal for specific dates and locations.",
     // header: <Skeleton />,
-    imageSrc: "https://media.licdn.com/dms/image/D4E22AQHWpXoPSWZVig/feedshare-shrink_2048_1536/0/1715062904545?e=1718236800&v=beta&t=5QGE5ufpMQ0E7Hr5eYvPoz0hol7wMawC49iVXhMGWd8",
+    imageSrc: "https://images.unsplash.com/photo-1606326608606-aa0b62935f2b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     // icon: <IconClipboardCopy className="h-4 w-4 text-neutral-500" />,
   },
   {
-    title: "An industrial visit to BTPS",
-    description: "EE students visited BTPS on 24th April, gaining practical knowledge on theoretical concepts.",
+    title: " Prize Distribution Ceremony for Recent Games Event",
+    description: "Join us for the Prize Distribution Ceremony celebrating our recent games event winners and participants!",
     // header: <Skeleton />,
-    imageSrc: "https://media.licdn.com/dms/image/D4E22AQENhSd0bpMpfQ/feedshare-shrink_2048_1536/0/1715063824018?e=1718236800&v=beta&t=zjVJPCZ_cyvRXkMUw2b0NHXB_n4-YuMMzwadJ7nvEOA",
+    imageSrc: "https://media.istockphoto.com/id/1296652620/photo/golden-trophy-cup-on-gold-background-copy-space-for-text-3d-rendering.jpg?s=2048x2048&w=is&k=20&c=DQVG4uvkE3wQxsTMAikEoTPMfgQfSkECpT7UFmo-yRo=",
     // icon: <IconClipboardCopy className="h-4 w-4 text-neutral-500" />,
   },
   {
-    title: "AOT and IEEE WIE Kolkata organized seminar on Women in Space Engineering.",
-    description: "AOT & IEEE WIE Kolkata co-hosted a seminar on 'Women in Space Engineering,' showcasing Dr. Sumitra Mukhopadhyay and Dr. Ankita Pramanik's efforts for women empowerment.",
+    title: "Celebrating Alumni Success",
+    description: "We are proud to announce that our distinguished alumnus, Mr. Yogesh Yogendra, has been recruited by Amazon as SDE.",
     // header: <Skeleton />,
-    imageSrc: "https://media.licdn.com/dms/image/D5622AQFIe7FuwQyw4w/feedshare-shrink_2048_1536/0/1713875963014?e=1718236800&v=beta&t=H3-jClfrMWs5GSGd2pE7FYnNZUx6rbpQ5nNziurIpm0",
+    imageSrc: "https://i.pinimg.com/564x/89/c5/3a/89c53a2a8ef25c033b3bee95992541ee.jpg",
     // icon: <IconClipboardCopy className="h-4 w-4 text-neutral-500" />,
   },
   {
-    title: "Guardian Interaction: Academic Performance Discussion",
-    description: "AOT held a campus session on academic performance and attendance improvement, engaging with guardians and stakeholders interactively.",
+    title: "Exciting Internship Opportunities",
+    description: "Exciting internships available with Cognizant and Wipro. Apply by June 15th! Check student portal.",
     // header: <Skeleton />,
-    imageSrc: "https://media.licdn.com/dms/image/D5622AQEdg8a9BzOMlg/feedshare-shrink_2048_1536/0/1713070848206?e=1718236800&v=beta&t=T6K5cAhaW5IrbGNmE5oBgs5l_xk2yEGRTwTOw2xwMgE",
+    imageSrc: "https://i.pinimg.com/564x/c4/90/81/c4908193ecd4e2e463dd155ac07dde53.jpg",
     // icon: <IconClipboardCopy className="h-4 w-4 text-neutral-500" />,
   },
   {
-    title: "Space Innovation: Dr. Tapan Misra",
-    description: "Dr. Tapan Misra discusses space tech innovation, past achievements, and future prospects.",
+    title: "Holiday for Exam Preparation",
+    description: "We are pleased to announce a one-month holiday for exam preparation starting May 1st. Use this time wisely to prepare for your exams. Good luck to all students!",
     // header: <Skeleton />,
-    imageSrc: "https://media.licdn.com/dms/image/D5622AQF8bRwSnaDygw/feedshare-shrink_2048_1536/0/1712984307820?e=1718236800&v=beta&t=3mWle45qrhzFTRcDD0ju88YYlO-FxPNQzKTUlol8wgE",
+    imageSrc: "https://i.pinimg.com/564x/a0/ea/9c/a0ea9cd104422e34a63d66d1d6c7c92d.jpg",
     // icon: <IconClipboardCopy className="h-4 w-4 text-neutral-500" />,
   },
   {
-    title: "Prize-Winning Start-Ups: Special Talk",
-    description: "ED-Cell hosts event with successful student entrepreneurs sharing startup journey, challenges, and advice",
+    title: "Campus Renovation Updates",
+    description: "The library will be closed for renovations from July 1st to August 15th. Alternative study spaces will be available in the Student Center.",
     // header: <Skeleton />,
-    imageSrc: "https://media.licdn.com/dms/image/D5622AQGFpYcl7apq9g/feedshare-shrink_2048_1536/0/1712983761618?e=1718236800&v=beta&t=Lyvi0NFY7OPFa9KKfnifmltu9Ogkbg3HfaCtdl4p-Rw",
+    imageSrc: "https://i.pinimg.com/564x/2e/86/e0/2e86e02d376ff6a99b6ecc71885a5b55.jpg",
     // icon: <IconClipboardCopy className="h-4 w-4 text-neutral-500" />,
   },
 ];
