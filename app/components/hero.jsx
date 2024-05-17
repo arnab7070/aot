@@ -6,7 +6,7 @@ import Image from "next/image";
 import Footer from "../components/footer";
 import Carousel from "./ui/carousal";
 import { Button } from "./ui/button";
-import Announcement from "../components/news";
+import Announcement from "./announcement";
 import EventSection from "../components/events";
 import Events from "./eventsCard";
 

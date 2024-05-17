@@ -74,6 +74,7 @@ const CSBS = () => {
         </section>
       </div>
       <div className="">
+      <p className="text-center text-3xl font-bold mt-10">NEWS BULLETIN</p>
         <Carousel items={newsItems} />
         <div className="flex justify-end mr-10 mt-0"></div>
       </div>

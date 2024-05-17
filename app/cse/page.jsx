@@ -3,6 +3,8 @@ import React from "react";
 import { useState, useEffect } from "react";
 import CSEnews from "../components/news1";
 import Carousel from "../components/ui/carousal";
+import Announcement from "../components/announcement1";
+import Events from "../components/events1";
 import Banner from "../components/banner1";
 import Navbar from "../components/navbar1";
 import Footer from "../components/footer";
@@ -75,9 +77,12 @@ const CSE = () => {
         </section>
       </div>
       <div className="">
+      <p className="text-center text-3xl font-bold mt-10">NEWS BULLETIN</p>
         <Carousel items={newsItems} />
         <div className="flex justify-end mr-10 mt-0"></div>
       </div>
+      <Announcement />
+      <Events />
       <Footer />
     </div>
   );
