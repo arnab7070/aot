@@ -21,13 +21,10 @@ const CSE = () => {
           <div className="md:mt-0 mt-20 w-full lg:w-1/2">
             <h1 className="mx-20 text-3xl md:text-4xl lg:text-4xl font-semibold text-white max-w-m">
               Discover and Master the World of{" "}
-              <span className="text-lime-500">Computer Science</span>
+              <span className="text-lime-500">Mechanical Engineering</span>
             </h1>
             <p className="text-white text-lg lg:text-base mt-5">
-              Get started with the most comprehensive and cutting-edge
-              curriculum to learn and excel in Computer Science and Engineering.
-              Start your journey today and become proficient in the latest
-              technologies and innovations in the field!
+              Get started with the most comprehensive and cutting-edge curriculum to learn and excel in Mechanical Engineering. Start your journey today and become proficient in the latest technologies and innovations in the field!
             </p>
             <div className="mt-10 h-12 flex items-center justify-start gap-3">
               <button className="px-6 py-1.5 h-12 text-white bg-lime-500 rounded-lg hover:opacity-75 transition-all duration-300">
@@ -40,7 +37,7 @@ const CSE = () => {
             <div className="grid grid-cols-1 md:grid-cols-3 mt-10 w-full h-auto gap-4 md:gap-2 lg:divide-x-[1px] place-content-center">
               <div className="w-full md:w-auto h-24 md:h-20 px-5 flex md:flex-col items-center justify-center">
                 <h2 className="text-4xl md:text-5xl font-bold text-lime-500">
-                40<span className="text-white">+</span>
+                  40<span className="text-white">+</span>
                 </h2>
                 <h3 className="text-gray-300 text-sm md:text-base mt-2">
                   Students
@@ -56,7 +53,7 @@ const CSE = () => {
               </div>
               <div className="w-full md:w-auto h-24 md:h-20 px-5 flex md:flex-col items-center justify-center">
                 <h2 className="text-4xl md:text-5xl font-bold text-lime-500">
-                1
+                  1
                 </h2>
                 <h3 className="text-gray-300 text-sm md:text-base mt-2">
                   Journals
@@ -77,7 +74,7 @@ const CSE = () => {
         </section>
       </div>
       <div className="">
-      <p className="text-center text-3xl font-bold mt-10">NEWS BULLETIN</p>
+        <p className="text-center text-3xl font-bold mt-10">NEWS BULLETIN</p>
         <Carousel items={newsItems} />
         <div className="flex justify-end mr-10 mt-0"></div>
       </div>
