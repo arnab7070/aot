@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
 import React from "react";
-import Banner from "../components/banner";
+import Banner from "../components/banner1";
 import Navbar from "../components/navbar";
 import Footer from "../components/footer";
 import "../departments/card.css";

@@ -80,7 +80,7 @@ const Banner = ({ setNav }) => {
               <Link href="/faculty">
                 <li className="dropdown_item-1">Faculty Members</li>
               </Link>
-              <Link href="/staff">
+              <Link href="/faculty">
                 <li className="dropdown_item-2">Staff Members</li>
               </Link>
             </ul>
