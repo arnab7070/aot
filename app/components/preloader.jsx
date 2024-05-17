@@ -2,10 +2,12 @@ import React, { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { Settings } from "lucide-react";
 import { Courgette } from "next/font/google";
+
 const courgette = Courgette({
   weight: "400",
   subsets: ["latin"],
 });
+
 const YourComponent = () => {
   // Create refs for React elements
   const gearEmojiRef = useRef(null);
@@ -91,17 +93,23 @@ const YourComponent = () => {
       document.body.style.overflow = "auto";
     };
   }, []);
+
   return (
-    <div className="relative z-[60] " ref={containerref}>
-      <div className="loading-screen" ref={loadingscreenref}>
+    <div
+      className="relative z-[60] bg-white" // Change background color to white
+      ref={containerref}
+    >
+      <div className="loading-screen bg-white" ref={loadingscreenref}>
         <div className="loader" ref={loader}>
-          <div className="loader-1" ref={loader1ref}></div>
+          <div
+            className="loader-1 bg-yellow-500" // Change loader bar color to yellow
+            ref={loader1ref}
+          ></div>
         </div>
       </div>
-      <div className="logo">
+      <div className="logo -mt-5">
         <span
-          className={`${courgette.className} text-[#6375ec] mr-2 font-bold text-8xl`}
-          style={{ textShadow: "0 0 10px rgba(47, 79, 168, 0.7)" }}
+          className={`text-[#242f64] mr-2 font-bold text-8xl`}
           ref={logo2ref}
         >
           A
@@ -109,12 +117,11 @@ const YourComponent = () => {
 
         <span ref={gearEmojiRef} className="gear-emoji">
           {/* ⚙️ */}
-          <Settings color="yellow" size={95} />
+          <Settings color="#242f64" size={95} />
         </span>
         <span
-          className={`${courgette.className} text-[#6375ec] ml-2 font-bold text-8xl`}
+          className={`text-[#242f64] ml-2 font-bold text-8xl`}
           ref={logo1ref}
-          style={{ textShadow: "0 0 10px rgba(47, 79, 168, 0.7)" }}
         >
           T
         </span>
