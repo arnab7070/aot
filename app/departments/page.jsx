@@ -17,14 +17,14 @@ const ugDepartments = [
   {
     title: "Computer Science and Engineering",
     text: "Explore the world of computing with CSE.",
-    imageUrl: "https://picsum.photos/500/300/?image=10",
+    imageUrl: "https://picsum.photos/500/300/?image=5",
     btnText: "Read More",
     link: 'cse'
   },
   {
     title: "Computer Science and Business Systems",
     text: "Integrate technology with business using CSBS.",
-    imageUrl: "https://picsum.photos/500/300/?image=5",
+    imageUrl: "https://images.unsplash.com/photo-1453928582365-b6ad33cbcf64",
     btnText: "Read More",
     link: 'csbs'
   },

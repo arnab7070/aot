@@ -11,7 +11,7 @@ const eventsData = [
     description: "Techfiesta 2024 is a two day long technical festival organised by the student's of Academy of Technology. It offers various events on software & hardware technology domain. Participants will take part based on their skillset and preferences.",
     category: "workshops",
     image: "https://images.unsplash.com/photo-1601564350184-9e93c13df688?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    className: "md:col-span-2",
+    dept: "cse"
   },
   {
     id: 2,
@@ -22,7 +22,7 @@ const eventsData = [
     description: "Experience the dynamic transformation of the Academy of Technology into a lively playground, where the air is filled with the excitement of football, volleyball, and a variety of other engaging activities. So, guys stay tuned.",
     category: "sports",
     image: "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    className: "col-span-1",
+    dept: "ece"
   },
   {
     id: 3,
@@ -33,7 +33,7 @@ const eventsData = [
     description: "At the Academy of Technology, innovation takes center stage with workshops on the product design lifecycle, Git & GitHub mastery, frontend business logic, backend deployment strategies, and CAD design, shaping tomorrow's tech leaders.",
     category: "workshops",
     image: "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    className: "col-span-1",
+    dept: "csbs"
   },
   {
     id: 4,
@@ -44,7 +44,7 @@ const eventsData = [
     description: "Experience the ultimate college extravaganza at Arcadia, a two-day fest filled with boundless fun and entertainment, featuring electrifying performances by renowned singers that will captivate and delight students throughout.",
     category: "music",
     image: "https://images.unsplash.com/photo-1583681758134-3ea2709d2e23?q=80&w=1852&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    className: "md:col-span-2",
+    dept: "cse"
   },
 ];
 
@@ -66,7 +66,8 @@ const Events = () => {
   const filterEvents = (searchTerm, category) => {
     const filtered = eventsData.filter(event =>
       (event.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
-       event.location.toLowerCase().includes(searchTerm.toLowerCase())) &&
+       event.location.toLowerCase().includes(searchTerm.toLowerCase()) ||
+       event.dept.toLowerCase().includes(searchTerm.toLowerCase())) &&
       (category === '' || event.category === category)
     );
     setFilteredEvents(filtered);
@@ -85,7 +86,6 @@ const Events = () => {
           <option value="workshops">Workshops</option>
           <option value="music">Music</option>
           <option value="music">Sports</option>
-          {/* Add more options as needed */}
         </select>
       </div>
 
