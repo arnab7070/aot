@@ -50,7 +50,7 @@ const cards = [
 export default function EventSection() {
   return (
     <main>
-      <p className='text-4xl font-semibold ml-5 mt-10'>Events</p>
+      <p className='text-4xl font-semibold ml-5 mt-10 text-center'>Events</p>
       <div className="h-screen py-16 w-full">
         <LayoutGrid cards={cards} />
       </div>
