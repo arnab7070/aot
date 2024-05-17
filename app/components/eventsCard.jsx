@@ -88,8 +88,7 @@ const Events = () => {
   const filterEvents = (searchTerm, category) => {
     const filtered = eventsData.filter(event =>
       (event.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
-       event.location.toLowerCase().includes(searchTerm.toLowerCase()) ||
-       event.dept.toLowerCase().includes(searchTerm.toLowerCase())) &&
+       event.location.toLowerCase().includes(searchTerm.toLowerCase())) &&
       (category === '' || event.category === category)
     );
     setFilteredEvents(filtered);
