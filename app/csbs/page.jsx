@@ -1,8 +1,10 @@
 "use client";
 import React from "react";
 import { useState, useEffect } from "react";
-import CSBSnews from "../components/news2";
+import CSBSnews from "../components/CSBSnews";
 import Carousel from "../components/ui/carousal";
+import Announcement from "../components/CSBSannouncement";
+import Events from "../components/CSBSevents";
 import Banner from "../components/banner1";
 import Navbar from "../components/navbar1";
 import Footer from "../components/footer";
@@ -65,7 +67,7 @@ const CSBS = () => {
             <div className="absolute left-10 top-20 h-[30%] w-[30%] bg-emerald-300 blur-[130px]"></div>
 
             <img
-              src="https://utfs.io/f/f1494cc9-99a0-472c-ae73-3de00d15e91f-df0jcn.jpg"
+              src="https://i.pinimg.com/564x/39/67/0e/39670eac716ebdbf83f3e8f8bd3250c3.jpg"
               alt=""
               className="h-auto w-full md:w-[70%] rounded-3xl"
             />
@@ -78,6 +80,8 @@ const CSBS = () => {
         <Carousel items={newsItems} />
         <div className="flex justify-end mr-10 mt-0"></div>
       </div>
+      <Events />
+      <Announcement />
       <Footer />
     </div>
   );

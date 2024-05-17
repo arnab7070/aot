@@ -1,10 +1,10 @@
 "use client";
 import React from "react";
 import { useState, useEffect } from "react";
-import CSEnews from "../components/news1";
+import CSEnews from "../components/CSEnews";
 import Carousel from "../components/ui/carousal";
-import Announcement from "../components/announcement1";
-import Events from "../components/events1";
+import Announcement from "../components/CSEannouncement";
+import Events from "../components/CSEevents";
 import Banner from "../components/banner1";
 import Navbar from "../components/navbar1";
 import Footer from "../components/footer";
@@ -68,7 +68,7 @@ const CSE = () => {
             <div className="absolute left-10 top-20 h-[30%] w-[30%] bg-emerald-300 blur-[130px]"></div>
 
             <img
-              src="https://utfs.io/f/f1494cc9-99a0-472c-ae73-3de00d15e91f-df0jcn.jpg"
+              src="https://i.pinimg.com/564x/88/4f/c4/884fc4a9e9431fa0cf6107381ee57997.jpg"
               alt=""
               className="h-auto w-full md:w-[70%] rounded-3xl"
             />
@@ -81,8 +81,8 @@ const CSE = () => {
         <Carousel items={newsItems} />
         <div className="flex justify-end mr-10 mt-0"></div>
       </div>
-      <Announcement />
       <Events />
+      <Announcement />
       <Footer />
     </div>
   );

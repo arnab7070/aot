@@ -77,7 +77,7 @@ const items = [
   },
   {
     title: "Holiday for Exam Preparation",
-    description: "We are pleased to announce a one-month holiday for exam preparation starting May 1st. Use this time wisely to prepare for your exams. Good luck to all students!",
+    description: "We're pleased to announce a one-month exam preparation holiday starting May 1st. Use this time wisely. Good luck, everyone!",
     // header: <Skeleton />,
     imageSrc: "https://i.pinimg.com/564x/a0/ea/9c/a0ea9cd104422e34a63d66d1d6c7c92d.jpg",
     // icon: <IconClipboardCopy className="h-4 w-4 text-neutral-500" />,

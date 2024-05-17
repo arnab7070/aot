@@ -1,6 +1,6 @@
 'use client';
 import React, { useState } from "react";
-import { LayoutGrid } from "../components/ui/layout-grid";
+import { LayoutGrid } from "./ui/layout-grid";
 
 // Sample events data
 const eventsData = [
@@ -73,14 +73,14 @@ const eventsData = [
 ];
 
 export default function EventSection() {
-  const [selectedDept, setSelectedDept] = useState('cse'); // Initial department
+  const [selectedDept, setSelectedDept] = useState('me'); // Initial department
 
   // Filter events based on selected department
   const filteredEvents = eventsData.filter(event => event.dept === selectedDept);
 
   return (
     <main>
-      <p className='text-4xl font-semibold ml-5 mt-10 text-center'>EVENTS</p>
+      <p className='text-4xl font-semibold ml-5 mt-10 text-center'>UPCOMING EVENTS</p>
       <div className="container mx-auto py-8">
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
           {filteredEvents.map(event => (
